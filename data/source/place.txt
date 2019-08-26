@@ -1,0 +1,5 @@
+here ここ
+here このあたり
+here この辺
+working_place 職場
+school 学校
