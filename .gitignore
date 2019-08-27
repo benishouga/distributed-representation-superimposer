@@ -123,4 +123,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-data/source/projectnextnlp-chat-dialogue-corpus
+distributed-representation-superimposer/data/source/projectnextnlp-chat-dialogue-corpus

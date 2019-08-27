@@ -6,12 +6,11 @@ from pytorch_pretrained_bert.tokenization import BertTokenizer
 from pytorch_pretrained_bert.modeling import BertModel
 
 class Extractor:
-    def __init__(self, bert_model):
+    def __init__(self, bert_pretrained_model):
         self.device = torch.device(
             "cuda" if torch.cuda.is_available() else "cpu")
-        self.bert_model = bert_model
-        self.tokenizer = BertTokenizer.from_pretrained(self.bert_model)
-        self.model = BertModel.from_pretrained(self.bert_model)
+        self.tokenizer = BertTokenizer.from_pretrained(bert_pretrained_model)
+        self.model = BertModel.from_pretrained(bert_pretrained_model)
         self.model.to(self.device)
         self.jm = Juman()
 
@@ -41,6 +40,4 @@ class Extractor:
 
         _, encoded = self.model(
             input_ids, token_type_ids=None, attention_mask=input_mask)
-        encoded = encoded.detach().cpu().numpy()
-
-        return encoded
+        return encoded.detach().cpu().numpy()[0]

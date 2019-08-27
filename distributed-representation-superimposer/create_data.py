@@ -1,19 +1,21 @@
 import os
+import time
 import random
 import datetime
 import re
 import json
 from itertools import permutations
+from extractor import Extractor
 
 base = os.path.dirname(os.path.abspath(__file__))
 INPUT_INTENT_SOURCE = os.path.normpath(
-    os.path.join(base, "./source/intent.txt"))
+    os.path.join(base, "./data/source/intent.txt"))
 
 INPUT_OTHER_SOURCE = os.path.normpath(
-    os.path.join(base, "./source/others.txt"))
+    os.path.join(base, "./data/source/others.txt"))
 
 OUTPUT = os.path.normpath(
-    os.path.join(base, "./data.tsv"))
+    os.path.join(base, "./data/data.tsv"))
 
 
 REGEX_FIND_HOLDER = re.compile(r'\{(.*?)\}')
@@ -49,14 +51,14 @@ def load_file(file_path):
 
 
 PLACES = []
-for line in load_file(os.path.join(base, "./source/place.txt")):
+for line in load_file(os.path.join(base, "./data/source/place.txt")):
     id, name = line.split(" ")
     PLACES.append(Attribute("place", id, name))
 
 
 GEOGRAPHICAL_NAMES = load_file(os.path.join(
-    base, "./source/geographical_names.txt"))
-STATION = load_file(os.path.join(base, "./source/station.txt"))
+    base, "./data/source/geographical_names.txt"))
+STATION = load_file(os.path.join(base, "./data/source/station.txt"))
 
 
 def get_place():
@@ -72,7 +74,7 @@ def get_place():
 
 DATES = []
 for line in load_file(os.path.normpath(
-        os.path.join(base, "./source/datetime.txt"))):
+        os.path.join(base, "./data/source/datetime.txt"))):
     id, name = line.split(" ")
     DATES.append(Attribute("datetime", id, name))
 
@@ -179,9 +181,33 @@ def main():
     for other in others:
         result.append(Intent(other, "other"))
 
+    extractor = Extractor('../Japanese_L-12_H-768_A-12_E-30_BPE/')
+    count = 10
+
+    start_time = time.time()
+    print("start")
+    for value in result:
+        if count != 0:
+            value.dr = [format(v, 'e') for v in extractor.extract(value.text)]
+            count = count - 1
+        else:
+            value.dr = None
+    finish = time.time()
+    duration = finish - start_time
+    print("duration", duration)
+    print("expected duration", duration * 38768 / 10 / 60, "min")
+
     with open(OUTPUT, "w") as out_file:
-        out_file.write('\n'.join(["{}\t{}\t{}\t{}".format(
-            value.intent, value.place, value.datetime, value.text) for value in result]))
+        contents = []
+        for value in result:
+            contents.append("{}\t{}\t{}\t{}\t{}".format(
+                value.intent,
+                value.place or "",
+                value.datetime or "",
+                value.text,
+                ",".join(value.dr) if value.dr else ""
+            ))
+        out_file.write('\n'.join(contents))
 
 
 if __name__ == '__main__':

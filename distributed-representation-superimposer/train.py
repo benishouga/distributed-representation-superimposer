@@ -1,3 +1,4 @@
+import sys
 import time
 import random
 import torch
@@ -172,7 +173,7 @@ class TextField(torchtext.data.Field):
         self.use_vocab = False
         self.batch_first=True
         self.dtype = torch.float
-        self.tokenize = lambda text: extractor.extract(text)[0]
+        self.tokenize = lambda text: extractor.extract(text)
 
 
 class Dataset(torchtext.data.TabularDataset):
@@ -182,8 +183,9 @@ class Dataset(torchtext.data.TabularDataset):
 
 
 def main():
+    args = sys.argv
     extractor = Extractor('../Japanese_L-12_H-768_A-12_E-30_BPE/')
-    td = Dataset(extractor, path='./data/data_100.tsv')
+    td = Dataset(extractor, path=args[1])
     training_data, validation_data = td.split(
         split_ratio=0.8, random_state=random.seed(1234))
 

@@ -3,7 +3,7 @@ import json
 
 base = os.path.dirname(os.path.abspath(__file__))
 INPUT_OTHER_SOURCE = os.path.normpath(os.path.join(
-    base, "./source/projectnextnlp-chat-dialogue-corpus/json/rest1046"))
+    base, "./data/source/projectnextnlp-chat-dialogue-corpus/json/rest1046"))
 
 def load_others():
     files = os.listdir(INPUT_OTHER_SOURCE)
