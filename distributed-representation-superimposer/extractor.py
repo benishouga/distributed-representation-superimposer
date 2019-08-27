@@ -14,13 +14,14 @@ class Extractor:
         self.model.to(self.device)
         self.jm = Juman()
 
-    def extract(self, text, seq_length=256):
+    def extract(self, text, seq_length=64):
         assert self.tokenizer != None
 
         jm_result = self.jm.analysis(text)
         tokens = self.tokenizer.tokenize(
             " ".join([m.midasi for m in jm_result.mrph_list()]))
         if len(tokens) > seq_length - 2:
+            print("tooooooo long !", text, len(tokens))
             tokens = tokens[0:(seq_length - 2)]
         tokens.insert(0, "[CLS]")
         tokens.append("[SEP]")

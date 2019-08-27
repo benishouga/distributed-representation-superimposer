@@ -181,22 +181,31 @@ def main():
     for other in others:
         result.append(Intent(other, "other"))
 
-    # extractor = Extractor('../Japanese_L-12_H-768_A-12_E-30_BPE/')
-    # count = 10
+    extractor = Extractor('../Japanese_L-12_H-768_A-12_E-30_BPE/')
+
+    # カウント数分だけ
+    # count = 32
+    # i = 0
     # start_time = time.time()
     # print("start")
     # for value in result:
-    #     if count != 0:
+    #     if i < count:
     #         value.dr = [format(v, 'e') for v in extractor.extract(value.text)]
-    #         count = count - 1
+    #         i = i + 1
     #     else:
     #         value.dr = None
     # finish = time.time()
     # duration = finish - start_time
-    # print("duration", duration)
-    # print("expected duration", duration * 38768 / 10 / 60, "min")
+    # print("duration on one text", duration / count)
+    # print("expected duration", duration * 38768 / count / 60, "min")
+
+    # 全部やらない
+    # for value in result:
+    #     value.dr = None
+
+    # 全部やる
     for value in result:
-        value.dr = None
+        value.dr = [format(v, 'e') for v in extractor.extract(value.text)]
 
     with open(OUTPUT, "w") as out_file:
         contents = []

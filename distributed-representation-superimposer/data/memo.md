@@ -1,3 +1,7 @@
+## シャッフルして生成
+
+shuf -n 1000 distributed-representation-superimposer/data/data.tsv > distributed-representation-superimposer/data/data_1000.tsv
+
 ## 今回判定したいもの
 
 - 主題
@@ -126,6 +130,7 @@
     - 風弱い？
 
 - 予定について
+
   - 予定
   - 予定教えて
   - 予定を教えて
@@ -140,6 +145,7 @@
   - 何か予定ある？
 
 - 日付をつける
+
   - 今日
   - 明日
   - 昨日
@@ -153,8 +159,8 @@
   - 来年
   - 再来年
   - 去年
-  - 特定の相対日付（X日後）
-  - 特定の日付（X年X月X日）
+  - 特定の相対日付（X 日後）
+  - 特定の日付（X 年 X 月 X 日）
 
 - 場所をつける
   - ここ
