@@ -27,7 +27,7 @@ class Cataloger(nn.Module):
         return self.l3(x)
 
 
-def train(net, dataloaders_dict, criterion, optimizer, num_epochs):
+def train(net, target, dataloaders_dict, criterion, optimizer, num_epochs):
 
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
@@ -54,7 +54,7 @@ def train(net, dataloaders_dict, criterion, optimizer, num_epochs):
             batches = dataloaders_dict[phase]
             for data in batches:
                 inputs = data.text.to(device)
-                labels = data.intent.to(device)
+                labels = getattr(data, target).to(device)
 
                 optimizer.zero_grad()
 
@@ -196,12 +196,12 @@ def main():
         'val': torchtext.data.Iterator(validation_data, batch_size=batch_size, train=False, sort=False)
     }
 
-    net = Cataloger(catalog_features=len(td.fields["intent"].labels))
-
-    optimizer = optim.Adam(net.parameters(), lr=5e-5)
-    criterion = nn.CrossEntropyLoss()
-
-    train(net, dataloaders_dict, criterion, optimizer, 20)
+    for target in ("intent", "place", "datetime"):
+        print("----{}----".format(target))
+        net = Cataloger(catalog_features=len(td.fields[target].labels))
+        optimizer = optim.Adam(net.parameters(), lr=5e-5)
+        criterion = nn.CrossEntropyLoss()
+        train(net, target, dataloaders_dict, criterion, optimizer, 20)
 
 
 if __name__ == '__main__':

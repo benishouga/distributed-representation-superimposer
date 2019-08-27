@@ -79,15 +79,15 @@ for line in load_file(os.path.normpath(
     DATES.append(Attribute("datetime", id, name))
 
 
-DATE_FORMATS = ["%Y年%-m月%-d日", "%Y年%-m月", "%-m月%-d日", "%Y年", "%-m月", "%-d日"]
+DATE_FORMATS = ["%-m月%-d日", "%-m月", "%-d日"]
 
 
 def get_date():
     result = []
     result.extend(DATES)
-    for n in range(3):
+    for n in range(2):
         random_time = datetime.datetime.fromtimestamp(
-            random.randint(0, 1566063664))
+            random.randint(1565000000, 1700000000))
         result.append(
             Attribute("datetime", "absolute", random_time.strftime(random.choice(DATE_FORMATS))))
     return result
@@ -181,21 +181,22 @@ def main():
     for other in others:
         result.append(Intent(other, "other"))
 
-    extractor = Extractor('../Japanese_L-12_H-768_A-12_E-30_BPE/')
-    count = 10
-
-    start_time = time.time()
-    print("start")
+    # extractor = Extractor('../Japanese_L-12_H-768_A-12_E-30_BPE/')
+    # count = 10
+    # start_time = time.time()
+    # print("start")
+    # for value in result:
+    #     if count != 0:
+    #         value.dr = [format(v, 'e') for v in extractor.extract(value.text)]
+    #         count = count - 1
+    #     else:
+    #         value.dr = None
+    # finish = time.time()
+    # duration = finish - start_time
+    # print("duration", duration)
+    # print("expected duration", duration * 38768 / 10 / 60, "min")
     for value in result:
-        if count != 0:
-            value.dr = [format(v, 'e') for v in extractor.extract(value.text)]
-            count = count - 1
-        else:
-            value.dr = None
-    finish = time.time()
-    duration = finish - start_time
-    print("duration", duration)
-    print("expected duration", duration * 38768 / 10 / 60, "min")
+        value.dr = None
 
     with open(OUTPUT, "w") as out_file:
         contents = []
