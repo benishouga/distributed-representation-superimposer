@@ -1,4 +1,4 @@
-## シャッフルして生成
+## data.tsv からシャッフルして切り出したデータを生成
 
 shuf -n 1000 distributed-representation-superimposer/data/data.tsv > distributed-representation-superimposer/data/data_1000.tsv
 
