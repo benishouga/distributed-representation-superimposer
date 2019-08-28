@@ -9,7 +9,6 @@ from torch import nn
 from torch import optim
 import torchtext
 
-from extractor import Extractor
 from cateloger import Cataloger
 from field.dataset import Dataset
 
@@ -40,7 +39,7 @@ def train(net, target, dataloaders_dict, criterion, optimizer, num_epochs):
 
             batches = dataloaders_dict[phase]
             for data in batches:
-                inputs = data.text.to(device)
+                inputs = data.dr.to(device)
                 labels = getattr(data, target).to(device)
 
                 optimizer.zero_grad()
@@ -51,25 +50,22 @@ def train(net, target, dataloaders_dict, criterion, optimizer, num_epochs):
                     loss = criterion(outputs, labels)
                     _, preds = torch.max(outputs, 1)
 
-                    # 訓練時はバックプロパゲーション
                     if phase == 'train':
                         loss.backward()
                         optimizer.step()
 
-                        if (iteration % 10 == 0):  # 10iterに1度、lossを表示
+                        if (iteration % 100 == 0):
                             t_iter_finish = time.time()
                             duration = t_iter_finish - t_iter_start
                             acc = (torch.sum(preds == labels.data)
                                    ).double()/batch_size
-                            print('イテレーション {} || Loss: {:.4f} || 10iter: {:.4f} sec. || 本イテレーションの正解率：{}'.format(
+                            print('Iteration: {} || Loss: {:.4f} || {:.4f} sec. || Acc：{}'.format(
                                 iteration, loss.item(), duration, acc))
                             t_iter_start = time.time()
 
                     iteration += 1
 
-                    # 損失と正解数の合計を更新
                     epoch_loss += loss.item() * batch_size
-                    epoch_loss += loss.item()
                     epoch_corrects += torch.sum(preds == labels.data)
 
             # epochごとのlossと正解率
@@ -85,15 +81,8 @@ def train(net, target, dataloaders_dict, criterion, optimizer, num_epochs):
     return net
 
 
-def main():
-    parser = ArgumentParser()
-    parser.add_argument("--mode", type=str, required=True,
-                        choices=["train", "eval"])
-    parser.add_argument("--input", type=Path, required=True)
-    args = parser.parse_args()
-
-    extractor = Extractor('../Japanese_L-12_H-768_A-12_E-30_BPE/')
-    td = Dataset(extractor, path=args.input)
+def cmd_train(args):
+    td = Dataset(path=args.input)
     training_data, validation_data = td.split(
         split_ratio=0.8, random_state=random.seed(1234))
 
@@ -109,7 +98,37 @@ def main():
         net = Cataloger(catalog_features=len(td.fields[target].labels))
         optimizer = optim.Adam(net.parameters(), lr=5e-5)
         criterion = nn.CrossEntropyLoss()
-        train(net, target, dataloaders_dict, criterion, optimizer, 20)
+        train(net, target, dataloaders_dict, criterion, optimizer, 10)
+
+
+def cmd_eval(args):
+    print(args)
+
+
+def cmd_help(args):
+    print(parser.parse_args([args.command, '--help']))
+
+
+def main():
+    parser = ArgumentParser()
+    sub = parser.add_subparsers()
+
+    mode_train = sub.add_parser('train')
+    mode_train.add_argument('--input', type=Path, required=True)
+    mode_train.set_defaults(handler=cmd_train)
+
+    mode_eval = sub.add_parser('eval')
+    mode_eval.set_defaults(handler=cmd_eval)
+
+    mode_help = sub.add_parser('help')
+    mode_help.add_argument('cmd')
+    mode_help.set_defaults(handler=cmd_help)
+
+    args = parser.parse_args()
+    if hasattr(args, 'handler'):
+        args.handler(args)
+    else:
+        parser.print_help()
 
 
 if __name__ == '__main__':

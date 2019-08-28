@@ -1,243 +1,363 @@
 ----intent----
-イテレーション 10 || Loss: 1.2077 || 10iter: 0.1277 sec. || 本イテレーションの正解率：0.625
-イテレーション 20 || Loss: 0.9511 || 10iter: 0.1213 sec. || 本イテレーションの正解率：0.71875
-Epoch 1/20 | train |  Loss: 1.1498 Acc: 0.6550
-Epoch 1/20 |  val  |  Loss: 0.9494 Acc: 0.7300
-イテレーション 10 || Loss: 0.7556 || 10iter: 0.1188 sec. || 本イテレーションの正解率：0.6875
-イテレーション 20 || Loss: 0.6491 || 10iter: 0.1185 sec. || 本イテレーションの正解率：0.78125
-Epoch 2/20 | train |  Loss: 0.6653 Acc: 0.7488
-Epoch 2/20 |  val  |  Loss: 0.6386 Acc: 0.7300
-イテレーション 10 || Loss: 0.4293 || 10iter: 0.1200 sec. || 本イテレーションの正解率：0.84375
-イテレーション 20 || Loss: 0.2665 || 10iter: 0.1209 sec. || 本イテレーションの正解率：0.90625
-Epoch 3/20 | train |  Loss: 0.4925 Acc: 0.7662
-Epoch 3/20 |  val  |  Loss: 0.4580 Acc: 0.7700
-イテレーション 10 || Loss: 0.4145 || 10iter: 0.1155 sec. || 本イテレーションの正解率：0.78125
-イテレーション 20 || Loss: 0.4076 || 10iter: 0.1174 sec. || 本イテレーションの正解率：0.9375
-Epoch 4/20 | train |  Loss: 0.3527 Acc: 0.8925
-Epoch 4/20 |  val  |  Loss: 0.2806 Acc: 0.9500
-イテレーション 10 || Loss: 0.1200 || 10iter: 0.1152 sec. || 本イテレーションの正解率：1.0
-イテレーション 20 || Loss: 0.1644 || 10iter: 0.1124 sec. || 本イテレーションの正解率：0.96875
-Epoch 5/20 | train |  Loss: 0.2460 Acc: 0.9437
-Epoch 5/20 |  val  |  Loss: 0.1839 Acc: 0.9600
-イテレーション 10 || Loss: 0.1376 || 10iter: 0.1124 sec. || 本イテレーションの正解率：0.96875
-イテレーション 20 || Loss: 0.1365 || 10iter: 0.1193 sec. || 本イテレーションの正解率：0.96875
-Epoch 6/20 | train |  Loss: 0.1803 Acc: 0.9625
-Epoch 6/20 |  val  |  Loss: 0.1439 Acc: 0.9650
-イテレーション 10 || Loss: 0.0788 || 10iter: 0.1155 sec. || 本イテレーションの正解率：1.0
-イテレーション 20 || Loss: 0.1417 || 10iter: 0.1113 sec. || 本イテレーションの正解率：0.96875
-Epoch 7/20 | train |  Loss: 0.1521 Acc: 0.9637
-Epoch 7/20 |  val  |  Loss: 0.1371 Acc: 0.9700
-イテレーション 10 || Loss: 0.1032 || 10iter: 0.1108 sec. || 本イテレーションの正解率：1.0
-イテレーション 20 || Loss: 0.2405 || 10iter: 0.1122 sec. || 本イテレーションの正解率：0.9375
-Epoch 8/20 | train |  Loss: 0.1333 Acc: 0.9712
-Epoch 8/20 |  val  |  Loss: 0.1214 Acc: 0.9750
-イテレーション 10 || Loss: 0.0529 || 10iter: 0.1191 sec. || 本イテレーションの正解率：1.0
-イテレーション 20 || Loss: 0.1438 || 10iter: 0.1138 sec. || 本イテレーションの正解率：0.9375
-Epoch 9/20 | train |  Loss: 0.1125 Acc: 0.9712
-Epoch 9/20 |  val  |  Loss: 0.1013 Acc: 0.9800
-イテレーション 10 || Loss: 0.0743 || 10iter: 0.1224 sec. || 本イテレーションの正解率：1.0
-イテレーション 20 || Loss: 0.0444 || 10iter: 0.1134 sec. || 本イテレーションの正解率：1.0
-Epoch 10/20 | train |  Loss: 0.0995 Acc: 0.9762
-Epoch 10/20 |  val  |  Loss: 0.1044 Acc: 0.9750
-イテレーション 10 || Loss: 0.0621 || 10iter: 0.1173 sec. || 本イテレーションの正解率：1.0
-イテレーション 20 || Loss: 0.0848 || 10iter: 0.1137 sec. || 本イテレーションの正解率：0.96875
-Epoch 11/20 | train |  Loss: 0.0899 Acc: 0.9762
-Epoch 11/20 |  val  |  Loss: 0.0988 Acc: 0.9750
-イテレーション 10 || Loss: 0.2299 || 10iter: 0.1194 sec. || 本イテレーションの正解率：0.9375
-イテレーション 20 || Loss: 0.1409 || 10iter: 0.1146 sec. || 本イテレーションの正解率：0.9375
-Epoch 12/20 | train |  Loss: 0.0862 Acc: 0.9800
-Epoch 12/20 |  val  |  Loss: 0.0852 Acc: 0.9850
-イテレーション 10 || Loss: 0.0273 || 10iter: 0.1223 sec. || 本イテレーションの正解率：1.0
-イテレーション 20 || Loss: 0.1359 || 10iter: 0.1162 sec. || 本イテレーションの正解率：0.96875
-Epoch 13/20 | train |  Loss: 0.0827 Acc: 0.9788
-Epoch 13/20 |  val  |  Loss: 0.0848 Acc: 0.9850
-イテレーション 10 || Loss: 0.1651 || 10iter: 0.1221 sec. || 本イテレーションの正解率：0.96875
-イテレーション 20 || Loss: 0.0152 || 10iter: 0.1142 sec. || 本イテレーションの正解率：1.0
-Epoch 14/20 | train |  Loss: 0.0733 Acc: 0.9800
-Epoch 14/20 |  val  |  Loss: 0.0950 Acc: 0.9750
-イテレーション 10 || Loss: 0.1043 || 10iter: 0.1121 sec. || 本イテレーションの正解率：0.96875
-イテレーション 20 || Loss: 0.0199 || 10iter: 0.1184 sec. || 本イテレーションの正解率：1.0
-Epoch 15/20 | train |  Loss: 0.0709 Acc: 0.9838
-Epoch 15/20 |  val  |  Loss: 0.0781 Acc: 0.9850
-イテレーション 10 || Loss: 0.0154 || 10iter: 0.1191 sec. || 本イテレーションの正解率：1.0
-イテレーション 20 || Loss: 0.0445 || 10iter: 0.1136 sec. || 本イテレーションの正解率：1.0
-Epoch 16/20 | train |  Loss: 0.0681 Acc: 0.9800
-Epoch 16/20 |  val  |  Loss: 0.0744 Acc: 0.9850
-イテレーション 10 || Loss: 0.1080 || 10iter: 0.1204 sec. || 本イテレーションの正解率：0.96875
-イテレーション 20 || Loss: 0.0200 || 10iter: 0.1141 sec. || 本イテレーションの正解率：1.0
-Epoch 17/20 | train |  Loss: 0.0651 Acc: 0.9825
-Epoch 17/20 |  val  |  Loss: 0.0696 Acc: 0.9900
-イテレーション 10 || Loss: 0.0208 || 10iter: 0.1163 sec. || 本イテレーションの正解率：1.0
-イテレーション 20 || Loss: 0.0208 || 10iter: 0.1159 sec. || 本イテレーションの正解率：1.0
-Epoch 18/20 | train |  Loss: 0.0598 Acc: 0.9825
-Epoch 18/20 |  val  |  Loss: 0.0728 Acc: 0.9850
-イテレーション 10 || Loss: 0.0116 || 10iter: 0.1220 sec. || 本イテレーションの正解率：1.0
-イテレーション 20 || Loss: 0.0340 || 10iter: 0.1179 sec. || 本イテレーションの正解率：1.0
-Epoch 19/20 | train |  Loss: 0.0533 Acc: 0.9862
-Epoch 19/20 |  val  |  Loss: 0.0655 Acc: 0.9900
-イテレーション 10 || Loss: 0.0365 || 10iter: 0.1222 sec. || 本イテレーションの正解率：1.0
-イテレーション 20 || Loss: 0.0356 || 10iter: 0.1159 sec. || 本イテレーションの正解率：0.96875
-Epoch 20/20 | train |  Loss: 0.0545 Acc: 0.9850
-Epoch 20/20 |  val  |  Loss: 0.0764 Acc: 0.9800
+Iteration: 100 || Loss: 0.2235 || 0.9240 sec. || Acc：0.9375
+Iteration: 200 || Loss: 0.0221 || 0.8782 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.2399 || 1.2512 sec. || Acc：0.90625
+Iteration: 400 || Loss: 0.0202 || 0.9678 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0937 || 0.8622 sec. || Acc：0.96875
+Iteration: 600 || Loss: 0.2557 || 1.3047 sec. || Acc：0.9375
+Iteration: 700 || Loss: 0.1571 || 1.0696 sec. || Acc：0.9375
+Iteration: 800 || Loss: 0.0128 || 0.9912 sec. || Acc：1.0
+Iteration: 900 || Loss: 0.0584 || 0.9588 sec. || Acc：0.96875
+Iteration: 1000 || Loss: 0.0602 || 0.8713 sec. || Acc：0.96875
+Epoch 1/10 | train |  Loss: 0.1240 Acc: 0.9606
+Epoch 1/10 |  val  |  Loss: 0.0353 Acc: 0.9876
+Iteration: 100 || Loss: 0.0561 || 0.8865 sec. || Acc：0.96875
+Iteration: 200 || Loss: 0.0796 || 0.9089 sec. || Acc：0.96875
+Iteration: 300 || Loss: 0.0270 || 1.0676 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0160 || 1.2387 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0043 || 1.3321 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0152 || 1.1589 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0494 || 1.2317 sec. || Acc：0.96875
+Iteration: 800 || Loss: 0.0215 || 0.9154 sec. || Acc：1.0
+Iteration: 900 || Loss: 0.0177 || 0.8987 sec. || Acc：1.0
+Iteration: 1000 || Loss: 0.0021 || 0.8777 sec. || Acc：1.0
+Epoch 2/10 | train |  Loss: 0.0304 Acc: 0.9898
+Epoch 2/10 |  val  |  Loss: 0.0200 Acc: 0.9919
+Iteration: 100 || Loss: 0.0339 || 1.0327 sec. || Acc：0.96875
+Iteration: 200 || Loss: 0.0109 || 1.0513 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0023 || 1.1630 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0886 || 1.0514 sec. || Acc：0.9375
+Iteration: 500 || Loss: 0.0142 || 1.0757 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0321 || 1.0741 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0015 || 1.0647 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0684 || 1.0017 sec. || Acc：0.96875
+Iteration: 900 || Loss: 0.1322 || 0.9945 sec. || Acc：0.96875
+Iteration: 1000 || Loss: 0.0110 || 1.0162 sec. || Acc：1.0
+Epoch 3/10 | train |  Loss: 0.0206 Acc: 0.9929
+Epoch 3/10 |  val  |  Loss: 0.0139 Acc: 0.9949
+Iteration: 100 || Loss: 0.0078 || 1.0747 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0062 || 0.9746 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0059 || 0.9702 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0007 || 1.0080 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0015 || 1.0472 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0009 || 1.0409 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0010 || 1.0355 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0022 || 1.0479 sec. || Acc：1.0
+Iteration: 900 || Loss: 0.0181 || 1.0514 sec. || Acc：1.0
+Iteration: 1000 || Loss: 0.0035 || 1.0431 sec. || Acc：1.0
+Epoch 4/10 | train |  Loss: 0.0156 Acc: 0.9948
+Epoch 4/10 |  val  |  Loss: 0.0113 Acc: 0.9961
+Iteration: 100 || Loss: 0.0339 || 1.0645 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0597 || 1.0850 sec. || Acc：0.96875
+Iteration: 300 || Loss: 0.0001 || 1.1212 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0120 || 1.0556 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0203 || 1.0343 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0008 || 1.0122 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0018 || 1.2925 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0079 || 1.1791 sec. || Acc：1.0
+Iteration: 900 || Loss: 0.0064 || 0.9102 sec. || Acc：1.0
+Iteration: 1000 || Loss: 0.0003 || 0.9086 sec. || Acc：1.0
+Epoch 5/10 | train |  Loss: 0.0131 Acc: 0.9953
+Epoch 5/10 |  val  |  Loss: 0.0092 Acc: 0.9969
+Iteration: 100 || Loss: 0.0016 || 0.9428 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0234 || 0.9118 sec. || Acc：0.96875
+Iteration: 300 || Loss: 0.1025 || 0.9195 sec. || Acc：0.96875
+Iteration: 400 || Loss: 0.0216 || 1.2634 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0004 || 0.9647 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0003 || 0.9445 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0000 || 0.9528 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0048 || 1.3198 sec. || Acc：1.0
+Iteration: 900 || Loss: 0.0001 || 1.3214 sec. || Acc：1.0
+Iteration: 1000 || Loss: 0.0003 || 1.2605 sec. || Acc：1.0
+Epoch 6/10 | train |  Loss: 0.0112 Acc: 0.9959
+Epoch 6/10 |  val  |  Loss: 0.0087 Acc: 0.9967
+Iteration: 100 || Loss: 0.0003 || 1.0777 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0436 || 1.0562 sec. || Acc：0.96875
+Iteration: 300 || Loss: 0.0061 || 1.0371 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0226 || 1.0230 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0003 || 1.0614 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0004 || 1.0133 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0026 || 1.0223 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0005 || 1.0356 sec. || Acc：1.0
+Iteration: 900 || Loss: 0.0402 || 1.0509 sec. || Acc：1.0
+Iteration: 1000 || Loss: 0.0001 || 1.0341 sec. || Acc：1.0
+Epoch 7/10 | train |  Loss: 0.0094 Acc: 0.9965
+Epoch 7/10 |  val  |  Loss: 0.0076 Acc: 0.9967
+Iteration: 100 || Loss: 0.0006 || 1.2592 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0008 || 1.1331 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0010 || 1.2858 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0000 || 1.1065 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0007 || 1.1161 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0013 || 1.0934 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0154 || 1.0748 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0005 || 1.1500 sec. || Acc：1.0
+Iteration: 900 || Loss: 0.0001 || 1.1255 sec. || Acc：1.0
+Iteration: 1000 || Loss: 0.0002 || 1.0854 sec. || Acc：1.0
+Epoch 8/10 | train |  Loss: 0.0079 Acc: 0.9973
+Epoch 8/10 |  val  |  Loss: 0.0064 Acc: 0.9977
+Iteration: 100 || Loss: 0.0006 || 1.0931 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0052 || 1.0580 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0000 || 1.0527 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0009 || 1.0718 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0104 || 1.0455 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0011 || 1.0702 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0003 || 1.1653 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0003 || 1.1394 sec. || Acc：1.0
+Iteration: 900 || Loss: 0.0000 || 1.0935 sec. || Acc：1.0
+Iteration: 1000 || Loss: 0.0519 || 1.7470 sec. || Acc：0.96875
+Epoch 9/10 | train |  Loss: 0.0070 Acc: 0.9978
+Epoch 9/10 |  val  |  Loss: 0.0061 Acc: 0.9980
+Iteration: 100 || Loss: 0.0002 || 1.1118 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0000 || 1.1247 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0047 || 1.1524 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0001 || 1.1407 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0004 || 1.3704 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0048 || 1.0539 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0002 || 1.0177 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0000 || 1.0188 sec. || Acc：1.0
+Iteration: 900 || Loss: 0.0007 || 1.3863 sec. || Acc：1.0
+Iteration: 1000 || Loss: 0.0015 || 1.8478 sec. || Acc：1.0
+Epoch 10/10 | train |  Loss: 0.0057 Acc: 0.9982
+Epoch 10/10 |  val  |  Loss: 0.0069 Acc: 0.9977
 ----place----
-イテレーション 10 || Loss: 1.1366 || 10iter: 0.1229 sec. || 本イテレーションの正解率：0.6875
-イテレーション 20 || Loss: 0.9650 || 10iter: 0.1179 sec. || 本イテレーションの正解率：0.71875
-Epoch 1/20 | train |  Loss: 1.1444 Acc: 0.6663
-Epoch 1/20 |  val  |  Loss: 0.9647 Acc: 0.7300
-イテレーション 10 || Loss: 0.8045 || 10iter: 0.1188 sec. || 本イテレーションの正解率：0.75
-イテレーション 20 || Loss: 1.2129 || 10iter: 0.1178 sec. || 本イテレーションの正解率：0.5
-Epoch 2/20 | train |  Loss: 0.9369 Acc: 0.6800
-Epoch 2/20 |  val  |  Loss: 0.8868 Acc: 0.7300
-イテレーション 10 || Loss: 0.7968 || 10iter: 0.1182 sec. || 本イテレーションの正解率：0.6875
-イテレーション 20 || Loss: 0.6862 || 10iter: 0.1159 sec. || 本イテレーションの正解率：0.84375
-Epoch 3/20 | train |  Loss: 0.8835 Acc: 0.6800
-Epoch 3/20 |  val  |  Loss: 0.8313 Acc: 0.7300
-イテレーション 10 || Loss: 0.7891 || 10iter: 0.1201 sec. || 本イテレーションの正解率：0.71875
-イテレーション 20 || Loss: 0.7926 || 10iter: 0.1122 sec. || 本イテレーションの正解率：0.6875
-Epoch 4/20 | train |  Loss: 0.8176 Acc: 0.6800
-Epoch 4/20 |  val  |  Loss: 0.7614 Acc: 0.7400
-イテレーション 10 || Loss: 0.6953 || 10iter: 0.1204 sec. || 本イテレーションの正解率：0.78125
-イテレーション 20 || Loss: 0.6163 || 10iter: 0.1185 sec. || 本イテレーションの正解率：0.78125
-Epoch 5/20 | train |  Loss: 0.7396 Acc: 0.7150
-Epoch 5/20 |  val  |  Loss: 0.6848 Acc: 0.7950
-イテレーション 10 || Loss: 0.6970 || 10iter: 0.1162 sec. || 本イテレーションの正解率：0.75
-イテレーション 20 || Loss: 0.6705 || 10iter: 0.1143 sec. || 本イテレーションの正解率：0.75
-Epoch 6/20 | train |  Loss: 0.6465 Acc: 0.7762
-Epoch 6/20 |  val  |  Loss: 0.5913 Acc: 0.8350
-イテレーション 10 || Loss: 0.4940 || 10iter: 0.1177 sec. || 本イテレーションの正解率：0.875
-イテレーション 20 || Loss: 0.6690 || 10iter: 0.1166 sec. || 本イテレーションの正解率：0.75
-Epoch 7/20 | train |  Loss: 0.5662 Acc: 0.8125
-Epoch 7/20 |  val  |  Loss: 0.5108 Acc: 0.8500
-イテレーション 10 || Loss: 0.4825 || 10iter: 0.1201 sec. || 本イテレーションの正解率：0.875
-イテレーション 20 || Loss: 0.3605 || 10iter: 0.1189 sec. || 本イテレーションの正解率：0.84375
-Epoch 8/20 | train |  Loss: 0.4878 Acc: 0.8275
-Epoch 8/20 |  val  |  Loss: 0.4501 Acc: 0.8400
-イテレーション 10 || Loss: 0.4428 || 10iter: 0.1126 sec. || 本イテレーションの正解率：0.78125
-イテレーション 20 || Loss: 0.3091 || 10iter: 0.1120 sec. || 本イテレーションの正解率：0.875
-Epoch 9/20 | train |  Loss: 0.4267 Acc: 0.8400
-Epoch 9/20 |  val  |  Loss: 0.3839 Acc: 0.8750
-イテレーション 10 || Loss: 0.4064 || 10iter: 0.1203 sec. || 本イテレーションの正解率：0.84375
-イテレーション 20 || Loss: 0.2576 || 10iter: 0.0983 sec. || 本イテレーションの正解率：0.875
-Epoch 10/20 | train |  Loss: 0.3834 Acc: 0.8562
-Epoch 10/20 |  val  |  Loss: 0.3392 Acc: 0.8850
-イテレーション 10 || Loss: 0.3736 || 10iter: 0.1330 sec. || 本イテレーションの正解率：0.875
-イテレーション 20 || Loss: 0.1951 || 10iter: 0.1167 sec. || 本イテレーションの正解率：0.96875
-Epoch 11/20 | train |  Loss: 0.3295 Acc: 0.8862
-Epoch 11/20 |  val  |  Loss: 0.2981 Acc: 0.9150
-イテレーション 10 || Loss: 0.2106 || 10iter: 0.1193 sec. || 本イテレーションの正解率：0.90625
-イテレーション 20 || Loss: 0.2534 || 10iter: 0.1159 sec. || 本イテレーションの正解率：0.96875
-Epoch 12/20 | train |  Loss: 0.2941 Acc: 0.9075
-Epoch 12/20 |  val  |  Loss: 0.2624 Acc: 0.9200
-イテレーション 10 || Loss: 0.2509 || 10iter: 0.1128 sec. || 本イテレーションの正解率：0.96875
-イテレーション 20 || Loss: 0.1992 || 10iter: 0.1128 sec. || 本イテレーションの正解率：0.96875
-Epoch 13/20 | train |  Loss: 0.2677 Acc: 0.9163
-Epoch 13/20 |  val  |  Loss: 0.2326 Acc: 0.9300
-イテレーション 10 || Loss: 0.2496 || 10iter: 0.1215 sec. || 本イテレーションの正解率：0.90625
-イテレーション 20 || Loss: 0.1485 || 10iter: 0.1203 sec. || 本イテレーションの正解率：0.96875
-Epoch 14/20 | train |  Loss: 0.2243 Acc: 0.9400
-Epoch 14/20 |  val  |  Loss: 0.2259 Acc: 0.9300
-イテレーション 10 || Loss: 0.2296 || 10iter: 0.1135 sec. || 本イテレーションの正解率：0.96875
-イテレーション 20 || Loss: 0.1347 || 10iter: 0.1155 sec. || 本イテレーションの正解率：0.96875
-Epoch 15/20 | train |  Loss: 0.2110 Acc: 0.9450
-Epoch 15/20 |  val  |  Loss: 0.2325 Acc: 0.9300
-イテレーション 10 || Loss: 0.1588 || 10iter: 0.1147 sec. || 本イテレーションの正解率：0.9375
-イテレーション 20 || Loss: 0.0744 || 10iter: 0.1166 sec. || 本イテレーションの正解率：1.0
-Epoch 16/20 | train |  Loss: 0.1839 Acc: 0.9587
-Epoch 16/20 |  val  |  Loss: 0.1819 Acc: 0.9350
-イテレーション 10 || Loss: 0.1616 || 10iter: 0.1215 sec. || 本イテレーションの正解率：0.96875
-イテレーション 20 || Loss: 0.1533 || 10iter: 0.1131 sec. || 本イテレーションの正解率：0.96875
-Epoch 17/20 | train |  Loss: 0.1639 Acc: 0.9625
-Epoch 17/20 |  val  |  Loss: 0.1605 Acc: 0.9600
-イテレーション 10 || Loss: 0.1246 || 10iter: 0.1136 sec. || 本イテレーションの正解率：0.96875
-イテレーション 20 || Loss: 0.0631 || 10iter: 0.1136 sec. || 本イテレーションの正解率：1.0
-Epoch 18/20 | train |  Loss: 0.1455 Acc: 0.9675
-Epoch 18/20 |  val  |  Loss: 0.1422 Acc: 0.9650
-イテレーション 10 || Loss: 0.1423 || 10iter: 0.1219 sec. || 本イテレーションの正解率：0.96875
-イテレーション 20 || Loss: 0.2025 || 10iter: 0.1167 sec. || 本イテレーションの正解率：0.96875
-Epoch 19/20 | train |  Loss: 0.1328 Acc: 0.9762
-Epoch 19/20 |  val  |  Loss: 0.1279 Acc: 0.9650
-イテレーション 10 || Loss: 0.1153 || 10iter: 0.1105 sec. || 本イテレーションの正解率：0.96875
-イテレーション 20 || Loss: 0.1399 || 10iter: 0.0960 sec. || 本イテレーションの正解率：0.96875
-Epoch 20/20 | train |  Loss: 0.1249 Acc: 0.9762
-Epoch 20/20 |  val  |  Loss: 0.1144 Acc: 0.9750
+Iteration: 100 || Loss: 0.6822 || 1.0334 sec. || Acc：0.75
+Iteration: 200 || Loss: 0.5533 || 0.9357 sec. || Acc：0.78125
+Iteration: 300 || Loss: 0.3830 || 0.9696 sec. || Acc：0.8125
+Iteration: 400 || Loss: 0.3070 || 0.8892 sec. || Acc：0.90625
+Iteration: 500 || Loss: 0.1847 || 0.9209 sec. || Acc：0.9375
+Iteration: 600 || Loss: 0.1790 || 0.8739 sec. || Acc：0.96875
+Iteration: 700 || Loss: 0.0764 || 1.1977 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.1216 || 1.3121 sec. || Acc：0.9375
+Iteration: 900 || Loss: 0.1033 || 1.0437 sec. || Acc：0.96875
+Iteration: 1000 || Loss: 0.0546 || 1.2635 sec. || Acc：0.96875
+Epoch 1/10 | train |  Loss: 0.2915 Acc: 0.9028
+Epoch 1/10 |  val  |  Loss: 0.0471 Acc: 0.9882
+Iteration: 100 || Loss: 0.0378 || 1.3283 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0391 || 1.0409 sec. || Acc：0.96875
+Iteration: 300 || Loss: 0.0347 || 1.0837 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0344 || 1.0737 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0427 || 1.1860 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0251 || 1.3033 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0368 || 1.0336 sec. || Acc：0.96875
+Iteration: 800 || Loss: 0.0207 || 1.2104 sec. || Acc：1.0
+Iteration: 900 || Loss: 0.0066 || 1.6242 sec. || Acc：1.0
+Iteration: 1000 || Loss: 0.0050 || 1.6043 sec. || Acc：1.0
+Epoch 2/10 | train |  Loss: 0.0369 Acc: 0.9903
+Epoch 2/10 |  val  |  Loss: 0.0143 Acc: 0.9971
+Iteration: 100 || Loss: 0.0231 || 1.1628 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0484 || 1.1014 sec. || Acc：0.96875
+Iteration: 300 || Loss: 0.0399 || 1.1089 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0025 || 1.3466 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0187 || 1.3976 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0022 || 1.2839 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0290 || 1.3167 sec. || Acc：0.96875
+Iteration: 800 || Loss: 0.0036 || 1.0804 sec. || Acc：1.0
+Iteration: 900 || Loss: 0.0229 || 1.0698 sec. || Acc：1.0
+Iteration: 1000 || Loss: 0.0043 || 1.2556 sec. || Acc：1.0
+Epoch 3/10 | train |  Loss: 0.0176 Acc: 0.9955
+Epoch 3/10 |  val  |  Loss: 0.0069 Acc: 0.9988
+Iteration: 100 || Loss: 0.0062 || 1.1048 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0028 || 1.0812 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0022 || 1.0700 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0129 || 1.0753 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0057 || 1.0811 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0082 || 1.0640 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0004 || 1.1230 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0054 || 1.0799 sec. || Acc：1.0
+Iteration: 900 || Loss: 0.0075 || 1.0401 sec. || Acc：1.0
+Iteration: 1000 || Loss: 0.0076 || 1.0398 sec. || Acc：1.0
+Epoch 4/10 | train |  Loss: 0.0102 Acc: 0.9976
+Epoch 4/10 |  val  |  Loss: 0.0045 Acc: 0.9994
+Iteration: 100 || Loss: 0.0017 || 1.0920 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0013 || 1.0745 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0053 || 1.1251 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0009 || 1.0845 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0060 || 1.0810 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0043 || 1.1166 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0022 || 1.0866 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0040 || 1.0675 sec. || Acc：1.0
+Iteration: 900 || Loss: 0.0080 || 1.1219 sec. || Acc：1.0
+Iteration: 1000 || Loss: 0.0043 || 1.1442 sec. || Acc：1.0
+Epoch 5/10 | train |  Loss: 0.0083 Acc: 0.9978
+Epoch 5/10 |  val  |  Loss: 0.0030 Acc: 0.9994
+Iteration: 100 || Loss: 0.0009 || 1.5636 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0007 || 1.2778 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0106 || 1.1706 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0059 || 1.1654 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0005 || 1.1698 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0007 || 1.1994 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0007 || 1.1819 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0029 || 1.1788 sec. || Acc：1.0
+Iteration: 900 || Loss: 0.0004 || 1.1439 sec. || Acc：1.0
+Iteration: 1000 || Loss: 0.0045 || 1.1561 sec. || Acc：1.0
+Epoch 6/10 | train |  Loss: 0.0053 Acc: 0.9987
+Epoch 6/10 |  val  |  Loss: 0.0020 Acc: 0.9996
+Iteration: 100 || Loss: 0.0029 || 1.1811 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0010 || 1.1390 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0012 || 1.1570 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0000 || 1.1326 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0007 || 1.2068 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0047 || 1.2328 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0020 || 1.2005 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0110 || 1.2215 sec. || Acc：1.0
+Iteration: 900 || Loss: 0.0037 || 1.2236 sec. || Acc：1.0
+Iteration: 1000 || Loss: 0.0266 || 1.2304 sec. || Acc：0.96875
+Epoch 7/10 | train |  Loss: 0.0046 Acc: 0.9988
+Epoch 7/10 |  val  |  Loss: 0.0035 Acc: 0.9989
+Iteration: 100 || Loss: 0.0021 || 1.2292 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0002 || 1.2679 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0018 || 1.1714 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0005 || 1.1752 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0002 || 1.1780 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0497 || 1.1887 sec. || Acc：0.96875
+Iteration: 700 || Loss: 0.0003 || 1.2493 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0073 || 1.2039 sec. || Acc：1.0
+Iteration: 900 || Loss: 0.0002 || 1.1953 sec. || Acc：1.0
+Iteration: 1000 || Loss: 0.0031 || 1.1684 sec. || Acc：1.0
+Epoch 8/10 | train |  Loss: 0.0039 Acc: 0.9988
+Epoch 8/10 |  val  |  Loss: 0.0039 Acc: 0.9989
+Iteration: 100 || Loss: 0.0002 || 1.2268 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0001 || 1.2282 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0264 || 1.2353 sec. || Acc：0.96875
+Iteration: 400 || Loss: 0.0054 || 1.2172 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0013 || 1.2078 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0003 || 1.1754 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0000 || 1.2726 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0000 || 1.2160 sec. || Acc：1.0
+Iteration: 900 || Loss: 0.0026 || 1.3020 sec. || Acc：1.0
+Iteration: 1000 || Loss: 0.0153 || 1.1865 sec. || Acc：1.0
+Epoch 9/10 | train |  Loss: 0.0046 Acc: 0.9985
+Epoch 9/10 |  val  |  Loss: 0.0015 Acc: 0.9995
+Iteration: 100 || Loss: 0.0001 || 1.2603 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0001 || 1.2576 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0005 || 1.2306 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0001 || 1.2100 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0008 || 1.2117 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0043 || 1.1941 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0001 || 1.1755 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0003 || 1.2316 sec. || Acc：1.0
+Iteration: 900 || Loss: 0.0024 || 1.2035 sec. || Acc：1.0
+Iteration: 1000 || Loss: 0.0003 || 1.1955 sec. || Acc：1.0
+Epoch 10/10 | train |  Loss: 0.0031 Acc: 0.9991
+Epoch 10/10 |  val  |  Loss: 0.0011 Acc: 0.9999
 ----datetime----
-イテレーション 10 || Loss: 2.5162 || 10iter: 0.1017 sec. || 本イテレーションの正解率：0.34375
-イテレーション 20 || Loss: 2.4773 || 10iter: 0.0989 sec. || 本イテレーションの正解率：0.25
-Epoch 1/20 | train |  Loss: 2.5589 Acc: 0.2687
-Epoch 1/20 |  val  |  Loss: 2.7182 Acc: 0.2800
-イテレーション 10 || Loss: 2.3201 || 10iter: 0.1007 sec. || 本イテレーションの正解率：0.3125
-イテレーション 20 || Loss: 2.2209 || 10iter: 0.0990 sec. || 本イテレーションの正解率：0.25
-Epoch 2/20 | train |  Loss: 2.3830 Acc: 0.2712
-Epoch 2/20 |  val  |  Loss: 2.5184 Acc: 0.2800
-イテレーション 10 || Loss: 2.3730 || 10iter: 0.0995 sec. || 本イテレーションの正解率：0.15625
-イテレーション 20 || Loss: 2.2746 || 10iter: 0.0968 sec. || 本イテレーションの正解率：0.28125
-Epoch 3/20 | train |  Loss: 2.2665 Acc: 0.2888
-Epoch 3/20 |  val  |  Loss: 2.4009 Acc: 0.3400
-イテレーション 10 || Loss: 2.3242 || 10iter: 0.1015 sec. || 本イテレーションの正解率：0.21875
-イテレーション 20 || Loss: 2.2590 || 10iter: 0.0994 sec. || 本イテレーションの正解率：0.28125
-Epoch 4/20 | train |  Loss: 2.1582 Acc: 0.3312
-Epoch 4/20 |  val  |  Loss: 2.2555 Acc: 0.3850
-イテレーション 10 || Loss: 2.1847 || 10iter: 0.0975 sec. || 本イテレーションの正解率：0.3125
-イテレーション 20 || Loss: 1.7282 || 10iter: 0.0980 sec. || 本イテレーションの正解率：0.46875
-Epoch 5/20 | train |  Loss: 2.0437 Acc: 0.3762
-Epoch 5/20 |  val  |  Loss: 2.1137 Acc: 0.4050
-イテレーション 10 || Loss: 1.7810 || 10iter: 0.0989 sec. || 本イテレーションの正解率：0.40625
-イテレーション 20 || Loss: 1.8705 || 10iter: 0.0983 sec. || 本イテレーションの正解率：0.34375
-Epoch 6/20 | train |  Loss: 1.9262 Acc: 0.3937
-Epoch 6/20 |  val  |  Loss: 1.9861 Acc: 0.4100
-イテレーション 10 || Loss: 2.1243 || 10iter: 0.0997 sec. || 本イテレーションの正解率：0.25
-イテレーション 20 || Loss: 1.5054 || 10iter: 0.1016 sec. || 本イテレーションの正解率：0.46875
-Epoch 7/20 | train |  Loss: 1.8326 Acc: 0.4175
-Epoch 7/20 |  val  |  Loss: 1.8973 Acc: 0.4350
-イテレーション 10 || Loss: 1.7279 || 10iter: 0.0997 sec. || 本イテレーションの正解率：0.46875
-イテレーション 20 || Loss: 1.6619 || 10iter: 0.0986 sec. || 本イテレーションの正解率：0.5
-Epoch 8/20 | train |  Loss: 1.7556 Acc: 0.4625
-Epoch 8/20 |  val  |  Loss: 1.8074 Acc: 0.4850
-イテレーション 10 || Loss: 2.1128 || 10iter: 0.0996 sec. || 本イテレーションの正解率：0.3125
-イテレーション 20 || Loss: 1.7521 || 10iter: 0.1039 sec. || 本イテレーションの正解率：0.4375
-Epoch 9/20 | train |  Loss: 1.6826 Acc: 0.4825
-Epoch 9/20 |  val  |  Loss: 1.7394 Acc: 0.5250
-イテレーション 10 || Loss: 1.4438 || 10iter: 0.0997 sec. || 本イテレーションの正解率：0.5625
-イテレーション 20 || Loss: 1.6963 || 10iter: 0.0978 sec. || 本イテレーションの正解率：0.4375
-Epoch 10/20 | train |  Loss: 1.5996 Acc: 0.5200
-Epoch 10/20 |  val  |  Loss: 1.6664 Acc: 0.5500
-イテレーション 10 || Loss: 1.6608 || 10iter: 0.0974 sec. || 本イテレーションの正解率：0.5
-イテレーション 20 || Loss: 1.3964 || 10iter: 0.0980 sec. || 本イテレーションの正解率：0.625
-Epoch 11/20 | train |  Loss: 1.5344 Acc: 0.5475
-Epoch 11/20 |  val  |  Loss: 1.5923 Acc: 0.6200
-イテレーション 10 || Loss: 1.1312 || 10iter: 0.0991 sec. || 本イテレーションの正解率：0.6875
-イテレーション 20 || Loss: 1.4352 || 10iter: 0.1003 sec. || 本イテレーションの正解率：0.65625
-Epoch 12/20 | train |  Loss: 1.4963 Acc: 0.5663
-Epoch 12/20 |  val  |  Loss: 1.5352 Acc: 0.6050
-イテレーション 10 || Loss: 1.5747 || 10iter: 0.0996 sec. || 本イテレーションの正解率：0.5
-イテレーション 20 || Loss: 1.5578 || 10iter: 0.0982 sec. || 本イテレーションの正解率：0.53125
-Epoch 13/20 | train |  Loss: 1.4194 Acc: 0.5950
-Epoch 13/20 |  val  |  Loss: 1.4720 Acc: 0.6600
-イテレーション 10 || Loss: 1.4448 || 10iter: 0.0963 sec. || 本イテレーションの正解率：0.5625
-イテレーション 20 || Loss: 1.4448 || 10iter: 0.1020 sec. || 本イテレーションの正解率：0.5625
-Epoch 14/20 | train |  Loss: 1.3437 Acc: 0.6262
-Epoch 14/20 |  val  |  Loss: 1.4170 Acc: 0.6650
-イテレーション 10 || Loss: 1.3802 || 10iter: 0.0992 sec. || 本イテレーションの正解率：0.59375
-イテレーション 20 || Loss: 1.0615 || 10iter: 0.0981 sec. || 本イテレーションの正解率：0.6875
-Epoch 15/20 | train |  Loss: 1.2874 Acc: 0.6425
-Epoch 15/20 |  val  |  Loss: 1.3499 Acc: 0.7050
-イテレーション 10 || Loss: 1.1919 || 10iter: 0.1095 sec. || 本イテレーションの正解率：0.59375
-イテレーション 20 || Loss: 1.4193 || 10iter: 0.1318 sec. || 本イテレーションの正解率：0.5625
-Epoch 16/20 | train |  Loss: 1.2520 Acc: 0.6388
-Epoch 16/20 |  val  |  Loss: 1.2995 Acc: 0.6600
-イテレーション 10 || Loss: 1.2467 || 10iter: 0.1072 sec. || 本イテレーションの正解率：0.59375
-イテレーション 20 || Loss: 1.3741 || 10iter: 0.0993 sec. || 本イテレーションの正解率：0.59375
-Epoch 17/20 | train |  Loss: 1.2002 Acc: 0.6800
-Epoch 17/20 |  val  |  Loss: 1.2364 Acc: 0.7300
-イテレーション 10 || Loss: 0.9977 || 10iter: 0.1087 sec. || 本イテレーションの正解率：0.78125
-イテレーション 20 || Loss: 1.5101 || 10iter: 0.0991 sec. || 本イテレーションの正解率：0.59375
-Epoch 18/20 | train |  Loss: 1.1496 Acc: 0.6775
-Epoch 18/20 |  val  |  Loss: 1.1966 Acc: 0.7150
-イテレーション 10 || Loss: 1.1096 || 10iter: 0.0961 sec. || 本イテレーションの正解率：0.71875
-イテレーション 20 || Loss: 1.2052 || 10iter: 0.1012 sec. || 本イテレーションの正解率：0.71875
-Epoch 19/20 | train |  Loss: 1.0986 Acc: 0.7150
-Epoch 19/20 |  val  |  Loss: 1.1370 Acc: 0.7300
-イテレーション 10 || Loss: 1.2593 || 10iter: 0.1013 sec. || 本イテレーションの正解率：0.625
-イテレーション 20 || Loss: 0.8869 || 10iter: 0.0979 sec. || 本イテレーションの正解率：0.6875
-Epoch 20/20 | train |  Loss: 1.0422 Acc: 0.7175
-Epoch 20/20 |  val  |  Loss: 1.0982 Acc: 0.7500
+Iteration: 100 || Loss: 2.2605 || 1.0668 sec. || Acc：0.1875
+Iteration: 200 || Loss: 1.8843 || 1.0434 sec. || Acc：0.375
+Iteration: 300 || Loss: 1.6467 || 1.0366 sec. || Acc：0.40625
+Iteration: 400 || Loss: 1.3581 || 1.0264 sec. || Acc：0.75
+Iteration: 500 || Loss: 1.1536 || 1.0137 sec. || Acc：0.6875
+Iteration: 600 || Loss: 1.1073 || 1.0277 sec. || Acc：0.78125
+Iteration: 700 || Loss: 0.8822 || 1.0511 sec. || Acc：0.75
+Iteration: 800 || Loss: 0.9903 || 1.0670 sec. || Acc：0.75
+Iteration: 900 || Loss: 0.6548 || 1.0754 sec. || Acc：0.875
+Iteration: 1000 || Loss: 0.4755 || 1.1014 sec. || Acc：0.90625
+Epoch 1/10 | train |  Loss: 1.3328 Acc: 0.5936
+Epoch 1/10 |  val  |  Loss: 0.6103 Acc: 0.8639
+Iteration: 100 || Loss: 0.6673 || 1.1390 sec. || Acc：0.8125
+Iteration: 200 || Loss: 0.5406 || 1.0965 sec. || Acc：0.90625
+Iteration: 300 || Loss: 0.4237 || 1.1596 sec. || Acc：0.90625
+Iteration: 400 || Loss: 0.6561 || 1.1521 sec. || Acc：0.75
+Iteration: 500 || Loss: 0.3392 || 1.1386 sec. || Acc：0.9375
+Iteration: 600 || Loss: 0.5026 || 1.1872 sec. || Acc：0.90625
+Iteration: 700 || Loss: 0.4323 || 1.1781 sec. || Acc：0.90625
+Iteration: 800 || Loss: 0.3842 || 1.2741 sec. || Acc：0.875
+Iteration: 900 || Loss: 0.3370 || 1.5039 sec. || Acc：0.90625
+Iteration: 1000 || Loss: 0.1617 || 1.2982 sec. || Acc：1.0
+Epoch 2/10 | train |  Loss: 0.4605 Acc: 0.8835
+Epoch 2/10 |  val  |  Loss: 0.2542 Acc: 0.9478
+Iteration: 100 || Loss: 0.1879 || 1.5399 sec. || Acc：0.96875
+Iteration: 200 || Loss: 0.1388 || 1.5983 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.3873 || 1.1261 sec. || Acc：0.9375
+Iteration: 400 || Loss: 0.4960 || 1.1343 sec. || Acc：0.90625
+Iteration: 500 || Loss: 0.2138 || 1.3769 sec. || Acc：0.9375
+Iteration: 600 || Loss: 0.2674 || 1.5161 sec. || Acc：0.90625
+Iteration: 700 || Loss: 0.1650 || 1.8218 sec. || Acc：0.96875
+Iteration: 800 || Loss: 0.2774 || 1.7969 sec. || Acc：0.90625
+Iteration: 900 || Loss: 0.2187 || 1.2384 sec. || Acc：0.9375
+Iteration: 1000 || Loss: 0.1511 || 1.0368 sec. || Acc：0.96875
+Epoch 3/10 | train |  Loss: 0.2463 Acc: 0.9395
+Epoch 3/10 |  val  |  Loss: 0.1499 Acc: 0.9695
+Iteration: 100 || Loss: 0.1790 || 1.0053 sec. || Acc：0.9375
+Iteration: 200 || Loss: 0.1071 || 1.0111 sec. || Acc：0.96875
+Iteration: 300 || Loss: 0.0713 || 1.2448 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0525 || 1.0446 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.2114 || 1.0144 sec. || Acc：0.9375
+Iteration: 600 || Loss: 0.2797 || 1.0052 sec. || Acc：0.90625
+Iteration: 700 || Loss: 0.2760 || 1.3602 sec. || Acc：0.9375
+Iteration: 800 || Loss: 0.1831 || 1.3729 sec. || Acc：0.9375
+Iteration: 900 || Loss: 0.2164 || 1.0786 sec. || Acc：0.9375
+Iteration: 1000 || Loss: 0.0647 || 1.1276 sec. || Acc：1.0
+Epoch 4/10 | train |  Loss: 0.1633 Acc: 0.9591
+Epoch 4/10 |  val  |  Loss: 0.1025 Acc: 0.9762
+Iteration: 100 || Loss: 0.0871 || 1.3136 sec. || Acc：0.96875
+Iteration: 200 || Loss: 0.1591 || 1.3570 sec. || Acc：0.9375
+Iteration: 300 || Loss: 0.0901 || 1.0650 sec. || Acc：0.96875
+Iteration: 400 || Loss: 0.1170 || 1.1128 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0461 || 1.0773 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.1039 || 0.9866 sec. || Acc：0.96875
+Iteration: 700 || Loss: 0.0543 || 1.0864 sec. || Acc：0.96875
+Iteration: 800 || Loss: 0.0896 || 1.1181 sec. || Acc：0.96875
+Iteration: 900 || Loss: 0.2285 || 1.1178 sec. || Acc：0.9375
+Iteration: 1000 || Loss: 0.1032 || 1.2817 sec. || Acc：0.96875
+Epoch 5/10 | train |  Loss: 0.1211 Acc: 0.9689
+Epoch 5/10 |  val  |  Loss: 0.0796 Acc: 0.9801
+Iteration: 100 || Loss: 0.1438 || 1.2230 sec. || Acc：0.9375
+Iteration: 200 || Loss: 0.0758 || 1.0923 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0187 || 1.0987 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0583 || 1.2009 sec. || Acc：0.96875
+Iteration: 500 || Loss: 0.0892 || 1.0973 sec. || Acc：0.96875
+Iteration: 600 || Loss: 0.0511 || 1.0822 sec. || Acc：0.96875
+Iteration: 700 || Loss: 0.1117 || 1.0310 sec. || Acc：0.96875
+Iteration: 800 || Loss: 0.0655 || 1.0158 sec. || Acc：0.96875
+Iteration: 900 || Loss: 0.0461 || 1.0612 sec. || Acc：1.0
+Iteration: 1000 || Loss: 0.0607 || 1.0730 sec. || Acc：1.0
+Epoch 6/10 | train |  Loss: 0.0947 Acc: 0.9744
+Epoch 6/10 |  val  |  Loss: 0.0610 Acc: 0.9838
+Iteration: 100 || Loss: 0.0456 || 1.0548 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0533 || 1.0909 sec. || Acc：0.96875
+Iteration: 300 || Loss: 0.0741 || 1.0655 sec. || Acc：0.96875
+Iteration: 400 || Loss: 0.0400 || 1.0190 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0627 || 1.0577 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0751 || 1.0326 sec. || Acc：0.96875
+Iteration: 700 || Loss: 0.1006 || 0.9898 sec. || Acc：0.96875
+Iteration: 800 || Loss: 0.1272 || 0.9672 sec. || Acc：0.96875
+Iteration: 900 || Loss: 0.1373 || 0.9530 sec. || Acc：0.9375
+Iteration: 1000 || Loss: 0.0918 || 0.9457 sec. || Acc：0.96875
+Epoch 7/10 | train |  Loss: 0.0788 Acc: 0.9787
+Epoch 7/10 |  val  |  Loss: 0.0568 Acc: 0.9833
+Iteration: 100 || Loss: 0.1285 || 0.9871 sec. || Acc：0.96875
+Iteration: 200 || Loss: 0.0177 || 0.9781 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.1279 || 1.0006 sec. || Acc：0.96875
+Iteration: 400 || Loss: 0.0314 || 1.0171 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0537 || 1.0184 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.1791 || 1.0192 sec. || Acc：0.90625
+Iteration: 700 || Loss: 0.1344 || 1.0017 sec. || Acc：0.90625
+Iteration: 800 || Loss: 0.0439 || 0.9785 sec. || Acc：1.0
+Iteration: 900 || Loss: 0.0095 || 0.9827 sec. || Acc：1.0
+Iteration: 1000 || Loss: 0.0187 || 0.9608 sec. || Acc：1.0
+Epoch 8/10 | train |  Loss: 0.0684 Acc: 0.9807
+Epoch 8/10 |  val  |  Loss: 0.0469 Acc: 0.9858
+Iteration: 100 || Loss: 0.0801 || 1.0184 sec. || Acc：0.96875
+Iteration: 200 || Loss: 0.0497 || 1.0581 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0210 || 1.0967 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0922 || 1.2644 sec. || Acc：0.96875
+Iteration: 500 || Loss: 0.0176 || 0.9796 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0496 || 0.9775 sec. || Acc：0.96875
+Iteration: 700 || Loss: 0.0070 || 0.9774 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0996 || 0.9944 sec. || Acc：0.96875
+Iteration: 900 || Loss: 0.0140 || 1.0175 sec. || Acc：1.0
+Iteration: 1000 || Loss: 0.0784 || 1.0086 sec. || Acc：0.96875
+Epoch 9/10 | train |  Loss: 0.0591 Acc: 0.9835
+Epoch 9/10 |  val  |  Loss: 0.0403 Acc: 0.9879
+Iteration: 100 || Loss: 0.0351 || 1.0312 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0148 || 1.0326 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0350 || 0.9923 sec. || Acc：0.96875
+Iteration: 400 || Loss: 0.0124 || 0.9722 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0098 || 0.9674 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0068 || 0.9709 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.1775 || 0.9714 sec. || Acc：0.9375
+Iteration: 800 || Loss: 0.1241 || 0.9670 sec. || Acc：0.96875
+Iteration: 900 || Loss: 0.0122 || 0.9727 sec. || Acc：1.0
+Iteration: 1000 || Loss: 0.1201 || 0.9859 sec. || Acc：0.9375
+Epoch 10/10 | train |  Loss: 0.0503 Acc: 0.9858
+Epoch 10/10 |  val  |  Loss: 0.0383 Acc: 0.9885

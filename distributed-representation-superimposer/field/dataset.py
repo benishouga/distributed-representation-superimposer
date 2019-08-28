@@ -73,15 +73,28 @@ class DatetimeField(torchtext.data.Field):
 
 
 class TextField(torchtext.data.Field):
-    def __init__(self, extractor):
+    def __init__(self):
         super(TextField, self).__init__()
         self.use_vocab = False
         self.batch_first = True
+        self.tokenize = lambda text: [0]
+
+
+class DrField(torchtext.data.Field):
+    def __init__(self):
+        super(DrField, self).__init__()
+        self.use_vocab = False
+        self.batch_first = True
         self.dtype = torch.float
-        self.tokenize = lambda text: extractor.extract(text)
+        self.tokenize = lambda text: [float(v) for v in text.split(",")]
 
 
 class Dataset(torchtext.data.TabularDataset):
-    def __init__(self, extractor, path):
+    def __init__(self, path):
         super(Dataset, self).__init__(path=path, format='tsv', fields=[
-            ('intent', IntentField()),  ('place', PlaceField()), ('datetime', DatetimeField()), ('text', TextField(extractor))])
+            ('intent', IntentField()),
+            ('place', PlaceField()),
+            ('datetime', DatetimeField()),
+            ('text', TextField()),
+            ('dr', DrField())
+        ])
