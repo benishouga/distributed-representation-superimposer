@@ -52,7 +52,7 @@ def load_file(file_path):
 
 PLACES = []
 for line in load_file(os.path.join(base, "./data/source/place.txt")):
-    id, name = line.split(" ")
+    id, name = line.split("\t")
     PLACES.append(Attribute("place", id, name))
 
 
@@ -75,7 +75,7 @@ def get_place():
 DATES = []
 for line in load_file(os.path.normpath(
         os.path.join(base, "./data/source/datetime.txt"))):
-    id, name = line.split(" ")
+    id, name = line.split("\t")
     DATES.append(Attribute("datetime", id, name))
 
 
@@ -148,7 +148,7 @@ def extract(holder):
 
 
 def build(text):
-    intent, text = text.split(" ")
+    intent, text = text.split("\t")
     reg_result = REGEX_FIND_HOLDER.search(text)
     if reg_result == None:
         return text
@@ -210,13 +210,13 @@ def main():
     with open(OUTPUT, "w") as out_file:
         contents = []
         for value in result:
-            contents.append("{}\t{}\t{}\t{}\t{}".format(
+            contents.append("\t".join([
                 value.intent,
                 value.place or "",
                 value.datetime or "",
                 value.text,
                 ",".join(value.dr) if value.dr else ""
-            ))
+            ]))
         out_file.write('\n'.join(contents))
 
 
