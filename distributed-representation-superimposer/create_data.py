@@ -14,8 +14,11 @@ INPUT_INTENT_SOURCE = os.path.normpath(
 INPUT_OTHER_SOURCE = os.path.normpath(
     os.path.join(base, "./data/source/others.txt"))
 
-OUTPUT = os.path.normpath(
-    os.path.join(base, "./data/data.tsv"))
+OUTPUT_CATALOGER = os.path.normpath(
+    os.path.join(base, "./data/data_cataloger.tsv"))
+
+OUTPUT_SUPERIMPOSER = os.path.normpath(
+    os.path.join(base, "./data/data_superimposer.tsv"))
 
 
 REGEX_FIND_HOLDER = re.compile(r'\{(.*?)\}')
@@ -183,7 +186,7 @@ def main():
 
     extractor = Extractor('../Japanese_L-12_H-768_A-12_E-30_BPE/')
 
-    # カウント数分だけ
+    # # カウント数分だけ
     # count = 32
     # i = 0
     # start_time = time.time()
@@ -199,7 +202,7 @@ def main():
     # print("duration on one text", duration / count)
     # print("expected duration", duration * 38768 / count / 60, "min")
 
-    # 全部やらない
+    # # 全部やらない
     # for value in result:
     #     value.dr = None
 
@@ -207,7 +210,7 @@ def main():
     for value in result:
         value.dr = [format(v, 'e') for v in extractor.extract(value.text)]
 
-    with open(OUTPUT, "w") as out_file:
+    with open(OUTPUT_CATALOGER, "w") as out_file:
         contents = []
         for value in result:
             contents.append("\t".join([
@@ -219,6 +222,25 @@ def main():
             ]))
         out_file.write('\n'.join(contents))
 
+    with open(OUTPUT_SUPERIMPOSER, "w") as out_file:
+        contents = []
+        for one in result:
+            two = random.choice(result)
+            expect = {
+                "intent": one.intent if two.intent is None else two.intent,
+                "place": one.place if two.place is None else two.place,
+                "datetime": one.datetime if two.datetime is None else two.datetime
+            }
+            contents.append("\t".join([
+                expect["intent"],
+                expect["place"] or "",
+                expect["datetime"] or "",
+                one.text,
+                ",".join(one.dr) if one.dr else "",
+                two.text,
+                ",".join(two.dr) if two.dr else ""
+            ]))
+        out_file.write('\n'.join(contents))
 
 if __name__ == '__main__':
     main()

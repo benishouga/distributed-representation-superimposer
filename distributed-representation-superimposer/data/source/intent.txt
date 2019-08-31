@@ -25,9 +25,7 @@ weather	{date|place+の}天気は雨降らない？
 weather	{date|place+の}天気は雪？
 weather	{date|place+の}天気は雪降る？
 weather	{date|place+の}天気は雪降らない？
-weather	{date|place+の}天気は降る？
-weather	{date|place+の}天気は降らない？
-weather	{date|place+の}天気は曇？
+weather	{date|place+の}天気は曇り？
 weather	{date|place+の}天気は曇る？
 weather	天気は{date}晴れ？
 weather	天気は{date}晴れる？

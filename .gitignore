@@ -124,5 +124,6 @@ dmypy.json
 .pyre/
 
 distributed-representation-superimposer/data/source/projectnextnlp-chat-dialogue-corpus
-distributed-representation-superimposer/data/data.tsv
+distributed-representation-superimposer/data/data_cataloger.tsv
+distributed-representation-superimposer/data/data_superimposer.tsv
 

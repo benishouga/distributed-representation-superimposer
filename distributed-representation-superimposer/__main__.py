@@ -1,7 +1,9 @@
 from argparse import ArgumentParser
 from pathlib import Path
-from cmd_train import cmd_train
-from cmd_eval import cmd_eval
+from cmd_train_cataloger import cmd_train_cataloger
+from cmd_eval_cataloger import cmd_eval_cataloger
+from cmd_train_superimposer import cmd_train_superimposer
+from cmd_eval_superimposer import cmd_eval_superimposer
 
 
 def cmd_help(args):
@@ -12,19 +14,50 @@ def main():
     parser = ArgumentParser()
     sub = parser.add_subparsers()
 
-    mode_train = sub.add_parser('train')
-    mode_train.add_argument('--input', type=Path, required=True)
-    mode_train.add_argument('--model_intent', type=Path)
-    mode_train.add_argument('--model_place', type=Path)
-    mode_train.add_argument('--model_datetime', type=Path)
-    mode_train.set_defaults(handler=cmd_train)
+    mode_train_cataloger = sub.add_parser('train:cataloger')
+    mode_train_cataloger.add_argument('--input', type=Path, required=True)
+    mode_train_cataloger.add_argument('--model_intent', type=Path,
+                                      default="distributed-representation-superimposer/model/model_intent.pth")
+    mode_train_cataloger.add_argument('--model_place', type=Path,
+                                      default="distributed-representation-superimposer/model/model_place.pth")
+    mode_train_cataloger.add_argument('--model_datetime', type=Path,
+                                      default="distributed-representation-superimposer/model/model_datetime.pth")
+    mode_train_cataloger.set_defaults(handler=cmd_train_cataloger)
 
-    mode_eval = sub.add_parser('eval')
-    mode_eval.add_argument('--text', type=str, required=True)
-    mode_eval.add_argument('--model_intent', type=Path, required=True)
-    mode_eval.add_argument('--model_place', type=Path, required=True)
-    mode_eval.add_argument('--model_datetime', type=Path, required=True)
-    mode_eval.set_defaults(handler=cmd_eval)
+    mode_eval_cataloger = sub.add_parser('eval:cataloger')
+    mode_eval_cataloger.add_argument('--text', type=str, required=True)
+    mode_eval_cataloger.add_argument('--model_intent', type=Path,
+                                     default="distributed-representation-superimposer/model/model_intent.pth")
+    mode_eval_cataloger.add_argument('--model_place', type=Path,
+                                     default="distributed-representation-superimposer/model/model_place.pth")
+    mode_eval_cataloger.add_argument('--model_datetime', type=Path,
+                                     default="distributed-representation-superimposer/model/model_datetime.pth")
+    mode_eval_cataloger.set_defaults(handler=cmd_eval_cataloger)
+
+    mode_train_superimposer = sub.add_parser('train:superimposer')
+    mode_train_superimposer.add_argument('--input', type=Path, required=True)
+    mode_train_superimposer.add_argument('--model', type=Path,
+                                         default="distributed-representation-superimposer/model/model_superimposer.pth")
+    mode_train_superimposer.add_argument('--model_intent', type=Path,
+                                         default="distributed-representation-superimposer/model/model_intent.pth")
+    mode_train_superimposer.add_argument('--model_place', type=Path,
+                                         default="distributed-representation-superimposer/model/model_place.pth")
+    mode_train_superimposer.add_argument('--model_datetime', type=Path,
+                                         default="distributed-representation-superimposer/model/model_datetime.pth")
+    mode_train_superimposer.set_defaults(handler=cmd_train_superimposer)
+
+    mode_eval_superimposer = sub.add_parser('eval:superimposer')
+    mode_eval_superimposer.add_argument('--text1', type=str, required=True)
+    mode_eval_superimposer.add_argument('--text2', type=str, required=True)
+    mode_eval_superimposer.add_argument('--model', type=Path,
+                                        default="distributed-representation-superimposer/model/model_superimposer.pth")
+    mode_eval_superimposer.add_argument('--model_intent', type=Path,
+                                        default="distributed-representation-superimposer/model/model_intent.pth")
+    mode_eval_superimposer.add_argument('--model_place', type=Path,
+                                        default="distributed-representation-superimposer/model/model_place.pth")
+    mode_eval_superimposer.add_argument('--model_datetime', type=Path,
+                                        default="distributed-representation-superimposer/model/model_datetime.pth")
+    mode_eval_superimposer.set_defaults(handler=cmd_eval_superimposer)
 
     mode_help = sub.add_parser('help')
     mode_help.add_argument('cmd')
