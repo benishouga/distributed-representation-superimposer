@@ -177,26 +177,25 @@ def build(text):
 
 def save_superimposer(result):
     with open(OUTPUT_SUPERIMPOSER, "w") as out_file:
-        contents = []
         for one in result:
-            two = random.choice(result)
-            expect = {
-                "intent": one.intent if two.intent == "continue" else two.intent,
-                "place": one.place if two.place is None else two.place,
-                "datetime": one.datetime if two.datetime is None else two.datetime
-            }
-            onedr = ",".join(one.dr)
-            twodr = ",".join(two.dr)
-            contents.append("\t".join([
-                expect["intent"],
-                expect["place"] or "",
-                expect["datetime"] or "",
-                one.text,
-                onedr,
-                two.text,
-                twodr
-            ]))
-        out_file.write('\n'.join(contents))
+            for i in range(3):
+                two = random.choice(result)
+                expect = {
+                    "intent": one.intent if two.intent == "continue" else two.intent,
+                    "place": one.place if two.place is None else two.place,
+                    "datetime": one.datetime if two.datetime is None else two.datetime
+                }
+                onedr = ",".join(one.dr)
+                twodr = ",".join(two.dr)
+                out_file.write("\t".join([
+                    expect["intent"],
+                    expect["place"] or "",
+                    expect["datetime"] or "",
+                    one.text,
+                    onedr,
+                    two.text,
+                    twodr
+                ]) + "\n")
 
 
 def cmd_create_all(args):
