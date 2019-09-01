@@ -146,3 +146,7 @@ schedule	{date+は}どこに行くんですか．
 schedule	{date+は}どこへ行くのですか？
 schedule	{date+は}どちらまで？
 schedule	{date+は}ヒマなんですか？
+continue	{date|place+は}？
+continue	{date|place+は}どう？
+continue	{date|place+は}どうだろう？
+continue	{date|place+}なら？

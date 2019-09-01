@@ -4,9 +4,10 @@ import torchtext
 field_labels = {
     "intent": {
         'unknown': 0,
-        'other': 1,
-        'weather': 2,
-        'schedule': 3
+        'continue': 1,
+        'other': 2,
+        'weather': 3,
+        'schedule': 4
     },
     "place": {
         "unknown": 0,

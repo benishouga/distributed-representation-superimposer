@@ -1,0 +1,375 @@
+----intent----
+Iteration: 100 || Loss: 0.6579 || 0.8564 sec. || Acc：0.8125
+Iteration: 200 || Loss: 0.1937 || 0.7844 sec. || Acc：0.96875
+Iteration: 300 || Loss: 0.2261 || 0.7984 sec. || Acc：0.9375
+Iteration: 400 || Loss: 0.1830 || 0.8020 sec. || Acc：0.9375
+Iteration: 500 || Loss: 0.1171 || 0.8077 sec. || Acc：0.96875
+Iteration: 600 || Loss: 0.3116 || 0.8026 sec. || Acc：0.875
+Iteration: 700 || Loss: 0.0204 || 0.7923 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0158 || 0.8071 sec. || Acc：1.0
+Epoch 1/10 | train |  Loss: 0.2263 Acc: 0.9303
+Epoch 1/10 |  val  |  Loss: 0.0804 Acc: 0.9721
+Iteration: 100 || Loss: 0.0917 || 0.7808 sec. || Acc：0.96875
+Iteration: 200 || Loss: 0.1981 || 0.7716 sec. || Acc：0.9375
+Iteration: 300 || Loss: 0.0662 || 0.7723 sec. || Acc：0.96875
+Iteration: 400 || Loss: 0.0148 || 0.7727 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0258 || 0.7816 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0202 || 0.7841 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0557 || 0.7909 sec. || Acc：0.96875
+Iteration: 800 || Loss: 0.0300 || 0.8411 sec. || Acc：1.0
+Epoch 2/10 | train |  Loss: 0.0624 Acc: 0.9793
+Epoch 2/10 |  val  |  Loss: 0.0447 Acc: 0.9853
+Iteration: 100 || Loss: 0.0088 || 0.9146 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0125 || 0.8987 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0252 || 0.8926 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0096 || 0.8975 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0614 || 0.8939 sec. || Acc：0.96875
+Iteration: 600 || Loss: 0.0985 || 0.8862 sec. || Acc：0.96875
+Iteration: 700 || Loss: 0.0301 || 0.8717 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0238 || 0.8667 sec. || Acc：1.0
+Epoch 3/10 | train |  Loss: 0.0389 Acc: 0.9870
+Epoch 3/10 |  val  |  Loss: 0.0327 Acc: 0.9885
+Iteration: 100 || Loss: 0.0257 || 0.8877 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0043 || 0.8668 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0754 || 0.9371 sec. || Acc：0.96875
+Iteration: 400 || Loss: 0.0047 || 0.9981 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0810 || 1.0084 sec. || Acc：0.9375
+Iteration: 600 || Loss: 0.0315 || 0.9223 sec. || Acc：0.96875
+Iteration: 700 || Loss: 0.0572 || 0.8599 sec. || Acc：0.96875
+Iteration: 800 || Loss: 0.0106 || 0.8566 sec. || Acc：1.0
+Epoch 4/10 | train |  Loss: 0.0276 Acc: 0.9909
+Epoch 4/10 |  val  |  Loss: 0.0275 Acc: 0.9904
+Iteration: 100 || Loss: 0.0469 || 0.8785 sec. || Acc：0.96875
+Iteration: 200 || Loss: 0.0795 || 0.8370 sec. || Acc：0.96875
+Iteration: 300 || Loss: 0.0299 || 0.8436 sec. || Acc：0.96875
+Iteration: 400 || Loss: 0.0171 || 0.8559 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0146 || 0.8607 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0026 || 0.8577 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0049 || 0.8582 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0087 || 0.8596 sec. || Acc：1.0
+^CTraceback (most recent call last):
+  File "/home/moriki/anaconda3/envs/py37/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/home/moriki/anaconda3/envs/py37/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "distributed-representation-superimposer/__main__.py", line 74, in <module>
+    main()
+  File "distributed-representation-superimposer/__main__.py", line 68, in main
+    args.handler(args)
+  File "distributed-representation-superimposer/cmd_train_cataloger.py", line 106, in cmd_train_cataloger
+    train(net, target, dataloaders_dict, criterion, optimizer, 10)
+  File "distributed-representation-superimposer/cmd_train_cataloger.py", line 40, in train
+    for data in batches:
+  File "/home/moriki/anaconda3/envs/py37/lib/python3.7/site-packages/torchtext/data/iterator.py", line 156, in __iter__
+    yield Batch(minibatch, self.dataset, self.device)
+  File "/home/moriki/anaconda3/envs/py37/lib/python3.7/site-packages/torchtext/data/batch.py", line 34, in __init__
+    setattr(self, name, field.process(batch, device=device))
+  File "/home/moriki/anaconda3/envs/py37/lib/python3.7/site-packages/torchtext/data/field.py", line 237, in process
+    tensor = self.numericalize(padded, device=device)
+  File "/home/moriki/anaconda3/envs/py37/lib/python3.7/site-packages/torchtext/data/field.py", line 358, in numericalize
+    var = torch.tensor(arr, dtype=self.dtype, device=device)
+KeyboardInterrupt
+(py37) moriki@carbon:~/work/bert/distributed-representation-superimposer$ python distributed-representation-superimposer train:cataloger --input=distributed-representation-superimposer/data/data_cataloger.tsv 
+----intent----
+Iteration: 100 || Loss: 0.7256 || 0.8680 sec. || Acc：0.84375
+Iteration: 200 || Loss: 0.1702 || 0.8048 sec. || Acc：0.96875
+Iteration: 300 || Loss: 0.2032 || 0.7824 sec. || Acc：0.9375
+Iteration: 400 || Loss: 0.1837 || 0.7869 sec. || Acc：0.9375
+Iteration: 500 || Loss: 0.1365 || 0.8049 sec. || Acc：0.96875
+Iteration: 600 || Loss: 0.2794 || 0.7798 sec. || Acc：0.90625
+Iteration: 700 || Loss: 0.0179 || 0.8146 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0351 || 0.8053 sec. || Acc：1.0
+Epoch 1/10 | train |  Loss: 0.2318 Acc: 0.9279
+Epoch 1/10 |  val  |  Loss: 0.0822 Acc: 0.9715
+Iteration: 100 || Loss: 0.0759 || 0.8810 sec. || Acc：0.96875
+Iteration: 200 || Loss: 0.2472 || 0.8590 sec. || Acc：0.90625
+Iteration: 300 || Loss: 0.0768 || 0.8763 sec. || Acc：0.96875
+Iteration: 400 || Loss: 0.0109 || 0.8748 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0292 || 0.8859 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0190 || 0.9035 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0489 || 0.9088 sec. || Acc：0.96875
+Iteration: 800 || Loss: 0.0319 || 0.9189 sec. || Acc：1.0
+Epoch 2/10 | train |  Loss: 0.0636 Acc: 0.9793
+Epoch 2/10 |  val  |  Loss: 0.0459 Acc: 0.9847
+Iteration: 100 || Loss: 0.0107 || 0.9538 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0176 || 0.9116 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0158 || 0.9270 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0168 || 0.9325 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0524 || 0.9333 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.1495 || 0.9328 sec. || Acc：0.9375
+Iteration: 700 || Loss: 0.0433 || 0.9516 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0093 || 0.9593 sec. || Acc：1.0
+Epoch 3/10 | train |  Loss: 0.0395 Acc: 0.9875
+Epoch 3/10 |  val  |  Loss: 0.0306 Acc: 0.9893
+Iteration: 100 || Loss: 0.0178 || 0.9848 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0098 || 0.9434 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.1572 || 0.9460 sec. || Acc：0.9375
+Iteration: 400 || Loss: 0.0117 || 0.9534 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0954 || 0.9600 sec. || Acc：0.9375
+Iteration: 600 || Loss: 0.0730 || 0.9623 sec. || Acc：0.96875
+Iteration: 700 || Loss: 0.0874 || 0.9632 sec. || Acc：0.96875
+Iteration: 800 || Loss: 0.0257 || 1.0029 sec. || Acc：1.0
+Epoch 4/10 | train |  Loss: 0.0288 Acc: 0.9907
+Epoch 4/10 |  val  |  Loss: 0.0252 Acc: 0.9915
+Iteration: 100 || Loss: 0.0642 || 1.0666 sec. || Acc：0.96875
+Iteration: 200 || Loss: 0.0382 || 1.0347 sec. || Acc：0.96875
+Iteration: 300 || Loss: 0.0397 || 1.0359 sec. || Acc：0.96875
+Iteration: 400 || Loss: 0.0102 || 1.0261 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0324 || 1.0189 sec. || Acc：0.96875
+Iteration: 600 || Loss: 0.0050 || 1.0198 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0030 || 1.0210 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0028 || 1.0267 sec. || Acc：1.0
+Epoch 5/10 | train |  Loss: 0.0230 Acc: 0.9926
+Epoch 5/10 |  val  |  Loss: 0.0350 Acc: 0.9885
+Iteration: 100 || Loss: 0.0337 || 1.0734 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0006 || 1.0568 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0190 || 1.0528 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0014 || 1.0509 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0022 || 1.0457 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0048 || 1.0448 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0006 || 1.0367 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0070 || 1.0389 sec. || Acc：1.0
+Epoch 6/10 | train |  Loss: 0.0206 Acc: 0.9934
+Epoch 6/10 |  val  |  Loss: 0.0219 Acc: 0.9915
+Iteration: 100 || Loss: 0.0032 || 1.0214 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0252 || 0.9893 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0011 || 1.0456 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0318 || 1.0064 sec. || Acc：0.96875
+Iteration: 500 || Loss: 0.0002 || 1.0021 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0104 || 1.0293 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0124 || 1.0114 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0858 || 1.0164 sec. || Acc：0.96875
+Epoch 7/10 | train |  Loss: 0.0166 Acc: 0.9945
+Epoch 7/10 |  val  |  Loss: 0.0158 Acc: 0.9949
+Iteration: 100 || Loss: 0.0053 || 0.9925 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0217 || 0.9830 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0002 || 1.0092 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0266 || 0.9824 sec. || Acc：0.96875
+Iteration: 500 || Loss: 0.0028 || 1.0232 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0028 || 1.0101 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0004 || 1.0152 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0031 || 1.0162 sec. || Acc：1.0
+Epoch 8/10 | train |  Loss: 0.0149 Acc: 0.9954
+Epoch 8/10 |  val  |  Loss: 0.0161 Acc: 0.9944
+Iteration: 100 || Loss: 0.0449 || 1.0567 sec. || Acc：0.96875
+Iteration: 200 || Loss: 0.0004 || 1.0332 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0001 || 1.0394 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0195 || 1.0395 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0935 || 1.0198 sec. || Acc：0.96875
+Iteration: 600 || Loss: 0.0009 || 1.0362 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0032 || 1.0216 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0043 || 1.0023 sec. || Acc：1.0
+Epoch 9/10 | train |  Loss: 0.0127 Acc: 0.9960
+Epoch 9/10 |  val  |  Loss: 0.0138 Acc: 0.9956
+Iteration: 100 || Loss: 0.0022 || 1.0563 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0955 || 0.9821 sec. || Acc：0.96875
+Iteration: 300 || Loss: 0.0002 || 0.9797 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0406 || 1.0331 sec. || Acc：0.96875
+Iteration: 500 || Loss: 0.0016 || 1.0145 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0001 || 1.0366 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0108 || 0.9870 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0515 || 1.0327 sec. || Acc：0.96875
+Epoch 10/10 | train |  Loss: 0.0110 Acc: 0.9961
+Epoch 10/10 |  val  |  Loss: 0.0145 Acc: 0.9951
+----place----
+Iteration: 100 || Loss: 0.9118 || 0.9148 sec. || Acc：0.59375
+Iteration: 200 || Loss: 0.6247 || 0.8926 sec. || Acc：0.84375
+Iteration: 300 || Loss: 0.3172 || 0.8918 sec. || Acc：0.90625
+Iteration: 400 || Loss: 0.3257 || 0.8376 sec. || Acc：0.84375
+Iteration: 500 || Loss: 0.1042 || 0.8910 sec. || Acc：0.96875
+Iteration: 600 || Loss: 0.0896 || 0.8602 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0401 || 0.9136 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0648 || 0.8835 sec. || Acc：1.0
+Epoch 1/10 | train |  Loss: 0.3298 Acc: 0.8877
+Epoch 1/10 |  val  |  Loss: 0.0688 Acc: 0.9866
+Iteration: 100 || Loss: 0.0436 || 0.9846 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0415 || 0.9553 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0762 || 0.9805 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0306 || 0.9454 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0101 || 0.9336 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0079 || 0.9643 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0200 || 0.9355 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0320 || 0.9359 sec. || Acc：1.0
+Epoch 2/10 | train |  Loss: 0.0429 Acc: 0.9890
+Epoch 2/10 |  val  |  Loss: 0.0180 Acc: 0.9966
+Iteration: 100 || Loss: 0.0075 || 0.9913 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0354 || 0.9612 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0207 || 0.9478 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0080 || 0.8862 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0106 || 0.9489 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0320 || 0.9306 sec. || Acc：0.96875
+Iteration: 700 || Loss: 0.0150 || 0.9672 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0108 || 0.9874 sec. || Acc：1.0
+Epoch 3/10 | train |  Loss: 0.0196 Acc: 0.9948
+Epoch 3/10 |  val  |  Loss: 0.0091 Acc: 0.9987
+Iteration: 100 || Loss: 0.0196 || 0.9956 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0018 || 0.9650 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0029 || 0.9373 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0048 || 0.9394 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0013 || 0.9658 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0081 || 0.9940 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0013 || 0.9802 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0037 || 0.9607 sec. || Acc：1.0
+Epoch 4/10 | train |  Loss: 0.0118 Acc: 0.9976
+Epoch 4/10 |  val  |  Loss: 0.0056 Acc: 0.9991
+Iteration: 100 || Loss: 0.0670 || 0.9846 sec. || Acc：0.96875
+Iteration: 200 || Loss: 0.0005 || 0.9641 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0237 || 0.9560 sec. || Acc：0.96875
+Iteration: 400 || Loss: 0.0005 || 0.9441 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0025 || 0.9701 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.1295 || 0.9488 sec. || Acc：0.96875
+Iteration: 700 || Loss: 0.0008 || 0.8792 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0069 || 0.8764 sec. || Acc：1.0
+Epoch 5/10 | train |  Loss: 0.0088 Acc: 0.9980
+Epoch 5/10 |  val  |  Loss: 0.0046 Acc: 0.9991
+Iteration: 100 || Loss: 0.0004 || 0.9836 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0072 || 0.9993 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0004 || 0.9634 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0002 || 0.9697 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0097 || 0.9664 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0060 || 0.9731 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0045 || 1.0102 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0005 || 0.9941 sec. || Acc：1.0
+Epoch 6/10 | train |  Loss: 0.0074 Acc: 0.9981
+Epoch 6/10 |  val  |  Loss: 0.0041 Acc: 0.9990
+Iteration: 100 || Loss: 0.0104 || 0.9927 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0003 || 0.9649 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0038 || 0.9791 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0012 || 0.9805 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0027 || 0.9762 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0020 || 0.9730 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0018 || 0.9912 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0037 || 0.9538 sec. || Acc：1.0
+Epoch 7/10 | train |  Loss: 0.0049 Acc: 0.9987
+Epoch 7/10 |  val  |  Loss: 0.0032 Acc: 0.9993
+Iteration: 100 || Loss: 0.0003 || 1.0233 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0008 || 0.9605 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0121 || 0.9987 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0008 || 0.9545 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0009 || 0.9546 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0018 || 0.9744 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0002 || 0.9937 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0008 || 0.9880 sec. || Acc：1.0
+Epoch 8/10 | train |  Loss: 0.0042 Acc: 0.9990
+Epoch 8/10 |  val  |  Loss: 0.0023 Acc: 0.9993
+Iteration: 100 || Loss: 0.0037 || 1.0515 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0046 || 1.0713 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0012 || 0.9969 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0004 || 1.0328 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0014 || 1.0009 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0020 || 1.0194 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0002 || 0.9724 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0029 || 0.9982 sec. || Acc：1.0
+Epoch 9/10 | train |  Loss: 0.0036 Acc: 0.9990
+Epoch 9/10 |  val  |  Loss: 0.0032 Acc: 0.9994
+Iteration: 100 || Loss: 0.0001 || 1.0657 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0001 || 1.0133 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0008 || 1.0031 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0002 || 0.9862 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0015 || 1.0253 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0001 || 0.9999 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0039 || 1.4326 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0008 || 1.1801 sec. || Acc：1.0
+Epoch 10/10 | train |  Loss: 0.0037 Acc: 0.9989
+Epoch 10/10 |  val  |  Loss: 0.0024 Acc: 0.9996
+----datetime----
+Iteration: 100 || Loss: 2.0990 || 1.2692 sec. || Acc：0.25
+Iteration: 200 || Loss: 1.4840 || 0.9264 sec. || Acc：0.53125
+Iteration: 300 || Loss: 1.6519 || 0.9549 sec. || Acc：0.46875
+Iteration: 400 || Loss: 1.6036 || 1.1647 sec. || Acc：0.46875
+Iteration: 500 || Loss: 1.5359 || 1.3151 sec. || Acc：0.5
+Iteration: 600 || Loss: 0.9844 || 1.2270 sec. || Acc：0.78125
+Iteration: 700 || Loss: 0.9913 || 0.8985 sec. || Acc：0.75
+Iteration: 800 || Loss: 0.7781 || 1.1778 sec. || Acc：0.75
+Epoch 1/10 | train |  Loss: 1.4039 Acc: 0.5651
+Epoch 1/10 |  val  |  Loss: 0.7708 Acc: 0.7847
+Iteration: 100 || Loss: 0.6616 || 1.0172 sec. || Acc：0.84375
+Iteration: 200 || Loss: 0.9089 || 1.0050 sec. || Acc：0.78125
+Iteration: 300 || Loss: 0.9674 || 1.0218 sec. || Acc：0.65625
+Iteration: 400 || Loss: 0.5499 || 1.0127 sec. || Acc：0.90625
+Iteration: 500 || Loss: 0.6286 || 1.0109 sec. || Acc：0.875
+Iteration: 600 || Loss: 0.4813 || 1.0339 sec. || Acc：0.875
+Iteration: 700 || Loss: 0.4798 || 1.0869 sec. || Acc：0.875
+Iteration: 800 || Loss: 0.5071 || 1.3896 sec. || Acc：0.84375
+Epoch 2/10 | train |  Loss: 0.5576 Acc: 0.8546
+Epoch 2/10 |  val  |  Loss: 0.3456 Acc: 0.9217
+Iteration: 100 || Loss: 0.3361 || 0.9981 sec. || Acc：0.84375
+Iteration: 200 || Loss: 0.1719 || 1.3113 sec. || Acc：0.96875
+Iteration: 300 || Loss: 0.2557 || 1.1297 sec. || Acc：0.96875
+Iteration: 400 || Loss: 0.3057 || 1.1212 sec. || Acc：0.90625
+Iteration: 500 || Loss: 0.4838 || 1.1158 sec. || Acc：0.90625
+Iteration: 600 || Loss: 0.3197 || 1.1231 sec. || Acc：0.875
+Iteration: 700 || Loss: 0.1434 || 1.1669 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.3158 || 1.2914 sec. || Acc：0.90625
+Epoch 3/10 | train |  Loss: 0.3005 Acc: 0.9253
+Epoch 3/10 |  val  |  Loss: 0.2118 Acc: 0.9531
+Iteration: 100 || Loss: 0.2122 || 1.2192 sec. || Acc：0.96875
+Iteration: 200 || Loss: 0.2390 || 1.1242 sec. || Acc：0.9375
+Iteration: 300 || Loss: 0.6101 || 1.1080 sec. || Acc：0.875
+Iteration: 400 || Loss: 0.3649 || 1.0879 sec. || Acc：0.90625
+Iteration: 500 || Loss: 0.0697 || 1.0871 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.2965 || 1.0685 sec. || Acc：0.875
+Iteration: 700 || Loss: 0.2190 || 1.0812 sec. || Acc：0.90625
+Iteration: 800 || Loss: 0.3361 || 1.0769 sec. || Acc：0.875
+Epoch 4/10 | train |  Loss: 0.1980 Acc: 0.9501
+Epoch 4/10 |  val  |  Loss: 0.1391 Acc: 0.9690
+Iteration: 100 || Loss: 0.2193 || 1.1539 sec. || Acc：0.875
+Iteration: 200 || Loss: 0.2431 || 1.1263 sec. || Acc：0.96875
+Iteration: 300 || Loss: 0.5342 || 1.1262 sec. || Acc：0.875
+Iteration: 400 || Loss: 0.0779 || 1.1162 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.2956 || 1.1178 sec. || Acc：0.9375
+Iteration: 600 || Loss: 0.4456 || 1.1026 sec. || Acc：0.90625
+Iteration: 700 || Loss: 0.0959 || 1.1066 sec. || Acc：0.96875
+Iteration: 800 || Loss: 0.0663 || 1.1084 sec. || Acc：0.96875
+Epoch 5/10 | train |  Loss: 0.1447 Acc: 0.9623
+Epoch 5/10 |  val  |  Loss: 0.1069 Acc: 0.9749
+Iteration: 100 || Loss: 0.1314 || 1.1040 sec. || Acc：0.96875
+Iteration: 200 || Loss: 0.3044 || 2.2528 sec. || Acc：0.90625
+Iteration: 300 || Loss: 0.0446 || 5.6245 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.2527 || 5.6365 sec. || Acc：0.96875
+Iteration: 500 || Loss: 0.0505 || 5.1677 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.1957 || 6.3902 sec. || Acc：0.9375
+Iteration: 700 || Loss: 0.0880 || 5.5465 sec. || Acc：0.96875
+Iteration: 800 || Loss: 0.0428 || 5.7131 sec. || Acc：0.96875
+Epoch 6/10 | train |  Loss: 0.1129 Acc: 0.9711
+Epoch 6/10 |  val  |  Loss: 0.0934 Acc: 0.9760
+Iteration: 100 || Loss: 0.0676 || 2.2797 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0476 || 1.9481 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.1099 || 1.8975 sec. || Acc：0.9375
+Iteration: 400 || Loss: 0.0654 || 1.8691 sec. || Acc：0.96875
+Iteration: 500 || Loss: 0.0714 || 1.8990 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0388 || 1.7127 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0407 || 1.7020 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0513 || 1.6954 sec. || Acc：1.0
+Epoch 7/10 | train |  Loss: 0.0918 Acc: 0.9749
+Epoch 7/10 |  val  |  Loss: 0.0721 Acc: 0.9803
+Iteration: 100 || Loss: 0.1246 || 1.6076 sec. || Acc：0.9375
+Iteration: 200 || Loss: 0.0465 || 1.5760 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.1094 || 1.5433 sec. || Acc：0.9375
+Iteration: 400 || Loss: 0.1160 || 1.5742 sec. || Acc：0.9375
+Iteration: 500 || Loss: 0.0787 || 1.4645 sec. || Acc：0.96875
+Iteration: 600 || Loss: 0.0402 || 1.4738 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.1202 || 1.3763 sec. || Acc：0.96875
+Iteration: 800 || Loss: 0.0615 || 1.4199 sec. || Acc：0.96875
+Epoch 8/10 | train |  Loss: 0.0773 Acc: 0.9785
+Epoch 8/10 |  val  |  Loss: 0.0667 Acc: 0.9824
+Iteration: 100 || Loss: 0.0389 || 1.4483 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0141 || 1.4103 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.1529 || 1.3588 sec. || Acc：0.96875
+Iteration: 400 || Loss: 0.1025 || 1.3190 sec. || Acc：0.9375
+Iteration: 500 || Loss: 0.0363 || 1.3399 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0209 || 1.3666 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0186 || 1.3530 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0542 || 1.2835 sec. || Acc：1.0
+Epoch 9/10 | train |  Loss: 0.0667 Acc: 0.9824
+Epoch 9/10 |  val  |  Loss: 0.0571 Acc: 0.9863
+Iteration: 100 || Loss: 0.0508 || 1.3100 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.1438 || 1.2396 sec. || Acc：0.96875
+Iteration: 300 || Loss: 0.0825 || 1.3115 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0217 || 1.2821 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0332 || 1.2571 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0064 || 1.2532 sec. || Acc：1.0
+Iteration: 700 || Loss: 0.0835 || 1.1921 sec. || Acc：1.0
+Iteration: 800 || Loss: 0.0092 || 1.1804 sec. || Acc：1.0
+Epoch 10/10 | train |  Loss: 0.0571 Acc: 0.9842
+Epoch 10/10 |  val  |  Loss: 0.0475 Acc: 0.9872

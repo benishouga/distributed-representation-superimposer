@@ -4,6 +4,8 @@ from cmd_train_cataloger import cmd_train_cataloger
 from cmd_eval_cataloger import cmd_eval_cataloger
 from cmd_train_superimposer import cmd_train_superimposer
 from cmd_eval_superimposer import cmd_eval_superimposer
+from cmd_create_data import cmd_create_all
+from cmd_create_data import cmd_create_superimposer
 
 
 def cmd_help(args):
@@ -58,6 +60,14 @@ def main():
     mode_eval_superimposer.add_argument('--model_datetime', type=Path,
                                         default="distributed-representation-superimposer/model/model_datetime.pth")
     mode_eval_superimposer.set_defaults(handler=cmd_eval_superimposer)
+
+    mode_create_all = sub.add_parser('create:all')
+    mode_create_all.set_defaults(handler=cmd_create_all)
+
+    mode_create_superimposer = sub.add_parser('create:superimposer')
+    mode_create_superimposer.add_argument('--input', type=Path,
+                                          default="distributed-representation-superimposer/data/data_cataloger.tsv")
+    mode_create_superimposer.set_defaults(handler=cmd_create_superimposer)
 
     mode_help = sub.add_parser('help')
     mode_help.add_argument('cmd')
