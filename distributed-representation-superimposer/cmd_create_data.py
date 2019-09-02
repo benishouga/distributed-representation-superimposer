@@ -241,8 +241,8 @@ def cmd_create_superimposer(args):
         result.append(Intent(
             text,
             intent,
-            datetime,
-            place,
+            None if datetime == "" else datetime,
+            None if place == "" else place,
             [v for v in dr.split(",")]))
     save_superimposer(result)
 

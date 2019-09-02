@@ -44,8 +44,6 @@ class IntentField(torchtext.data.Field):
     def tokenize_to_array(self, label):
         label = label if label in self.labels else "unknown"
         return [self.labels[label]]
-        # label_index = self.labels[label]
-        # return [1 if i == label_index else 0 for i in range(len(self.labels))]
 
 
 class PlaceField(torchtext.data.Field):
@@ -59,8 +57,6 @@ class PlaceField(torchtext.data.Field):
     def tokenize_to_array(self, label):
         label = label if label in self.labels else "unknown"
         return [self.labels[label]]
-        # label_index = self.labels[label]
-        # return [1 if i == label_index else 0 for i in range(len(self.labels))]
 
 
 class DatetimeField(torchtext.data.Field):
@@ -75,8 +71,6 @@ class DatetimeField(torchtext.data.Field):
     def tokenize_to_array(self, label):
         label = label if label in self.labels else "unknown"
         return [self.labels[label]]
-        # label_index = self.labels[label]
-        # return [1 if i == label_index else 0 for i in range(len(self.labels))]
 
 
 class TextField(torchtext.data.Field):

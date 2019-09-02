@@ -1,0 +1,29 @@
+python distributed-representation-superimposer eval:cataloger --text=天気教えて
+python distributed-representation-superimposer eval:cataloger --text=今日の職場の天気教えて
+python distributed-representation-superimposer eval:cataloger --text=明日の天気は何？
+python distributed-representation-superimposer eval:cataloger --text=来週、このあたりは晴れる？
+python distributed-representation-superimposer eval:cataloger --text=学校の天気は明日雨かな？
+python distributed-representation-superimposer eval:cataloger --text=明日風強い？
+python distributed-representation-superimposer eval:cataloger --text=予定教えて
+python distributed-representation-superimposer eval:cataloger --text=10月の予定教えて
+python distributed-representation-superimposer eval:cataloger --text=明日は忙しい？
+python distributed-representation-superimposer eval:cataloger --text=明日忙しい？
+python distributed-representation-superimposer eval:cataloger --text=明日忙しいっけ？
+python distributed-representation-superimposer eval:cataloger --text=明後日忙しいっけ？
+python distributed-representation-superimposer eval:cataloger --text=来月は暇？
+python distributed-representation-superimposer eval:cataloger --text=お腹いたい
+python distributed-representation-superimposer eval:cataloger --text=テレビつけて
+python distributed-representation-superimposer eval:cataloger --text=10日は？
+python distributed-representation-superimposer eval:cataloger --text=明日はどう？
+python distributed-representation-superimposer eval:cataloger --text=職場は？
+python distributed-representation-superimposer eval:cataloger --text=明後日のこのあたりは？
+
+python distributed-representation-superimposer eval:superimposer --text1=明日の天気教えて --text2=このあたりはどうですか？
+  ⇒ Intentが潰れる
+python distributed-representation-superimposer eval:superimposer --text1=明日風強い？ --text2=職場は？
+  ⇒ Intentが潰れる
+python distributed-representation-superimposer eval:superimposer --text1=風強い？ --text2=明日の職場は？
+python distributed-representation-superimposer eval:superimposer --text1=明日の天気教えて --text2=明後日は？
+python distributed-representation-superimposer eval:superimposer --text1=このあたりの天気教えて --text2=明日は？
+python distributed-representation-superimposer eval:superimposer --text1=明日の天気教えて --text2=学校は？
+
