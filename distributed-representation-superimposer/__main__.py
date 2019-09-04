@@ -47,6 +47,7 @@ def main():
                                          default="distributed-representation-superimposer/model/model_place.pth")
     mode_train_superimposer.add_argument('--model_datetime', type=Path,
                                          default="distributed-representation-superimposer/model/model_datetime.pth")
+    mode_train_superimposer.add_argument('--validation-only', action='store_true')
     mode_train_superimposer.set_defaults(handler=cmd_train_superimposer)
 
     mode_eval_superimposer = sub.add_parser('eval:superimposer')

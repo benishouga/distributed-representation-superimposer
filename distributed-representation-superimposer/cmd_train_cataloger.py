@@ -15,7 +15,7 @@ from dataset.cataloger_dataset import CatalogerDataset
 
 
 def train(net, target, display_labels, dataloaders_dict, batch_size, criterion, optimizer, num_epochs):
-    lables_length = len(display_labels)
+    labels_length = len(display_labels)
 
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
@@ -29,7 +29,7 @@ def train(net, target, display_labels, dataloaders_dict, batch_size, criterion, 
             else:
                 net.eval()
 
-            correct = np.zeros([lables_length, lables_length], dtype=int)
+            correct = np.zeros([labels_length, labels_length], dtype=int)
 
             epoch_loss = 0.0
             epoch_corrects = 0
