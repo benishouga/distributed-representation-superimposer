@@ -24,6 +24,7 @@ def main():
                                       default="distributed-representation-superimposer/model/model_place.pth")
     mode_train_cataloger.add_argument('--model_datetime', type=Path,
                                       default="distributed-representation-superimposer/model/model_datetime.pth")
+    mode_train_cataloger.add_argument('--validation-only', action='store_true')
     mode_train_cataloger.set_defaults(handler=cmd_train_cataloger)
 
     mode_eval_cataloger = sub.add_parser('eval:cataloger')
