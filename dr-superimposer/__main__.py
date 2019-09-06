@@ -14,67 +14,80 @@ def cmd_help(args):
 
 def main():
     parser = ArgumentParser()
-    sub = parser.add_subparsers()
+    subparser = parser.add_subparsers()
 
-    mode_train_cataloger = sub.add_parser('train:cataloger')
-    mode_train_cataloger.add_argument('--input', type=Path, required=True)
-    mode_train_cataloger.add_argument('--model_intent', type=Path,
-                                      default="dr-superimposer/model/model_intent.pth")
-    mode_train_cataloger.add_argument('--model_place', type=Path,
-                                      default="dr-superimposer/model/model_place.pth")
-    mode_train_cataloger.add_argument('--model_datetime', type=Path,
-                                      default="dr-superimposer/model/model_datetime.pth")
-    mode_train_cataloger.add_argument('--validation-only', action='store_true')
-    mode_train_cataloger.set_defaults(handler=cmd_train_cataloger)
+    def mode_train_cataloger():
+        sub = subparser.add_parser('train:cataloger')
+        sub.add_argument('--input', type=Path, required=True)
+        sub.add_argument('--model_intent', type=Path,
+                         default="dr-superimposer/model/model_intent.pth")
+        sub.add_argument('--model_place', type=Path,
+                         default="dr-superimposer/model/model_place.pth")
+        sub.add_argument('--model_datetime', type=Path,
+                         default="dr-superimposer/model/model_datetime.pth")
+        sub.add_argument('--validation-only', action='store_true')
+        sub.set_defaults(handler=cmd_train_cataloger)
+    mode_train_cataloger()
 
-    mode_eval_cataloger = sub.add_parser('eval:cataloger')
-    mode_eval_cataloger.add_argument('--text', type=str, required=True)
-    mode_eval_cataloger.add_argument('--model_intent', type=Path,
-                                     default="dr-superimposer/model/model_intent.pth")
-    mode_eval_cataloger.add_argument('--model_place', type=Path,
-                                     default="dr-superimposer/model/model_place.pth")
-    mode_eval_cataloger.add_argument('--model_datetime', type=Path,
-                                     default="dr-superimposer/model/model_datetime.pth")
-    mode_eval_cataloger.set_defaults(handler=cmd_eval_cataloger)
+    def mode_eval_cataloger():
+        sub = subparser.add_parser('eval:cataloger')
+        sub.add_argument('--text', type=str, required=True)
+        sub.add_argument('--model_intent', type=Path,
+                         default="dr-superimposer/model/model_intent.pth")
+        sub.add_argument('--model_place', type=Path,
+                         default="dr-superimposer/model/model_place.pth")
+        sub.add_argument('--model_datetime', type=Path,
+                         default="dr-superimposer/model/model_datetime.pth")
+        sub.set_defaults(handler=cmd_eval_cataloger)
+    mode_eval_cataloger()
 
-    mode_train_superimposer = sub.add_parser('train:superimposer')
-    mode_train_superimposer.add_argument('--input', type=Path, required=True)
-    mode_train_superimposer.add_argument('--model', type=Path,
-                                         default="dr-superimposer/model/model_superimposer.pth")
-    mode_train_superimposer.add_argument('--model_intent', type=Path,
-                                         default="dr-superimposer/model/model_intent.pth")
-    mode_train_superimposer.add_argument('--model_place', type=Path,
-                                         default="dr-superimposer/model/model_place.pth")
-    mode_train_superimposer.add_argument('--model_datetime', type=Path,
-                                         default="dr-superimposer/model/model_datetime.pth")
-    mode_train_superimposer.add_argument(
-        '--validation-only', action='store_true')
-    mode_train_superimposer.set_defaults(handler=cmd_train_superimposer)
+    def mode_train_superimposer():
+        sub = subparser.add_parser('train:superimposer')
+        sub.add_argument('--input', type=Path, required=True)
+        sub.add_argument('--model', type=Path,
+                         default="dr-superimposer/model/model_superimposer.pth")
+        sub.add_argument('--model_intent', type=Path,
+                         default="dr-superimposer/model/model_intent.pth")
+        sub.add_argument('--model_place', type=Path,
+                         default="dr-superimposer/model/model_place.pth")
+        sub.add_argument('--model_datetime', type=Path,
+                         default="dr-superimposer/model/model_datetime.pth")
+        sub.add_argument('--validation-only', action='store_true')
+        sub.set_defaults(handler=cmd_train_superimposer)
+    mode_train_superimposer()
 
-    mode_eval_superimposer = sub.add_parser('eval:superimposer')
-    mode_eval_superimposer.add_argument('--text1', type=str, required=True)
-    mode_eval_superimposer.add_argument('--text2', type=str, required=True)
-    mode_eval_superimposer.add_argument('--model', type=Path,
-                                        default="dr-superimposer/model/model_superimposer.pth")
-    mode_eval_superimposer.add_argument('--model_intent', type=Path,
-                                        default="dr-superimposer/model/model_intent.pth")
-    mode_eval_superimposer.add_argument('--model_place', type=Path,
-                                        default="dr-superimposer/model/model_place.pth")
-    mode_eval_superimposer.add_argument('--model_datetime', type=Path,
-                                        default="dr-superimposer/model/model_datetime.pth")
-    mode_eval_superimposer.set_defaults(handler=cmd_eval_superimposer)
+    def mode_eval_superimposer():
+        sub = subparser.add_parser('eval:superimposer')
+        sub.add_argument('--text1', type=str, required=True)
+        sub.add_argument('--text2', type=str, required=True)
+        sub.add_argument('--model', type=Path,
+                         default="dr-superimposer/model/model_superimposer.pth")
+        sub.add_argument('--model_intent', type=Path,
+                         default="dr-superimposer/model/model_intent.pth")
+        sub.add_argument('--model_place', type=Path,
+                         default="dr-superimposer/model/model_place.pth")
+        sub.add_argument('--model_datetime', type=Path,
+                         default="dr-superimposer/model/model_datetime.pth")
+        sub.set_defaults(handler=cmd_eval_superimposer)
+    mode_eval_superimposer()
 
-    mode_create_all = sub.add_parser('create:all')
-    mode_create_all.set_defaults(handler=cmd_create_all)
+    def mode_create_all():
+        sub = subparser.add_parser('create:all')
+        sub.set_defaults(handler=cmd_create_all)
+    mode_create_all()
 
-    mode_create_superimposer = sub.add_parser('create:superimposer')
-    mode_create_superimposer.add_argument('--input', type=Path,
-                                          default="dr-superimposer/data/data_cataloger.tsv")
-    mode_create_superimposer.set_defaults(handler=cmd_create_superimposer)
+    def mode_create_superimposer():
+        sub = subparser.add_parser('create:superimposer')
+        sub.add_argument('--input', type=Path,
+                         default="dr-superimposer/data/data_cataloger.tsv")
+        sub.set_defaults(handler=cmd_create_superimposer)
+    mode_create_superimposer()
 
-    mode_help = sub.add_parser('help')
-    mode_help.add_argument('cmd')
-    mode_help.set_defaults(handler=cmd_help)
+    def mode_help():
+        sub = subparser.add_parser('help')
+        sub.add_argument('cmd')
+        sub.set_defaults(handler=cmd_help)
+    mode_help()
 
     args = parser.parse_args()
     if hasattr(args, 'handler'):
