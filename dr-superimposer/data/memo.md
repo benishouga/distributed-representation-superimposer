@@ -1,7 +1,7 @@
 ## data.tsv からシャッフルして切り出したデータを生成
 
-shuf -n 1000 distributed-representation-superimposer/data/data_cataloger.tsv > distributed-representation-superimposer/data/data_cataloger_1000.tsv
-shuf -n 1000 distributed-representation-superimposer/data/data_superimposer.tsv > distributed-representation-superimposer/data/data_superimposer_1000.tsv
+shuf -n 1000 dr-superimposer/data/data_cataloger.tsv > dr-superimposer/data/data_cataloger_1000.tsv
+shuf -n 1000 dr-superimposer/data/data_superimposer.tsv > dr-superimposer/data/data_superimposer_1000.tsv
 
 ## 今回判定したいもの
 

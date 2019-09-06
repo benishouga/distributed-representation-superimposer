@@ -123,7 +123,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-distributed-representation-superimposer/data/source/projectnextnlp-chat-dialogue-corpus
-distributed-representation-superimposer/data/data_cataloger.tsv
-distributed-representation-superimposer/data/data_superimposer.tsv
+dr-superimposer/data/source/projectnextnlp-chat-dialogue-corpus
+dr-superimposer/data/data_cataloger.tsv
+dr-superimposer/data/data_superimposer.tsv
 

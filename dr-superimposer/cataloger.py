@@ -12,8 +12,8 @@ class Cataloger(nn.Module):
         self.l3 = nn.Linear(in_features=hidden_units,
                             out_features=catalog_features)
 
-    def forward(self, distributed_representation):
-        x = F.relu(self.l1(distributed_representation))
+    def forward(self, dr):
+        x = F.relu(self.l1(dr))
         x = F.dropout(x, training=self.training)
         x = F.relu(self.l2(x))
         return self.l3(x)
