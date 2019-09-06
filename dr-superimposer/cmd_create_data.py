@@ -208,9 +208,9 @@ def cmd_create_all(args):
     for other in others:
         result.append(Intent(other, "other"))
 
-    # 10件だけ
-    random.shuffle(result)
-    result = result[0:10]
+    # # 10件だけ試す
+    # random.shuffle(result)
+    # result = result[0:10]
 
     extractor = Extractor('../Japanese_L-12_H-768_A-12_E-30_BPE/')
 
