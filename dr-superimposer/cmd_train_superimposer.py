@@ -13,10 +13,11 @@ import torchtext
 from cataloger import Cataloger
 from superimposer import Superimposer
 
+from dataset.text_holder import TextHolder
 from dataset.superimposer_dataset import SuperimposerDataset
 
 
-def train(net, catalogers, dataloaders_dict, batch_size, criterion, optimizer, num_epochs):
+def train(net, catalogers, text_holder, dataloaders_dict, batch_size, criterion, optimizer, num_epochs):
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
     net.to(device)
@@ -72,6 +73,8 @@ def train(net, catalogers, dataloaders_dict, batch_size, criterion, optimizer, n
                         correct = corrects[cataloger_name]
                         for i in range(len(labels)):
                             correct[labels[i]][preds[i]] += 1
+                            if labels[i] != preds[i]:
+                                print(text_holder.get(data.text1[i][0]) + ", " + text_holder.get(data.text2[i][0]))
 
                     if phase == 'train':
                         loss.backward()
@@ -108,7 +111,8 @@ def train(net, catalogers, dataloaders_dict, batch_size, criterion, optimizer, n
 
 
 def cmd_train_superimposer(args):
-    td = SuperimposerDataset(path=args.input)
+    text_holder = TextHolder()
+    td = SuperimposerDataset(path=args.input, text_holder=text_holder)
     training_data, validation_data = td.split(
         split_ratio=0.8, random_state=random.seed(1234))
 
@@ -132,7 +136,7 @@ def cmd_train_superimposer(args):
 
         optimizer = optim.Adam(net.parameters(), lr=5e-5)
         criterion = nn.CrossEntropyLoss()
-        train(net, catalogers, dataloaders_dict,
+        train(net, catalogers, text_holder, dataloaders_dict,
               batch_size, criterion, optimizer, 1)
 
         return
@@ -149,7 +153,7 @@ def cmd_train_superimposer(args):
 
     optimizer = optim.Adam(net.parameters(), lr=5e-5)
     criterion = nn.CrossEntropyLoss()
-    train(net, catalogers, dataloaders_dict,
+    train(net, catalogers, text_holder, dataloaders_dict,
           batch_size, criterion, optimizer, 10)
 
     if model_path is not None:

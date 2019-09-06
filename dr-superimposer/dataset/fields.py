@@ -74,11 +74,11 @@ class DatetimeField(torchtext.data.Field):
 
 
 class TextField(torchtext.data.Field):
-    def __init__(self):
+    def __init__(self, text_holder):
         super(TextField, self).__init__()
         self.use_vocab = False
         self.batch_first = True
-        self.tokenize = lambda text: [0]
+        self.tokenize = lambda text: [text_holder.register(text)]
 
 
 class DrField(torchtext.data.Field):

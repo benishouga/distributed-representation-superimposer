@@ -11,10 +11,11 @@ from torch import optim
 import torchtext
 
 from cataloger import Cataloger
+from dataset.text_holder import TextHolder
 from dataset.cataloger_dataset import CatalogerDataset
 
 
-def train(net, target, display_labels, dataloaders_dict, batch_size, criterion, optimizer, num_epochs):
+def train(net, target, display_labels, text_holder, dataloaders_dict, batch_size, criterion, optimizer, num_epochs):
     labels_length = len(display_labels)
 
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -51,6 +52,8 @@ def train(net, target, display_labels, dataloaders_dict, batch_size, criterion, 
                     _, preds = torch.max(outputs, 1)
                     for i in range(len(labels)):
                         correct[labels[i]][preds[i]] += 1
+                        if labels[i] != preds[i]:
+                            print(text_holder.get(data.text[i][0]))
 
                     if phase == 'train':
                         loss.backward()
@@ -82,7 +85,8 @@ def train(net, target, display_labels, dataloaders_dict, batch_size, criterion, 
 
 
 def cmd_train_cataloger(args):
-    td = CatalogerDataset(path=args.input)
+    text_holder = TextHolder()
+    td = CatalogerDataset(path=args.input, text_holder=text_holder)
     training_data, validation_data = td.split(
         split_ratio=0.8, random_state=random.seed(1234))
 
@@ -100,7 +104,7 @@ def cmd_train_cataloger(args):
             net.load_state_dict(torch.load(model_path))
             optimizer = optim.Adam(net.parameters(), lr=5e-5)
             criterion = nn.CrossEntropyLoss()
-            train(net, target, display_labels, dataloaders_dict,
+            train(net, target, display_labels, text_holder, dataloaders_dict,
                   batch_size, criterion, optimizer, 1)
         return
 
@@ -121,7 +125,7 @@ def cmd_train_cataloger(args):
 
         optimizer = optim.Adam(net.parameters(), lr=5e-5)
         criterion = nn.CrossEntropyLoss()
-        train(net, target, display_labels, dataloaders_dict,
+        train(net, target, display_labels, text_holder, dataloaders_dict,
               batch_size, criterion, optimizer, 10)
 
         if model_path is not None:

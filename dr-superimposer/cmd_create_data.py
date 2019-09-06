@@ -6,7 +6,6 @@ import re
 import json
 from itertools import permutations
 from extractor import Extractor
-from dataset.cataloger_dataset import CatalogerDataset
 
 base = os.path.dirname(os.path.abspath(__file__))
 INPUT_INTENT_SOURCE = os.path.normpath(
