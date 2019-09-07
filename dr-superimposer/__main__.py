@@ -4,6 +4,7 @@ from cmd_train_cataloger import cmd_train_cataloger
 from cmd_eval_cataloger import cmd_eval_cataloger
 from cmd_train_superimposer import cmd_train_superimposer
 from cmd_eval_superimposer import cmd_eval_superimposer
+from cmd_eval_repl import cmd_eval_repl
 from cmd_create_data import cmd_create_all
 from cmd_create_data import cmd_create_superimposer
 
@@ -82,6 +83,19 @@ def main():
                          default="dr-superimposer/data/data_cataloger.tsv")
         sub.set_defaults(handler=cmd_create_superimposer)
     mode_create_superimposer()
+
+    def mode_eval_repl():
+        sub = subparser.add_parser('eval:repl')
+        sub.add_argument('--model', type=Path,
+                         default="dr-superimposer/model/model_superimposer.pth")
+        sub.add_argument('--model_intent', type=Path,
+                         default="dr-superimposer/model/model_intent.pth")
+        sub.add_argument('--model_place', type=Path,
+                         default="dr-superimposer/model/model_place.pth")
+        sub.add_argument('--model_datetime', type=Path,
+                         default="dr-superimposer/model/model_datetime.pth")
+        sub.set_defaults(handler=cmd_eval_repl)
+    mode_eval_repl()
 
     def mode_help():
         sub = subparser.add_parser('help')
