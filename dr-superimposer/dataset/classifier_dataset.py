@@ -8,9 +8,9 @@ from .fields import TextField
 from .fields import DrField
 
 
-class CatalogerDataset(torchtext.data.TabularDataset):
+class ClassifierDataset(torchtext.data.TabularDataset):
     def __init__(self, path, text_holder):
-        super(CatalogerDataset, self).__init__(path=path, format='tsv', fields=[
+        super(ClassifierDataset, self).__init__(path=path, format='tsv', fields=[
             ('intent', IntentField()),
             ('place', PlaceField()),
             ('datetime', DatetimeField()),

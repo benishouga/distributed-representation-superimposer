@@ -10,9 +10,9 @@ from torch import nn
 from torch import optim
 import torchtext
 
-from cataloger import Cataloger
+from classifier import Classifier
 from dataset.text_holder import TextHolder
-from dataset.cataloger_dataset import CatalogerDataset
+from dataset.classifier_dataset import ClassifierDataset
 
 
 def train(net, target, display_labels, text_holder, dataloaders_dict, batch_size, criterion, optimizer, num_epochs):
@@ -84,9 +84,9 @@ def train(net, target, display_labels, text_holder, dataloaders_dict, batch_size
     return net
 
 
-def cmd_train_cataloger(args):
+def cmd_train_classifier(args):
     text_holder = TextHolder()
-    td = CatalogerDataset(path=args.input, text_holder=text_holder)
+    td = ClassifierDataset(path=args.input, text_holder=text_holder)
     training_data, validation_data = td.split(
         split_ratio=0.8, random_state=random.seed(1234))
 
@@ -100,7 +100,7 @@ def cmd_train_cataloger(args):
             print("----{}----".format(target))
             model_path = getattr(args, "model_" + target)
             display_labels = td.fields[target].labels
-            net = Cataloger(catalog_features=len(display_labels))
+            net = Classifier(catalog_features=len(display_labels))
             net.load_state_dict(torch.load(model_path))
             optimizer = optim.Adam(net.parameters(), lr=5e-5)
             criterion = nn.CrossEntropyLoss()
@@ -119,7 +119,7 @@ def cmd_train_cataloger(args):
         model_path = getattr(args, "model_" + target)
 
         display_labels = td.fields[target].labels
-        net = Cataloger(catalog_features=len(display_labels))
+        net = Classifier(catalog_features=len(display_labels))
         if model_path is not None and os.path.exists(model_path):
             net.load_state_dict(torch.load(model_path))
 

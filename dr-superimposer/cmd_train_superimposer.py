@@ -10,21 +10,21 @@ from torch import nn
 from torch import optim
 import torchtext
 
-from cataloger import Cataloger
+from classifier import Classifier
 from superimposer import Superimposer
 
 from dataset.text_holder import TextHolder
 from dataset.superimposer_dataset import SuperimposerDataset
 
 
-def train(net, catalogers, text_holder, dataloaders_dict, batch_size, criterion, optimizer, num_epochs):
+def train(net, classifiers, text_holder, dataloaders_dict, batch_size, criterion, optimizer, num_epochs):
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
     net.to(device)
-    for cataloger_name in catalogers:
-        cataloger_net = catalogers[cataloger_name]["net"]
-        cataloger_net.to(device)
-        cataloger_net.eval()
+    for classifier_name in classifiers:
+        classifier_net = classifiers[classifier_name]["net"]
+        classifier_net.to(device)
+        classifier_net.eval()
 
     torch.backends.cudnn.benchmark = True
 
@@ -36,10 +36,10 @@ def train(net, catalogers, text_holder, dataloaders_dict, batch_size, criterion,
                 net.eval()
 
             corrects = {}
-            for cataloger_name in catalogers:
-                display_label = catalogers[cataloger_name]["display_labels"]
+            for classifier_name in classifiers:
+                display_label = classifiers[classifier_name]["display_labels"]
                 labels_length = len(display_label)
-                corrects[cataloger_name] = np.zeros(
+                corrects[classifier_name] = np.zeros(
                     [labels_length, labels_length], dtype=int)
 
             epoch_loss = 0.0
@@ -61,16 +61,16 @@ def train(net, catalogers, text_holder, dataloaders_dict, batch_size, criterion,
                     loss = 0
                     preds = {}
                     acc = 0
-                    for cataloger_name in catalogers:
-                        labels = getattr(data, cataloger_name).to(device)
-                        o = catalogers[cataloger_name]["net"](outputs)
+                    for classifier_name in classifiers:
+                        labels = getattr(data, classifier_name).to(device)
+                        o = classifiers[classifier_name]["net"](outputs)
                         labels = labels.squeeze(1)
                         loss += criterion(o, labels)
                         _, preds = torch.max(o, 1)
                         acc += (torch.sum(preds == labels.data)
                                 ).double()/batch_size
 
-                        correct = corrects[cataloger_name]
+                        correct = corrects[classifier_name]
                         for i in range(len(labels)):
                             correct[labels[i]][preds[i]] += 1
                             if labels[i] != preds[i]:
@@ -83,7 +83,7 @@ def train(net, catalogers, text_holder, dataloaders_dict, batch_size, criterion,
                         if (iteration % 100 == 0):
                             t_iter_finish = time.time()
                             duration = t_iter_finish - t_iter_start
-                            acc = acc / len(catalogers)
+                            acc = acc / len(classifiers)
                             print('Iteration: {} || Loss: {:.4f} || {:.4f} sec. || Acc：{}'.format(
                                 iteration, loss.item(), duration, acc))
 
@@ -101,10 +101,10 @@ def train(net, catalogers, text_holder, dataloaders_dict, batch_size, criterion,
             print('Epoch {}/{} | {:^5} |  Loss: {:.4f} Acc: {:.4f}'.format(epoch+1, num_epochs,
                                                                            phase, epoch_loss, epoch_acc))
 
-            for cataloger_name in catalogers:
-                print("----{}----".format(cataloger_name))
-                print(catalogers[cataloger_name]["display_labels"].keys())
-                print(corrects[cataloger_name])
+            for classifier_name in classifiers:
+                print("----{}----".format(classifier_name))
+                print(classifiers[classifier_name]["display_labels"].keys())
+                print(corrects[classifier_name])
 
 
     return net
@@ -118,13 +118,13 @@ def cmd_train_superimposer(args):
 
     batch_size = 32
 
-    catalogers = {}
+    classifiers = {}
     for target in ("intent", "place", "datetime"):
-        cataloger_model_path = getattr(args, "model_" + target)
+        classifier_model_path = getattr(args, "model_" + target)
         display_labels = td.fields[target].labels
-        net = Cataloger(catalog_features=len(display_labels))
-        net.load_state_dict(torch.load(cataloger_model_path))
-        catalogers[target] = {"net": net, "display_labels": display_labels}
+        net = Classifier(catalog_features=len(display_labels))
+        net.load_state_dict(torch.load(classifier_model_path))
+        classifiers[target] = {"net": net, "display_labels": display_labels}
 
     if args.validation_only == True:
         dataloaders_dict = {
@@ -136,7 +136,7 @@ def cmd_train_superimposer(args):
 
         optimizer = optim.Adam(net.parameters(), lr=5e-5)
         criterion = nn.CrossEntropyLoss()
-        train(net, catalogers, text_holder, dataloaders_dict,
+        train(net, classifiers, text_holder, dataloaders_dict,
               batch_size, criterion, optimizer, 1)
 
         return
@@ -153,7 +153,7 @@ def cmd_train_superimposer(args):
 
     optimizer = optim.Adam(net.parameters(), lr=5e-5)
     criterion = nn.CrossEntropyLoss()
-    train(net, catalogers, text_holder, dataloaders_dict,
+    train(net, classifiers, text_holder, dataloaders_dict,
           batch_size, criterion, optimizer, 10)
 
     if model_path is not None:

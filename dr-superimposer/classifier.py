@@ -2,9 +2,9 @@ import torch
 from torch import nn
 from torch.functional import F
 
-class Cataloger(nn.Module):
+class Classifier(nn.Module):
     def __init__(self, catalog_features, hidden_units=768):
-        super(Cataloger, self).__init__()
+        super(Classifier, self).__init__()
 
         self.l1 = nn.Linear(in_features=768, out_features=hidden_units)
         self.l2 = nn.Linear(in_features=hidden_units,

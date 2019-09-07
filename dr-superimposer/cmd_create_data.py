@@ -14,8 +14,8 @@ INPUT_INTENT_SOURCE = os.path.normpath(
 INPUT_OTHER_SOURCE = os.path.normpath(
     os.path.join(base, "./data/source/others.txt"))
 
-OUTPUT_CATALOGER = os.path.normpath(
-    os.path.join(base, "./data/data_cataloger.tsv"))
+OUTPUT_CLASSIFIER = os.path.normpath(
+    os.path.join(base, "./data/data_classifier.tsv"))
 
 OUTPUT_SUPERIMPOSER = os.path.normpath(
     os.path.join(base, "./data/data_superimposer.tsv"))
@@ -217,7 +217,7 @@ def cmd_create_all(args):
     for value in result:
         value.dr = [format(v, 'e') for v in extractor.extract(value.text)]
 
-    with open(OUTPUT_CATALOGER, "w") as out_file:
+    with open(OUTPUT_CLASSIFIER, "w") as out_file:
         contents = []
         for value in result:
             contents.append("\t".join([

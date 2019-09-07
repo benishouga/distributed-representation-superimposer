@@ -8,7 +8,7 @@ from torch import nn
 from torch import optim
 import torchtext
 
-from cataloger import Cataloger
+from classifier import Classifier
 from superimposer import Superimposer
 from dataset.fields import field_labels
 
@@ -31,7 +31,7 @@ def cmd_eval_superimposer(args):
     for target in ("intent", "place", "datetime"):
         model_path = getattr(args, "model_" + target)
 
-        net = Cataloger(catalog_features=len(field_labels[target]))
+        net = Classifier(catalog_features=len(field_labels[target]))
         net.load_state_dict(torch.load(model_path))
         net.to(device)
         net.eval()

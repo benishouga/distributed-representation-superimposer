@@ -1,7 +1,7 @@
 from argparse import ArgumentParser
 from pathlib import Path
-from cmd_train_cataloger import cmd_train_cataloger
-from cmd_eval_cataloger import cmd_eval_cataloger
+from cmd_train_classifier import cmd_train_classifier
+from cmd_eval_classifier import cmd_eval_classifier
 from cmd_train_superimposer import cmd_train_superimposer
 from cmd_eval_superimposer import cmd_eval_superimposer
 from cmd_eval_repl import cmd_eval_repl
@@ -17,8 +17,8 @@ def main():
     parser = ArgumentParser()
     subparser = parser.add_subparsers()
 
-    def mode_train_cataloger():
-        sub = subparser.add_parser('train:cataloger')
+    def mode_train_classifier():
+        sub = subparser.add_parser('train:classifier')
         sub.add_argument('--input', type=Path, required=True)
         sub.add_argument('--model_intent', type=Path,
                          default="dr-superimposer/model/model_intent.pth")
@@ -27,11 +27,11 @@ def main():
         sub.add_argument('--model_datetime', type=Path,
                          default="dr-superimposer/model/model_datetime.pth")
         sub.add_argument('--validation-only', action='store_true')
-        sub.set_defaults(handler=cmd_train_cataloger)
-    mode_train_cataloger()
+        sub.set_defaults(handler=cmd_train_classifier)
+    mode_train_classifier()
 
-    def mode_eval_cataloger():
-        sub = subparser.add_parser('eval:cataloger')
+    def mode_eval_classifier():
+        sub = subparser.add_parser('eval:classifier')
         sub.add_argument('--text', type=str, required=True)
         sub.add_argument('--model_intent', type=Path,
                          default="dr-superimposer/model/model_intent.pth")
@@ -39,8 +39,8 @@ def main():
                          default="dr-superimposer/model/model_place.pth")
         sub.add_argument('--model_datetime', type=Path,
                          default="dr-superimposer/model/model_datetime.pth")
-        sub.set_defaults(handler=cmd_eval_cataloger)
-    mode_eval_cataloger()
+        sub.set_defaults(handler=cmd_eval_classifier)
+    mode_eval_classifier()
 
     def mode_train_superimposer():
         sub = subparser.add_parser('train:superimposer')
@@ -80,7 +80,7 @@ def main():
     def mode_create_superimposer():
         sub = subparser.add_parser('create:superimposer')
         sub.add_argument('--input', type=Path,
-                         default="dr-superimposer/data/data_cataloger.tsv")
+                         default="dr-superimposer/data/data_classifier.tsv")
         sub.set_defaults(handler=cmd_create_superimposer)
     mode_create_superimposer()
 

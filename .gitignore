@@ -124,6 +124,6 @@ dmypy.json
 .pyre/
 
 dr-superimposer/data/source/projectnextnlp-chat-dialogue-corpus
-dr-superimposer/data/data_cataloger.tsv
+dr-superimposer/data/data_classifier.tsv
 dr-superimposer/data/data_superimposer.tsv
 
