@@ -74,7 +74,8 @@ def train(net, classifiers, text_holder, dataloaders_dict, batch_size, criterion
                         for i in range(len(labels)):
                             correct[labels[i]][preds[i]] += 1
                             if labels[i] != preds[i]:
-                                print(text_holder.get(data.text1[i][0]) + ", " + text_holder.get(data.text2[i][0]))
+                                print(text_holder.get(
+                                    data.text1[i][0]) + ", " + text_holder.get(data.text2[i][0]))
 
                     if phase == 'train':
                         loss.backward()
@@ -105,7 +106,6 @@ def train(net, classifiers, text_holder, dataloaders_dict, batch_size, criterion
                 print("----{}----".format(classifier_name))
                 print(classifiers[classifier_name]["display_labels"].keys())
                 print(corrects[classifier_name])
-
 
     return net
 

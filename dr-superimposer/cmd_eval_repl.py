@@ -17,6 +17,8 @@ from extractor import Extractor
 
 def cmd_eval_repl(args):
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+    extractor = Extractor('../Japanese_L-12_H-768_A-12_E-30_BPE/')
+
     net_superimposer = Superimposer()
     net_superimposer.load_state_dict(torch.load(args.model))
     net_superimposer.to(device)
@@ -34,11 +36,17 @@ def cmd_eval_repl(args):
 
     prev_dr = None
     first = True
+
     while True:
         print("> ", end='')
         input_text = input()
 
-        extractor = Extractor('../Japanese_L-12_H-768_A-12_E-30_BPE/')
+        if input_text == "exit":
+            break
+
+        if input_text == "reset":
+            first = True
+            continue
 
         next_dr = torch.FloatTensor([extractor.extract(input_text)])
 
