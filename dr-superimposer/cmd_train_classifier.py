@@ -15,7 +15,7 @@ from dataset.text_holder import TextHolder
 from dataset.classifier_dataset import ClassifierDataset
 
 
-def train(net, target, display_labels, text_holder, dataloaders_dict, batch_size, criterion, optimizer, num_epochs):
+def train(net, target, display_labels, text_holder, dataloaders_dict, batch_size, criterion, optimizer, num_epochs, validation_only=False):
     labels_length = len(display_labels)
 
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -36,7 +36,6 @@ def train(net, target, display_labels, text_holder, dataloaders_dict, batch_size
             epoch_corrects = 0
             iteration = 1
 
-            t_epoch_start = time.time()
             t_iter_start = time.time()
 
             for data in dataloaders_dict[phase]:
@@ -52,7 +51,7 @@ def train(net, target, display_labels, text_holder, dataloaders_dict, batch_size
                     _, preds = torch.max(outputs, 1)
                     for i in range(len(labels)):
                         correct[labels[i]][preds[i]] += 1
-                        if labels[i] != preds[i]:
+                        if labels[i] != preds[i] and validation_only:
                             print(text_holder.get(data.text[i][0]))
 
                     if phase == 'train':
@@ -105,7 +104,7 @@ def cmd_train_classifier(args):
             optimizer = optim.Adam(net.parameters(), lr=5e-5)
             criterion = nn.CrossEntropyLoss()
             train(net, target, display_labels, text_holder, dataloaders_dict,
-                  batch_size, criterion, optimizer, 1)
+                  batch_size, criterion, optimizer, 1, True)
         return
 
     dataloaders_dict = {

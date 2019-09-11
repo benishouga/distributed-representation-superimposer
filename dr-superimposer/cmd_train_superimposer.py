@@ -17,7 +17,7 @@ from dataset.text_holder import TextHolder
 from dataset.superimposer_dataset import SuperimposerDataset
 
 
-def train(net, classifiers, text_holder, dataloaders_dict, batch_size, criterion, optimizer, num_epochs):
+def train(net, classifiers, text_holder, dataloaders_dict, batch_size, criterion, optimizer, num_epochs, validation_only=False):
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
     net.to(device)
@@ -46,7 +46,6 @@ def train(net, classifiers, text_holder, dataloaders_dict, batch_size, criterion
             epoch_corrects = 0
             iteration = 1
 
-            t_epoch_start = time.time()
             t_iter_start = time.time()
 
             batches = dataloaders_dict[phase]
@@ -73,9 +72,9 @@ def train(net, classifiers, text_holder, dataloaders_dict, batch_size, criterion
                         correct = corrects[classifier_name]
                         for i in range(len(labels)):
                             correct[labels[i]][preds[i]] += 1
-                            if labels[i] != preds[i]:
+                            if labels[i] != preds[i] and validation_only:
                                 print(text_holder.get(
-                                    data.text1[i][0]) + ", " + text_holder.get(data.text2[i][0]))
+                                    data.text1[i][0]) + "\t" + text_holder.get(data.text2[i][0]))
 
                     if phase == 'train':
                         loss.backward()
@@ -137,7 +136,7 @@ def cmd_train_superimposer(args):
         optimizer = optim.Adam(net.parameters(), lr=5e-5)
         criterion = nn.CrossEntropyLoss()
         train(net, classifiers, text_holder, dataloaders_dict,
-              batch_size, criterion, optimizer, 1)
+              batch_size, criterion, optimizer, 1, True)
 
         return
 

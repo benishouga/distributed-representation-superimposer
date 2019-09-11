@@ -68,11 +68,12 @@ STATION = load_file(os.path.join(base, "./data/source/station.txt"))
 def get_place():
     result = []
     result.extend(PLACES)
-    for n in range(2):
+    for n in range(3):
         result.append(Attribute("place", "geographical_names",
                                 random.choice(GEOGRAPHICAL_NAMES)))
-    for n in range(2):
-        result.append(Attribute("place", "station", random.choice(STATION)))
+    # FIXME: disabled station...
+    # for n in range(2):
+    #     result.append(Attribute("place", "station", random.choice(STATION)))
     return result
 
 
@@ -175,26 +176,51 @@ def build(text):
 
 
 def save_superimposer(result):
+    standards = []
+    continues = []
+    others = []
+    for item in result:
+        if item.intent == "continue":
+            continues.append(item)
+        elif item.intent == "other":
+            others.append(item)
+        else:
+            standards.append(item)
+
+    print("standards", len(standards))
+    print("continues", len(continues))
+    print("others", len(others))
+
     with open(OUTPUT_SUPERIMPOSER, "w") as out_file:
         for one in result:
-            for i in range(3):
-                two = random.choice(result)
-                expect = {
-                    "intent": one.intent if two.intent == "continue" else two.intent,
-                    "place": one.place if two.place is None else two.place,
-                    "datetime": one.datetime if two.datetime is None else two.datetime
-                }
-                onedr = ",".join(one.dr)
-                twodr = ",".join(two.dr)
-                out_file.write("\t".join([
-                    expect["intent"],
-                    expect["place"] or "",
-                    expect["datetime"] or "",
-                    one.text,
-                    onedr,
-                    two.text,
-                    twodr
-                ]) + "\n")
+            for i in range(2):
+                two = random.choice(standards)
+                write_superimposer_row(out_file, one, two)
+            for i in range(1):
+                two = random.choice(others)
+                write_superimposer_row(out_file, one, two)
+            for i in range(2):
+                two = random.choice(continues)
+                write_superimposer_row(out_file, one, two)
+
+
+def write_superimposer_row(out_file, one, two):
+    expect = {
+        "intent": one.intent if two.intent == "continue" else two.intent,
+        "place": one.place if two.place is None else two.place,
+        "datetime": one.datetime if two.datetime is None else two.datetime
+    }
+    onedr = ",".join(one.dr)
+    twodr = ",".join(two.dr)
+    out_file.write("\t".join([
+        expect["intent"],
+        expect["place"] or "",
+        expect["datetime"] or "",
+        one.text,
+        onedr,
+        two.text,
+        twodr
+    ]) + "\n")
 
 
 def cmd_create_all(args):
@@ -208,14 +234,24 @@ def cmd_create_all(args):
     for other in others:
         result.append(Intent(other, "other"))
 
-    # # 10件だけ試す
+    print("total", len(result))
+
+    # # Try some items..
     # random.shuffle(result)
-    # result = result[0:10]
+    # result = result[0:110]
 
     extractor = Extractor('../Japanese_L-12_H-768_A-12_E-30_BPE/')
 
+    total = len(result)
+    i = 0
+    print("extracting start")
+    start_time = time.time()
     for value in result:
+        i += 1
         value.dr = [format(v, 'e') for v in extractor.extract(value.text)]
+        if i % 100 == 0 or i == total:
+            print("{} / {}".format(i, total))
+    print("extracting finish ({:.4f} sec)".format(time.time() - start_time))
 
     with open(OUTPUT_CLASSIFIER, "w") as out_file:
         contents = []
