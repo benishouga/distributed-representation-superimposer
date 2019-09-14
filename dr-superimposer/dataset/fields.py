@@ -27,8 +27,7 @@ field_labels = {
         "next_week": 8,
         "next_month": 9,
         "now": 10,
-        "next_year": 11,
-        "absolute": 12
+        "absolute": 11
     }
 }
 

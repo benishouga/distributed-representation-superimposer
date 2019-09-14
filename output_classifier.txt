@@ -1,713 +1,723 @@
 ----intent----
-Iteration: 100 || Loss: 0.3586 || 0.8986 sec. || Acc：0.96875
-Iteration: 200 || Loss: 0.2098 || 1.7390 sec. || Acc：0.9375
-Iteration: 300 || Loss: 0.1861 || 2.6388 sec. || Acc：0.96875
-Iteration: 400 || Loss: 0.0699 || 3.5465 sec. || Acc：1.0
-Iteration: 500 || Loss: 0.1526 || 4.4052 sec. || Acc：0.9375
-Epoch 1/10 | train |  Loss: 0.3267 Acc: 0.8986
+Iteration: 100 || Loss: 0.4855 || 0.9064 sec. || Acc：0.90625
+Iteration: 200 || Loss: 0.1662 || 1.7546 sec. || Acc：0.96875
+Iteration: 300 || Loss: 0.1923 || 2.6128 sec. || Acc：0.96875
+Iteration: 400 || Loss: 0.1638 || 3.4567 sec. || Acc：0.9375
+Iteration: 500 || Loss: 0.2182 || 4.3043 sec. || Acc：0.9375
+Iteration: 600 || Loss: 0.0675 || 5.1562 sec. || Acc：1.0
+Epoch 1/10 | train |  Loss: 0.3381 Acc: 0.8960
 dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
 [[   0    0    0    0    0]
- [   0  833  233  735    0]
- [   2   30 6870  579    0]
- [   0   56   71 9514    0]
- [   0   29  112   95    0]]
-Epoch 1/10 |  val  |  Loss: 0.1046 Acc: 0.9668
+ [   2  844  205  830    4]
+ [   8   22 6479  536    6]
+ [  13   34  115 9903   11]
+ [   0   18   91  104    1]]
+Epoch 1/10 |  val  |  Loss: 0.0977 Acc: 0.9734
 dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
 [[   0    0    0    0    0]
- [   0  379    3   31    0]
- [   0   14 1784   14    0]
- [   0   24    5 2468    0]
- [   0   17   37   14    0]]
-Iteration: 100 || Loss: 0.0972 || 0.8886 sec. || Acc：0.96875
-Iteration: 200 || Loss: 0.0257 || 1.7764 sec. || Acc：1.0
-Iteration: 300 || Loss: 0.0206 || 2.6515 sec. || Acc：1.0
-Iteration: 400 || Loss: 0.1567 || 3.5281 sec. || Acc：0.9375
-Iteration: 500 || Loss: 0.0611 || 4.4042 sec. || Acc：0.96875
-Epoch 2/10 | train |  Loss: 0.0823 Acc: 0.9742
+ [   0  385    4   30    0]
+ [   0    8 1776    7    0]
+ [   0   26    2 2518    0]
+ [   0   10   24   17    0]]
+Iteration: 100 || Loss: 0.0323 || 0.9135 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0515 || 1.8751 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0323 || 190.9354 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0756 || 191.9077 sec. || Acc：0.96875
+Iteration: 500 || Loss: 0.0352 || 193.0461 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0239 || 194.1214 sec. || Acc：1.0
+Epoch 2/10 | train |  Loss: 0.0754 Acc: 0.9768
+dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
+[[    0     0     0     0     0]
+ [    0  1741    19   125     0]
+ [    0    16  6994    41     0]
+ [    0    41    13 10022     0]
+ [    0    36   106    49    23]]
+Epoch 2/10 |  val  |  Loss: 0.0447 Acc: 0.9894
 dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
 [[   0    0    0    0    0]
- [   0 1651   27  122    1]
- [   0   31 7408   41    1]
- [   0   58   16 9567    0]
- [   0   44  119   35   38]]
-Epoch 2/10 |  val  |  Loss: 0.0525 Acc: 0.9833
+ [   0  413    2    4    0]
+ [   0    5 1778    4    4]
+ [   0   12    1 2533    0]
+ [   0    3   13    3   32]]
+Iteration: 100 || Loss: 0.0240 || 1.1220 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0449 || 2.2148 sec. || Acc：0.96875
+Iteration: 300 || Loss: 0.0262 || 3.3004 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0605 || 4.3389 sec. || Acc：0.96875
+Iteration: 500 || Loss: 0.0141 || 5.4183 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0128 || 6.6747 sec. || Acc：1.0
+Epoch 3/10 | train |  Loss: 0.0418 Acc: 0.9870
+dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
+[[    0     0     0     0     0]
+ [    0  1828    12    43     2]
+ [    0    12  7010    21     8]
+ [    0    24    13 10037     2]
+ [    0    23    70    19   102]]
+Epoch 3/10 |  val  |  Loss: 0.0298 Acc: 0.9908
 dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
 [[   0    0    0    0    0]
- [   0  403    3    7    0]
- [   0    2 1800    9    1]
- [   0   12    5 2480    0]
- [   0    4   33    4   27]]
-Iteration: 100 || Loss: 0.0111 || 0.8862 sec. || Acc：1.0
-Iteration: 200 || Loss: 0.0083 || 1.7752 sec. || Acc：1.0
-Iteration: 300 || Loss: 0.0321 || 2.6670 sec. || Acc：1.0
-Iteration: 400 || Loss: 0.0941 || 3.5540 sec. || Acc：0.96875
-Iteration: 500 || Loss: 0.0930 || 4.4340 sec. || Acc：0.90625
-Epoch 3/10 | train |  Loss: 0.0506 Acc: 0.9837
+ [   0  415    3    1    0]
+ [   0    1 1785    2    3]
+ [   0    9    2 2534    1]
+ [   0    3   17    2   29]]
+Iteration: 100 || Loss: 0.0377 || 1.4239 sec. || Acc：0.96875
+Iteration: 200 || Loss: 0.0037 || 2.4504 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0091 || 3.5752 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.1149 || 4.6571 sec. || Acc：0.96875
+Iteration: 500 || Loss: 0.0021 || 5.7804 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0031 || 6.8567 sec. || Acc：1.0
+Epoch 4/10 | train |  Loss: 0.0270 Acc: 0.9925
+dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
+[[    0     0     0     0     0]
+ [    0  1860     7    17     1]
+ [    0     8  7012    21    10]
+ [    0    21     7 10048     0]
+ [    0    10    36     7   161]]
+Epoch 4/10 |  val  |  Loss: 0.0198 Acc: 0.9942
 dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
 [[   0    0    0    0    0]
- [   0 1729   16   54    2]
- [   0   19 7420   27   15]
- [   0   43   13 9585    0]
- [   0   20   85   19  112]]
-Epoch 3/10 |  val  |  Loss: 0.0384 Acc: 0.9877
+ [   0  415    1    3    0]
+ [   0    2 1783    3    3]
+ [   0    0    1 2545    0]
+ [   0    2   11    2   36]]
+Iteration: 100 || Loss: 0.0066 || 0.9607 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0213 || 1.9018 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0029 || 2.8506 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0044 || 3.7766 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0222 || 4.7051 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0042 || 5.6341 sec. || Acc：1.0
+Epoch 5/10 | train |  Loss: 0.0197 Acc: 0.9940
+dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
+[[    0     0     0     0     0]
+ [    0  1859     8    15     3]
+ [    0     6  7023    11    11]
+ [    0    15     4 10057     0]
+ [    0     6    31     6   171]]
+Epoch 5/10 |  val  |  Loss: 0.0214 Acc: 0.9936
 dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
 [[   0    0    0    0    0]
- [   0  403    3    7    0]
- [   0    2 1799   10    1]
- [   0    3    2 2492    0]
- [   0    2   25    4   37]]
-Iteration: 100 || Loss: 0.1006 || 0.8765 sec. || Acc：0.96875
-Iteration: 200 || Loss: 0.0026 || 1.7451 sec. || Acc：1.0
-Iteration: 300 || Loss: 0.1378 || 2.6088 sec. || Acc：0.96875
-Iteration: 400 || Loss: 0.0030 || 3.4824 sec. || Acc：1.0
-Iteration: 500 || Loss: 0.0350 || 4.3601 sec. || Acc：0.96875
-Epoch 4/10 | train |  Loss: 0.0365 Acc: 0.9878
+ [   0  419    0    0    0]
+ [   0    5 1772    5    9]
+ [   0    3    1 2542    0]
+ [   0    1    5    2   43]]
+Iteration: 100 || Loss: 0.0484 || 0.9567 sec. || Acc：0.96875
+Iteration: 200 || Loss: 0.0071 || 1.9132 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0048 || 2.9684 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0102 || 4.0687 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0214 || 5.1699 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0021 || 6.2668 sec. || Acc：1.0
+Epoch 6/10 | train |  Loss: 0.0163 Acc: 0.9945
+dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
+[[    0     0     0     0     0]
+ [    0  1859     9    16     1]
+ [    0     3  7026    14     8]
+ [    0    13     6 10056     1]
+ [    0     7    24     4   179]]
+Epoch 6/10 |  val  |  Loss: 0.0151 Acc: 0.9954
 dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
 [[   0    0    0    0    0]
- [   0 1750   16   34    1]
- [   0   14 7427   24   16]
- [   0   33    6 9602    0]
- [   0   15   66    9  146]]
-Epoch 4/10 |  val  |  Loss: 0.0291 Acc: 0.9906
+ [   0  412    2    5    0]
+ [   0    0 1786    2    3]
+ [   0    0    1 2545    0]
+ [   0    0    9    0   42]]
+Iteration: 100 || Loss: 0.0416 || 0.9571 sec. || Acc：0.96875
+Iteration: 200 || Loss: 0.0027 || 1.9055 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0243 || 2.8705 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0093 || 3.8431 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0027 || 4.8027 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0016 || 5.7706 sec. || Acc：1.0
+Epoch 7/10 | train |  Loss: 0.0121 Acc: 0.9966
+dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
+[[    0     0     0     0     0]
+ [    0  1873     3     8     1]
+ [    0     2  7034     6     9]
+ [    0     8     4 10063     1]
+ [    0     3    18     3   190]]
+Epoch 7/10 |  val  |  Loss: 0.0124 Acc: 0.9954
 dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
 [[   0    0    0    0    0]
- [   0  410    2    1    0]
- [   0    2 1805    4    1]
- [   0    6    3 2488    0]
- [   0    2   22    2   42]]
-Iteration: 100 || Loss: 0.0634 || 0.9929 sec. || Acc：0.96875
-Iteration: 200 || Loss: 0.0363 || 2.0110 sec. || Acc：0.96875
-Iteration: 300 || Loss: 0.0159 || 2.9901 sec. || Acc：1.0
-Iteration: 400 || Loss: 0.0018 || 3.8989 sec. || Acc：1.0
-Iteration: 500 || Loss: 0.0018 || 4.7953 sec. || Acc：1.0
-Epoch 5/10 | train |  Loss: 0.0278 Acc: 0.9915
+ [   0  417    1    1    0]
+ [   0    3 1779    3    6]
+ [   0    2    1 2543    0]
+ [   0    0    5    0   46]]
+Iteration: 100 || Loss: 0.0005 || 1.1047 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0047 || 2.0749 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0007 || 3.0339 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0190 || 3.9918 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0590 || 4.9465 sec. || Acc：0.96875
+Iteration: 600 || Loss: 0.0011 || 5.8913 sec. || Acc：1.0
+Epoch 8/10 | train |  Loss: 0.0094 Acc: 0.9969
+dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
+[[    0     0     0     0     0]
+ [    0  1878     2     5     0]
+ [    0     5  7027     7    12]
+ [    0     7     3 10066     0]
+ [    0     1    16     2   195]]
+Epoch 8/10 |  val  |  Loss: 0.0106 Acc: 0.9965
 dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
 [[   0    0    0    0    0]
- [   0 1773   10   17    1]
- [   0   10 7435   14   22]
- [   0   25    8 9607    1]
- [   0    5   45    5  181]]
-Epoch 5/10 |  val  |  Loss: 0.0312 Acc: 0.9887
+ [   0  418    1    0    0]
+ [   0    1 1784    2    4]
+ [   0    3    1 2542    0]
+ [   0    0    5    0   46]]
+Iteration: 100 || Loss: 0.0035 || 1.0753 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0100 || 2.1327 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0059 || 3.2030 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0266 || 4.2940 sec. || Acc：0.96875
+Iteration: 500 || Loss: 0.0034 || 5.3833 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0083 || 6.4712 sec. || Acc：1.0
+Epoch 9/10 | train |  Loss: 0.0080 Acc: 0.9977
+dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
+[[    0     0     0     0     0]
+ [    0  1876     2     5     2]
+ [    0     1  7038     5     7]
+ [    0     5     2 10068     1]
+ [    0     0    12     2   200]]
+Epoch 9/10 |  val  |  Loss: 0.0099 Acc: 0.9969
 dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
 [[   0    0    0    0    0]
- [   0  397    2   14    0]
- [   0    2 1798   11    1]
- [   0    0    1 2496    0]
- [   0    1   17    5   45]]
-Iteration: 100 || Loss: 0.0102 || 1.0489 sec. || Acc：1.0
-Iteration: 200 || Loss: 0.0310 || 2.0883 sec. || Acc：1.0
-Iteration: 300 || Loss: 0.0034 || 3.1151 sec. || Acc：1.0
-Iteration: 400 || Loss: 0.0163 || 4.1528 sec. || Acc：1.0
-Iteration: 500 || Loss: 0.0205 || 5.1857 sec. || Acc：1.0
-Epoch 6/10 | train |  Loss: 0.0230 Acc: 0.9924
+ [   0  417    1    1    0]
+ [   0    0 1782    2    7]
+ [   0    0    1 2545    0]
+ [   0    0    3    0   48]]
+Iteration: 100 || Loss: 0.0004 || 1.0914 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0002 || 2.2001 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0026 || 3.3026 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0013 || 4.3857 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0107 || 5.4601 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0093 || 6.5142 sec. || Acc：1.0
+Epoch 10/10 | train |  Loss: 0.0076 Acc: 0.9974
+dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
+[[    0     0     0     0     0]
+ [    0  1874     5     6     0]
+ [    0     2  7035     5     9]
+ [    0     7     3 10066     0]
+ [    0     1    11     1   201]]
+Epoch 10/10 |  val  |  Loss: 0.0082 Acc: 0.9969
 dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
 [[   0    0    0    0    0]
- [   0 1777    7   15    2]
- [   0   10 7439   15   17]
- [   0   21    9 9610    1]
- [   0    6   42    1  187]]
-Epoch 6/10 |  val  |  Loss: 0.0217 Acc: 0.9927
-dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
-[[   0    0    0    0    0]
- [   0  409    1    3    0]
- [   0    3 1797    9    3]
- [   0    1    1 2495    0]
- [   0    2   10    2   54]]
-Iteration: 100 || Loss: 0.0098 || 1.0687 sec. || Acc：1.0
-Iteration: 200 || Loss: 0.0152 || 2.1346 sec. || Acc：1.0
-Iteration: 300 || Loss: 0.0290 || 3.1958 sec. || Acc：0.96875
-Iteration: 400 || Loss: 0.0074 || 4.2625 sec. || Acc：1.0
-Iteration: 500 || Loss: 0.0033 || 5.3303 sec. || Acc：1.0
-Epoch 7/10 | train |  Loss: 0.0202 Acc: 0.9935
-dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
-[[   0    0    0    0    0]
- [   0 1778    8   14    1]
- [   0   12 7444   10   15]
- [   0   23    4 9614    0]
- [   0    2   28    8  198]]
-Epoch 7/10 |  val  |  Loss: 0.0169 Acc: 0.9948
-dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
-[[   0    0    0    0    0]
- [   0  409    1    3    0]
- [   0    2 1801    4    5]
- [   0    0    2 2495    0]
- [   0    0    6    2   60]]
-Iteration: 100 || Loss: 0.0524 || 1.0553 sec. || Acc：0.96875
-Iteration: 200 || Loss: 0.0036 || 2.0992 sec. || Acc：1.0
-Iteration: 300 || Loss: 0.0039 || 3.1398 sec. || Acc：1.0
-Iteration: 400 || Loss: 0.0071 || 4.1661 sec. || Acc：1.0
-Iteration: 500 || Loss: 0.0045 || 5.1682 sec. || Acc：1.0
-Epoch 8/10 | train |  Loss: 0.0151 Acc: 0.9954
-dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
-[[   0    0    0    0    0]
- [   0 1784    4   13    0]
- [   0    8 7455    5   13]
- [   0   11    3 9627    0]
- [   0    1   28    3  204]]
-Epoch 8/10 |  val  |  Loss: 0.0158 Acc: 0.9948
-dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
-[[   0    0    0    0    0]
- [   0  412    0    1    0]
- [   0    3 1796    7    6]
- [   0    0    1 2496    0]
- [   0    0    5    2   61]]
-Iteration: 100 || Loss: 0.0016 || 1.0289 sec. || Acc：1.0
-Iteration: 200 || Loss: 0.0280 || 2.0306 sec. || Acc：1.0
-Iteration: 300 || Loss: 0.0015 || 3.0302 sec. || Acc：1.0
-Iteration: 400 || Loss: 0.0010 || 4.0426 sec. || Acc：1.0
-Iteration: 500 || Loss: 0.0002 || 5.0785 sec. || Acc：1.0
-Epoch 9/10 | train |  Loss: 0.0129 Acc: 0.9955
-dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
-[[   0    0    0    0    0]
- [   0 1787    5    8    1]
- [   0    8 7449    9   15]
- [   0   12    4 9625    0]
- [   0    2   22    1  211]]
-Epoch 9/10 |  val  |  Loss: 0.0154 Acc: 0.9946
-dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
-[[   0    0    0    0    0]
- [   0  408    2    3    0]
- [   0    1 1805    4    2]
- [   0    0    2 2495    0]
- [   0    0   11    1   56]]
-Iteration: 100 || Loss: 0.0051 || 1.0569 sec. || Acc：1.0
-Iteration: 200 || Loss: 0.0133 || 2.1116 sec. || Acc：1.0
-Iteration: 300 || Loss: 0.0027 || 3.1294 sec. || Acc：1.0
-Iteration: 400 || Loss: 0.0022 || 4.1184 sec. || Acc：1.0
-Iteration: 500 || Loss: 0.0016 || 5.1584 sec. || Acc：1.0
-Epoch 10/10 | train |  Loss: 0.0117 Acc: 0.9962
-dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
-[[   0    0    0    0    0]
- [   0 1787    2   12    0]
- [   0    2 7461    6   12]
- [   0   10    3 9628    0]
- [   0    1   23    2  210]]
-Epoch 10/10 |  val  |  Loss: 0.0111 Acc: 0.9956
-dict_keys(['unknown', 'continue', 'other', 'weather', 'schedule'])
-[[   0    0    0    0    0]
- [   0  411    2    0    0]
- [   0    1 1806    2    3]
- [   0    1    3 2493    0]
- [   0    0    8    1   59]]
+ [   0  417    1    1    0]
+ [   0    1 1781    2    7]
+ [   0    1    1 2544    0]
+ [   0    0    1    0   50]]
 ----place----
-Iteration: 100 || Loss: 0.6623 || 1.0333 sec. || Acc：0.75
-Iteration: 200 || Loss: 0.6306 || 2.1885 sec. || Acc：0.71875
-Iteration: 300 || Loss: 0.1988 || 3.1553 sec. || Acc：0.96875
-Iteration: 400 || Loss: 0.2152 || 4.0938 sec. || Acc：0.90625
-Iteration: 500 || Loss: 0.1967 || 5.6538 sec. || Acc：0.9375
-Epoch 1/10 | train |  Loss: 0.3935 Acc: 0.8686
+Iteration: 100 || Loss: 0.7580 || 1.0068 sec. || Acc：0.84375
+Iteration: 200 || Loss: 0.3346 || 2.1805 sec. || Acc：0.9375
+Iteration: 300 || Loss: 0.1017 || 3.1585 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.1937 || 4.1333 sec. || Acc：0.9375
+Iteration: 500 || Loss: 0.0476 || 5.1048 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0600 || 6.0773 sec. || Acc：1.0
+Epoch 1/10 | train |  Loss: 0.3876 Acc: 0.8687
 dict_keys(['unknown', 'here', 'working_place', 'school'])
-[[12250   139    24    17]
- [  962  3081     4     5]
- [  577   118   602    41]
- [  494   110    27   708]]
-Epoch 1/10 |  val  |  Loss: 0.0835 Acc: 0.9854
+[[7570  194  133   29]
+ [ 620 3047   60   23]
+ [ 591   58 3049  121]
+ [ 505   72  119 3035]]
+Epoch 1/10 |  val  |  Loss: 0.0658 Acc: 0.9871
 dict_keys(['unknown', 'here', 'working_place', 'school'])
-[[3057   29    6    2]
- [   5  998    0    0]
- [  10    2  335    0]
- [   5    1   10  330]]
-Iteration: 100 || Loss: 0.0927 || 0.9850 sec. || Acc：0.96875
-Iteration: 200 || Loss: 0.0229 || 1.9710 sec. || Acc：1.0
-Iteration: 300 || Loss: 0.0236 || 2.9327 sec. || Acc：1.0
-Iteration: 400 || Loss: 0.0764 || 3.8859 sec. || Acc：0.96875
-Iteration: 500 || Loss: 0.0981 || 4.8731 sec. || Acc：0.96875
-Epoch 2/10 | train |  Loss: 0.0536 Acc: 0.9881
+[[1977    7    7    4]
+ [  21  932    0    1]
+ [   6    3  875    1]
+ [   3    7    2  961]]
+Iteration: 100 || Loss: 0.1217 || 0.9829 sec. || Acc：0.9375
+Iteration: 200 || Loss: 0.0330 || 1.9994 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0475 || 3.0239 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0029 || 4.0301 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0220 || 5.0871 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0671 || 6.0979 sec. || Acc：0.96875
+Epoch 2/10 | train |  Loss: 0.0511 Acc: 0.9890
 dict_keys(['unknown', 'here', 'working_place', 'school'])
-[[12358    44    16    12]
- [   66  3984     2     0]
- [   39     7  1291     1]
- [   29     4     8  1298]]
-Epoch 2/10 |  val  |  Loss: 0.0229 Acc: 0.9967
+[[7818   54   41   13]
+ [  31 3715    3    1]
+ [  20    6 3785    8]
+ [   8   13   14 3696]]
+Epoch 2/10 |  val  |  Loss: 0.0246 Acc: 0.9952
 dict_keys(['unknown', 'here', 'working_place', 'school'])
-[[3085    6    2    1]
- [   2 1001    0    0]
- [   2    0  345    0]
- [   2    0    1  343]]
-Iteration: 100 || Loss: 0.0271 || 0.9865 sec. || Acc：1.0
-Iteration: 200 || Loss: 0.0197 || 1.9454 sec. || Acc：1.0
-Iteration: 300 || Loss: 0.0059 || 2.9475 sec. || Acc：1.0
-Iteration: 400 || Loss: 0.0629 || 3.9824 sec. || Acc：0.96875
-Iteration: 500 || Loss: 0.0805 || 5.0074 sec. || Acc：0.96875
-Epoch 3/10 | train |  Loss: 0.0235 Acc: 0.9950
+[[1983    4    5    3]
+ [   3  951    0    0]
+ [   0    1  882    2]
+ [   3    2    0  968]]
+Iteration: 100 || Loss: 0.0092 || 1.0727 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0334 || 2.1352 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0957 || 3.2134 sec. || Acc：0.96875
+Iteration: 400 || Loss: 0.0118 || 4.2813 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0096 || 5.3410 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0048 || 6.4205 sec. || Acc：1.0
+Epoch 3/10 | train |  Loss: 0.0248 Acc: 0.9946
 dict_keys(['unknown', 'here', 'working_place', 'school'])
-[[12393    20     7    10]
- [   31  4021     0     0]
- [   13     3  1321     1]
- [   10     0     0  1329]]
-Epoch 3/10 |  val  |  Loss: 0.0133 Acc: 0.9969
+[[7873   24   21    8]
+ [  16 3734    0    0]
+ [  10    3 3796   10]
+ [   3    3    5 3720]]
+Epoch 3/10 |  val  |  Loss: 0.0153 Acc: 0.9963
 dict_keys(['unknown', 'here', 'working_place', 'school'])
-[[3088    5    0    1]
- [   4  999    0    0]
- [   4    0  343    0]
- [   1    0    0  345]]
-Iteration: 100 || Loss: 0.0320 || 1.0305 sec. || Acc：1.0
-Iteration: 200 || Loss: 0.0084 || 1.9577 sec. || Acc：1.0
-Iteration: 300 || Loss: 0.0281 || 2.8754 sec. || Acc：1.0
-Iteration: 400 || Loss: 0.0411 || 3.7814 sec. || Acc：1.0
-Iteration: 500 || Loss: 0.0044 || 4.6768 sec. || Acc：1.0
-Epoch 4/10 | train |  Loss: 0.0144 Acc: 0.9970
+[[1985    6    3    1]
+ [   0  954    0    0]
+ [   0    1  882    2]
+ [   1    3    1  968]]
+Iteration: 100 || Loss: 0.0041 || 0.9582 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0135 || 1.9096 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0018 || 2.9693 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0436 || 4.0332 sec. || Acc：0.96875
+Iteration: 500 || Loss: 0.0075 || 5.0926 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0291 || 6.1533 sec. || Acc：1.0
+Epoch 4/10 | train |  Loss: 0.0155 Acc: 0.9966
 dict_keys(['unknown', 'here', 'working_place', 'school'])
-[[12406    14     3     7]
- [   18  4034     0     0]
- [    9     0  1328     1]
- [    4     0     2  1333]]
-Epoch 4/10 |  val  |  Loss: 0.0081 Acc: 0.9981
+[[7895   11   14    6]
+ [  11 3739    0    0]
+ [   7    4 3804    4]
+ [   3    3    2 3723]]
+Epoch 4/10 |  val  |  Loss: 0.0103 Acc: 0.9971
 dict_keys(['unknown', 'here', 'working_place', 'school'])
-[[3088    4    0    2]
- [   0 1003    0    0]
- [   3    0  344    0]
- [   0    0    0  346]]
-Iteration: 100 || Loss: 0.0043 || 0.9213 sec. || Acc：1.0
-Iteration: 200 || Loss: 0.0201 || 1.8162 sec. || Acc：1.0
-Iteration: 300 || Loss: 0.0043 || 2.7166 sec. || Acc：1.0
-Iteration: 400 || Loss: 0.0302 || 3.6120 sec. || Acc：0.96875
-Iteration: 500 || Loss: 0.0180 || 4.5057 sec. || Acc：1.0
-Epoch 5/10 | train |  Loss: 0.0103 Acc: 0.9979
+[[1986    4    4    1]
+ [   0  954    0    0]
+ [   0    0  882    3]
+ [   1    0    1  971]]
+Iteration: 100 || Loss: 0.0033 || 1.0632 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0008 || 2.1590 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0130 || 3.1879 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0659 || 4.2569 sec. || Acc：0.96875
+Iteration: 500 || Loss: 0.0010 || 5.3237 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0049 || 6.3791 sec. || Acc：1.0
+Epoch 5/10 | train |  Loss: 0.0117 Acc: 0.9970
 dict_keys(['unknown', 'here', 'working_place', 'school'])
-[[12410    10     5     5]
- [   12  4040     0     0]
- [    7     0  1331     0]
- [    1     0     0  1338]]
-Epoch 5/10 |  val  |  Loss: 0.0060 Acc: 0.9990
+[[7900   13    8    5]
+ [  13 3736    1    0]
+ [   4    1 3810    4]
+ [   6    2    1 3722]]
+Epoch 5/10 |  val  |  Loss: 0.0082 Acc: 0.9979
 dict_keys(['unknown', 'here', 'working_place', 'school'])
-[[3091    3    0    0]
- [   0 1003    0    0]
- [   2    0  345    0]
- [   0    0    0  346]]
-Iteration: 100 || Loss: 0.0263 || 0.9208 sec. || Acc：0.96875
-Iteration: 200 || Loss: 0.0081 || 1.8287 sec. || Acc：1.0
-Iteration: 300 || Loss: 0.0020 || 2.7295 sec. || Acc：1.0
-Iteration: 400 || Loss: 0.0045 || 3.6274 sec. || Acc：1.0
-Iteration: 500 || Loss: 0.0024 || 4.5383 sec. || Acc：1.0
-Epoch 6/10 | train |  Loss: 0.0070 Acc: 0.9986
+[[1990    3    2    0]
+ [   0  954    0    0]
+ [   0    0  883    2]
+ [   2    0    1  970]]
+Iteration: 100 || Loss: 0.0469 || 1.1049 sec. || Acc：0.96875
+Iteration: 200 || Loss: 0.0003 || 2.1936 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0022 || 3.2361 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0005 || 4.2778 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0040 || 5.3289 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0020 || 6.3630 sec. || Acc：1.0
+Epoch 6/10 | train |  Loss: 0.0084 Acc: 0.9980
 dict_keys(['unknown', 'here', 'working_place', 'school'])
-[[12417     6     3     4]
- [    7  4045     0     0]
- [    3     0  1334     1]
- [    2     0     0  1337]]
-Epoch 6/10 |  val  |  Loss: 0.0046 Acc: 0.9987
+[[7909    5    9    3]
+ [   5 3745    0    0]
+ [   7    0 3807    5]
+ [   2    2    1 3726]]
+Epoch 6/10 |  val  |  Loss: 0.0105 Acc: 0.9967
 dict_keys(['unknown', 'here', 'working_place', 'school'])
-[[3089    4    0    1]
- [   0 1003    0    0]
- [   1    0  346    0]
- [   0    0    0  346]]
-Iteration: 100 || Loss: 0.0019 || 0.9124 sec. || Acc：1.0
-Iteration: 200 || Loss: 0.0068 || 1.8223 sec. || Acc：1.0
-Iteration: 300 || Loss: 0.0036 || 2.7531 sec. || Acc：1.0
-Iteration: 400 || Loss: 0.0150 || 3.6654 sec. || Acc：1.0
-Iteration: 500 || Loss: 0.0003 || 4.5819 sec. || Acc：1.0
-Epoch 7/10 | train |  Loss: 0.0047 Acc: 0.9992
+[[1985    6    4    0]
+ [   0  954    0    0]
+ [   0    0  884    1]
+ [   2    0    3  968]]
+Iteration: 100 || Loss: 0.0022 || 1.0857 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0004 || 2.1506 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0125 || 3.2202 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0090 || 4.3025 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0014 || 5.3711 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0112 || 6.4182 sec. || Acc：1.0
+Epoch 7/10 | train |  Loss: 0.0056 Acc: 0.9990
 dict_keys(['unknown', 'here', 'working_place', 'school'])
-[[12421     4     3     2]
- [    4  4048     0     0]
- [    1     0  1337     0]
- [    1     0     0  1338]]
-Epoch 7/10 |  val  |  Loss: 0.0042 Acc: 0.9990
+[[7917    2    6    1]
+ [   5 3745    0    0]
+ [   1    0 3814    4]
+ [   0    0    1 3730]]
+Epoch 7/10 |  val  |  Loss: 0.0067 Acc: 0.9979
 dict_keys(['unknown', 'here', 'working_place', 'school'])
-[[3090    3    0    1]
- [   0 1003    0    0]
- [   1    0  346    0]
- [   0    0    0  346]]
-Iteration: 100 || Loss: 0.0008 || 0.9088 sec. || Acc：1.0
-Iteration: 200 || Loss: 0.0012 || 1.8158 sec. || Acc：1.0
-Iteration: 300 || Loss: 0.0010 || 2.7213 sec. || Acc：1.0
-Iteration: 400 || Loss: 0.0009 || 3.6350 sec. || Acc：1.0
-Iteration: 500 || Loss: 0.0054 || 4.5510 sec. || Acc：1.0
-Epoch 8/10 | train |  Loss: 0.0046 Acc: 0.9990
+[[1993    2    0    0]
+ [   1  953    0    0]
+ [   2    0  881    2]
+ [   2    0    1  970]]
+Iteration: 100 || Loss: 0.0003 || 1.0811 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0052 || 2.1553 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0062 || 3.2316 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0242 || 4.3061 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0033 || 5.3902 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0011 || 6.4627 sec. || Acc：1.0
+Epoch 8/10 | train |  Loss: 0.0055 Acc: 0.9985
 dict_keys(['unknown', 'here', 'working_place', 'school'])
-[[12421     2     2     5]
- [    4  4048     0     0]
- [    5     0  1333     0]
- [    2     0     0  1337]]
-Epoch 8/10 |  val  |  Loss: 0.0035 Acc: 0.9987
+[[7913    4    7    2]
+ [   4 3746    0    0]
+ [   6    0 3810    3]
+ [   0    0    2 3729]]
+Epoch 8/10 |  val  |  Loss: 0.0058 Acc: 0.9981
 dict_keys(['unknown', 'here', 'working_place', 'school'])
-[[3089    5    0    0]
- [   0 1003    0    0]
- [   1    0  346    0]
- [   0    0    0  346]]
-Iteration: 100 || Loss: 0.0003 || 0.9362 sec. || Acc：1.0
-Iteration: 200 || Loss: 0.0002 || 1.8613 sec. || Acc：1.0
-Iteration: 300 || Loss: 0.0045 || 2.7810 sec. || Acc：1.0
-Iteration: 400 || Loss: 0.0030 || 3.7034 sec. || Acc：1.0
-Iteration: 500 || Loss: 0.0005 || 4.6249 sec. || Acc：1.0
-Epoch 9/10 | train |  Loss: 0.0033 Acc: 0.9994
+[[1991    1    3    0]
+ [   0  954    0    0]
+ [   0    0  882    3]
+ [   2    0    0  971]]
+Iteration: 100 || Loss: 0.0009 || 1.0617 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0941 || 2.1663 sec. || Acc：0.96875
+Iteration: 300 || Loss: 0.0066 || 3.2488 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0001 || 4.3202 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0004 || 5.3910 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0123 || 6.4629 sec. || Acc：1.0
+Epoch 9/10 | train |  Loss: 0.0043 Acc: 0.9990
 dict_keys(['unknown', 'here', 'working_place', 'school'])
-[[12425     3     0     2]
- [    5  4047     0     0]
- [    1     0  1337     0]
- [    1     0     0  1338]]
-Epoch 9/10 |  val  |  Loss: 0.0052 Acc: 0.9981
+[[7917    6    2    1]
+ [   1 3748    1    0]
+ [   2    1 3814    2]
+ [   2    0    1 3728]]
+Epoch 9/10 |  val  |  Loss: 0.0051 Acc: 0.9985
 dict_keys(['unknown', 'here', 'working_place', 'school'])
-[[3086    6    0    2]
- [   0 1003    0    0]
- [   1    0  346    0]
- [   0    0    0  346]]
-Iteration: 100 || Loss: 0.0001 || 0.9217 sec. || Acc：1.0
-Iteration: 200 || Loss: 0.0543 || 1.8452 sec. || Acc：0.96875
-Iteration: 300 || Loss: 0.0061 || 2.7668 sec. || Acc：1.0
-Iteration: 400 || Loss: 0.0000 || 3.6783 sec. || Acc：1.0
-Iteration: 500 || Loss: 0.0038 || 4.5823 sec. || Acc：1.0
-Epoch 10/10 | train |  Loss: 0.0030 Acc: 0.9993
+[[1991    2    2    0]
+ [   0  954    0    0]
+ [   0    0  884    1]
+ [   2    0    0  971]]
+Iteration: 100 || Loss: 0.0004 || 1.0770 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0002 || 2.1738 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0041 || 3.2747 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0079 || 4.3696 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0001 || 5.4531 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0001 || 6.5360 sec. || Acc：1.0
+Epoch 10/10 | train |  Loss: 0.0045 Acc: 0.9989
 dict_keys(['unknown', 'here', 'working_place', 'school'])
-[[12426     1     2     1]
- [    5  4047     0     0]
- [    3     0  1335     0]
- [    1     0     0  1338]]
-Epoch 10/10 |  val  |  Loss: 0.0026 Acc: 0.9992
+[[7919    4    2    1]
+ [   5 3744    1    0]
+ [   3    1 3813    2]
+ [   2    0    0 3729]]
+Epoch 10/10 |  val  |  Loss: 0.0061 Acc: 0.9981
 dict_keys(['unknown', 'here', 'working_place', 'school'])
-[[3091    2    0    1]
- [   0 1003    0    0]
- [   1    0  346    0]
- [   0    0    0  346]]
+[[1987    6    2    0]
+ [   0  954    0    0]
+ [   0    0  884    1]
+ [   0    0    0  973]]
 ----datetime----
-Iteration: 100 || Loss: 1.8022 || 0.9537 sec. || Acc：0.375
-Iteration: 200 || Loss: 1.7905 || 2.0559 sec. || Acc：0.40625
-Iteration: 300 || Loss: 1.5930 || 2.8834 sec. || Acc：0.46875
-Iteration: 400 || Loss: 1.0494 || 3.7052 sec. || Acc：0.625
-Iteration: 500 || Loss: 0.8220 || 4.5329 sec. || Acc：0.6875
-Epoch 1/10 | train |  Loss: 1.4017 Acc: 0.5572
-dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'next_year', 'absolute'])
-[[7678   11   61   45   10   33    1    1    3    9   10    4    1]
- [ 369   85  174   40    6   80    5    2    3    1   36    0    2]
- [ 487    7  659  229   14  167    6    3    4    0    7    2    5]
- [ 448    3  175  730   16  230    0    1    4    0    2    1    4]
- [ 294    5  279  123   49   69    0    3    1    0    2    0    1]
- [ 428    5  165  254   13  701    3    4    9    6    9    0    0]
- [ 227   11  162   99    0  207   68    2    2    1   31    1    0]
- [ 239    4  210  141    6   64    7  127    0    5    4    1   12]
- [ 232    0   37  102    1  157    0    0  306    0    0    3    0]
- [ 244    2   85  189    6  153    2    4   24   61    4    0   16]
- [ 331   41  167   43    1   98    6    1    2    1  104    2    1]
- [   0    0    0    0    0    0    0    0    0    0    0    0    0]
- [ 268    1  160  127    5   99    4   16    0   14    3    0  108]]
-Epoch 1/10 |  val  |  Loss: 0.9254 Acc: 0.7411
-dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'next_year', 'absolute'])
-[[1870    4   12   10    0    8    1    0    0    0    9    0    0]
- [  38   68   36   11    2   28    1    0    0    0   23    0    2]
- [   8    1  295   88    2   32    0    1    0    0    1    0    6]
- [  17    3   38  312    1   28    0    0    0    0    2    0    9]
- [  21    0   58   58   36    9    0    0    0    0    0    0    4]
- [  16    0   13   63    3  327    0    0    0    0    0    0    5]
- [   3    2   34   19    0   40   79    0    0    0   20    0    4]
- [   4    0   33   17    0    8    2  119    0    1    0    0    8]
- [   0    0    0    9    0   13    0    0  151    1    0    0    0]
- [  15    0   12   16    0   50    0    0    3   82    0    0   44]
- [  43   13   36    9    1   15    4    0    0    0   91    0    2]
- [   0    0    0    0    0    0    0    0    0    0    0    0    0]
- [   6    2   17   13    2   38    1    0    0    8    0    0  120]]
-Iteration: 100 || Loss: 0.9205 || 0.8521 sec. || Acc：0.71875
-Iteration: 200 || Loss: 0.9392 || 1.7506 sec. || Acc：0.78125
-Iteration: 300 || Loss: 0.4964 || 2.7786 sec. || Acc：0.9375
-Iteration: 400 || Loss: 0.5412 || 3.8285 sec. || Acc：0.75
-Iteration: 500 || Loss: 0.4493 || 4.8762 sec. || Acc：0.90625
-Epoch 2/10 | train |  Loss: 0.6761 Acc: 0.8200
-dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'next_year', 'absolute'])
-[[7667   29   23   37   23   32    3    4    6   10   25    0    8]
- [  86  397   79   13    6   54   35    5    1    5  115    0    7]
- [  47   14 1157  132   94   69   31   11    1    5   10    0   19]
- [  73   13  101 1272   47   81    6    1    1    2    2    0   15]
- [  48    4  172  143  376   67    0    1    0    2    3    0   10]
- [  49    5   35  120   40 1299    8    3    9    9    8    0   12]
- [  16   16   77   29    0   35  583    7    1    3   39    0    5]
- [  12    6   81   40    6   12   23  612    0    8    1    0   19]
- [   1    0    0   11    0   14    0    0  796   16    0    0    0]
- [  39    3   15   24    4   52    9    7   21  553    0    0   63]
- [  75  107   51   12    1   31   48    1    0    0  471    0    1]
- [   0    0    0    0    0    0    0    0    0    0    0    0    0]
- [  29    5   49   23    7   52   18   33    0   62    0    0  527]]
-Epoch 2/10 |  val  |  Loss: 0.4503 Acc: 0.8960
-dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'next_year', 'absolute'])
-[[1852   25   10    3    8    2    1    0    2    5    3    0    3]
- [   5  182   14    0    0    5    2    0    0    1    0    0    0]
- [   0    1  420    9    2    0    0    0    0    1    0    0    1]
- [   9    9   48  325    8    5    2    0    0    0    0    0    4]
- [   5    1   49   24  101    5    0    0    0    0    0    0    1]
- [   6    3    9   12    8  384    1    0    1    1    0    0    2]
- [   1    2    9    1    0    0  184    0    0    1    2    0    1]
- [   0    0    7    2    0    0    2  181    0    0    0    0    0]
- [   0    0    0    0    0    0    0    0  172    2    0    0    0]
- [   0    0    1    0    0    0    0    0    6  211    0    0    4]
- [  13   68   12    0    0    0   16    0    0    0  105    0    0]
- [   0    0    0    0    0    0    0    0    0    0    0    0    0]
- [   0    6    3    0    1    4    1    1    0   16    0    0  175]]
-Iteration: 100 || Loss: 0.3773 || 1.0727 sec. || Acc：0.9375
-Iteration: 200 || Loss: 0.2667 || 2.1192 sec. || Acc：0.96875
-Iteration: 300 || Loss: 0.2476 || 3.1746 sec. || Acc：0.96875
-Iteration: 400 || Loss: 0.1743 || 4.2526 sec. || Acc：0.9375
-Iteration: 500 || Loss: 0.1990 || 5.3214 sec. || Acc：0.96875
-Epoch 3/10 | train |  Loss: 0.3634 Acc: 0.9152
-dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'next_year', 'absolute'])
-[[7711   22   16   38   17   12    3    1    5    7   24    0   11]
- [  53  589   41    4    3   19   23    2    0    3   65    0    1]
- [  14    9 1404   49   65   20    6   11    0    2    6    0    4]
- [  55   10   39 1403   46   25    6    5    2    2    6    0   15]
- [  29    5  102   96  548   35    2    3    0    2    2    0    2]
- [  37    1   11   48   15 1460    3    0    6    9    4    0    3]
- [  11    1   16    9    0    2  752    4    0    0   13    0    3]
- [   6    2   13   11    4    1    6  764    0    4    0    0    9]
- [   0    0    0    1    0    0    0    0  821   16    0    0    0]
- [  15    0    0    4    0   11    1    3   12  726    0    0   18]
- [  44   58   13    4    0    5   22    0    0    0  650    0    2]
- [   0    0    0    0    0    0    0    0    0    0    0    0    0]
- [  11    6    6    6    0   21    5    9    0   34    0    0  707]]
-Epoch 3/10 |  val  |  Loss: 0.2556 Acc: 0.9480
-dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'next_year', 'absolute'])
-[[1882    5    4    3    4    3    0    0    2    3    5    0    3]
- [  12  178    5    2    0    4    0    0    0    0    8    0    0]
- [   0    1  414   11    6    1    0    0    0    1    0    0    0]
- [  11    4    8  368    9    2    1    0    0    0    1    0    6]
- [   6    0   21   20  135    3    0    0    0    0    1    0    0]
- [   8    0    0   11    1  407    0    0    0    0    0    0    0]
- [   1    1    1    1    0    0  192    0    0    1    3    0    1]
- [   0    0    0    1    0    0    1  190    0    0    0    0    0]
- [   0    0    0    0    0    0    0    0  173    1    0    0    0]
- [   0    0    0    1    0    0    0    0    3  217    0    0    1]
- [  10    6    3    0    0    0    1    0    0    0  194    0    0]
- [   0    0    0    0    0    0    0    0    0    0    0    0    0]
- [   2    0    1    0    0    3    0    0    0   10    0    0  191]]
-Iteration: 100 || Loss: 0.2153 || 1.0133 sec. || Acc：0.96875
-Iteration: 200 || Loss: 0.1451 || 2.0047 sec. || Acc：0.96875
-Iteration: 300 || Loss: 0.2612 || 3.0403 sec. || Acc：0.9375
-Iteration: 400 || Loss: 0.0901 || 4.0660 sec. || Acc：1.0
-Iteration: 500 || Loss: 0.2051 || 5.0959 sec. || Acc：0.96875
-Epoch 4/10 | train |  Loss: 0.2308 Acc: 0.9492
-dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'next_year', 'absolute'])
-[[7737   17   10   25   13   16    1    3    7    4   24    0   10]
- [  41  694   13    3    5    8    8    0    0    0   30    0    1]
- [  14    4 1468   34   53    6    3    3    0    1    3    0    1]
- [  55    5   17 1466   30   13    2    3    1    0    6    0   16]
- [  24    1   59   48  667   20    1    0    0    1    3    0    2]
- [  21    0   10   25    7 1522    5    0    2    2    3    0    0]
- [   6    4    7    2    0    2  781    1    0    1    5    0    2]
- [   3    0    5    5    1    0    3  799    0    0    0    0    4]
- [   0    0    0    1    0    0    0    0  824   13    0    0    0]
- [   8    0    1    1    0    4    0    0    8  760    0    0    8]
- [  41   27   11    4    0    0   11    0    0    0  704    0    0]
- [   0    0    0    0    0    0    0    0    0    0    0    0    0]
- [   5    1    2    4    1    8    3    3    0   15    0    0  763]]
-Epoch 4/10 |  val  |  Loss: 0.1714 Acc: 0.9664
-dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'next_year', 'absolute'])
-[[1885    5    3    5    4    4    0    1    0    2    3    0    2]
- [   7  195    2    1    0    3    0    0    0    0    1    0    0]
- [   0    0  424    4    5    1    0    0    0    0    0    0    0]
- [   8    1    2  379    7    5    1    0    0    0    0    0    7]
- [   3    0   11   11  155    6    0    0    0    0    0    0    0]
- [   4    0    0    6    0  417    0    0    0    0    0    0    0]
- [   1    1    0    1    0    0  196    0    0    0    1    0    1]
- [   0    0    0    0    0    0    1  191    0    0    0    0    0]
- [   0    0    0    0    0    0    0    0  173    1    0    0    0]
- [   0    0    0    1    0    0    0    0    2  218    0    0    1]
- [   9    4    4    0    0    0    0    0    0    0  197    0    0]
- [   0    0    0    0    0    0    0    0    0    0    0    0    0]
- [   1    0    1    0    0    4    0    0    0    2    0    0  199]]
-Iteration: 100 || Loss: 0.1495 || 1.0407 sec. || Acc：0.96875
-Iteration: 200 || Loss: 0.0644 || 2.0666 sec. || Acc：1.0
-Iteration: 300 || Loss: 0.0875 || 3.1191 sec. || Acc：0.96875
-Iteration: 400 || Loss: 0.2050 || 4.1354 sec. || Acc：0.96875
-Iteration: 500 || Loss: 0.1804 || 5.1486 sec. || Acc：0.9375
-Epoch 5/10 | train |  Loss: 0.1646 Acc: 0.9633
-dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'next_year', 'absolute'])
-[[7753   13   12   28   11   14    2    1    6    4   14    0    9]
- [  23  745    9    0    0    6    2    0    0    0   16    0    2]
- [   8    2 1493   20   49    5    3    4    0    0    4    0    2]
- [  50    3   16 1493   22   10    0    1    1    0    5    0   13]
- [  19    2   42   33  714   16    0    0    0    0    0    0    0]
- [  17    0    8   21    4 1541    0    0    1    2    1    0    2]
- [   7    1    1    2    0    0  796    0    0    0    3    0    1]
- [   3    0    3    3    0    1    1  806    0    0    0    0    3]
- [   0    0    1    0    0    1    0    0  825   11    0    0    0]
- [   6    0    0    2    0    3    0    0    4  769    0    0    6]
- [  21   20    0    2    0    2    4    0    0    0  749    0    0]
- [   0    0    0    0    0    0    0    0    0    0    0    0    0]
- [   6    0    1    6    0    2    1    4    0   14    0    0  771]]
-Epoch 5/10 |  val  |  Loss: 0.1268 Acc: 0.9737
-dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'next_year', 'absolute'])
-[[1886    6    1    5    4    5    0    0    1    0    2    0    4]
- [   9  199    0    0    0    1    0    0    0    0    0    0    0]
- [   1    0  420    4    8    1    0    0    0    0    0    0    0]
- [  11    0    0  380    8    2    1    0    0    0    0    0    8]
- [   5    0    2    3  171    5    0    0    0    0    0    0    0]
- [   5    0    0    2    0  420    0    0    0    0    0    0    0]
- [   1    0    0    0    0    0  199    0    0    0    0    0    1]
- [   0    0    0    0    0    0    1  191    0    0    0    0    0]
- [   0    0    0    0    0    0    0    0  173    1    0    0    0]
- [   0    0    0    1    0    0    0    0    1  220    0    0    0]
- [   7    4    0    0    0    0    0    0    0    0  203    0    0]
- [   0    0    0    0    0    0    0    0    0    0    0    0    0]
- [   1    0    0    0    0    2    0    0    0    2    0    0  202]]
-Iteration: 100 || Loss: 0.1609 || 1.0415 sec. || Acc：1.0
-Iteration: 200 || Loss: 0.0878 || 2.0988 sec. || Acc：1.0
-Iteration: 300 || Loss: 0.1886 || 3.1648 sec. || Acc：0.9375
-Iteration: 400 || Loss: 0.1484 || 4.1949 sec. || Acc：0.96875
-Iteration: 500 || Loss: 0.0744 || 5.2507 sec. || Acc：1.0
-Epoch 6/10 | train |  Loss: 0.1213 Acc: 0.9737
-dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'next_year', 'absolute'])
-[[7763    9    7   26   10   19    3    2    5    3   15    0    5]
- [  24  761    5    0    1    4    2    0    0    0    6    0    0]
- [   6    3 1544   14   19    2    1    0    0    1    0    0    0]
- [  42    2   14 1514   13   11    0    0    0    0    3    0   15]
- [  16    2   20   24  749   15    0    0    0    0    0    0    0]
- [  14    1    8   14    7 1549    2    0    0    1    0    0    1]
- [   4    0    0    1    1    1  803    0    0    0    1    0    0]
- [   1    0    4    3    0    0    1  811    0    0    0    0    0]
- [   0    0    0    0    0    0    0    0  829    9    0    0    0]
- [   1    0    0    1    0    4    0    0    4  776    0    0    4]
- [  13    8    1    2    0    0    1    0    0    0  773    0    0]
- [   0    0    0    0    0    0    0    0    0    0    0    0    0]
- [   2    0    0    5    0    2    1    2    0    9    0    0  784]]
-Epoch 6/10 |  val  |  Loss: 0.0973 Acc: 0.9768
-dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'next_year', 'absolute'])
-[[1881    8    4    3    4    5    0    1    0    0    5    0    3]
- [   6  201    1    0    0    1    0    0    0    0    0    0    0]
- [   0    0  434    0    0    0    0    0    0    0    0    0    0]
- [   7    1    3  383    8    2    1    0    0    0    0    0    5]
- [   4    0    7    2  169    4    0    0    0    0    0    0    0]
- [   7    0    0    2    0  418    0    0    0    0    0    0    0]
- [   1    0    0    0    0    0  200    0    0    0    0    0    0]
- [   0    0    0    0    0    0    1  191    0    0    0    0    0]
- [   0    0    0    0    0    0    0    0  174    0    0    0    0]
- [   0    0    1    0    0    0    0    0    1  220    0    0    0]
- [   4    2    1    0    0    0    0    0    0    0  207    0    0]
- [   0    0    0    0    0    0    0    0    0    0    0    0    0]
- [   1    0    1    0    0    2    0    0    0    2    0    0  201]]
-Iteration: 100 || Loss: 0.0333 || 1.0267 sec. || Acc：1.0
-Iteration: 200 || Loss: 0.1024 || 2.0713 sec. || Acc：0.9375
-Iteration: 300 || Loss: 0.1086 || 3.1051 sec. || Acc：0.96875
-Iteration: 400 || Loss: 0.0344 || 4.1672 sec. || Acc：1.0
-Iteration: 500 || Loss: 0.1737 || 5.2142 sec. || Acc：0.96875
-Epoch 7/10 | train |  Loss: 0.0951 Acc: 0.9790
-dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'next_year', 'absolute'])
-[[7769   15    4   31    9   10    2    1    5    2   15    0    4]
- [  16  777    4    0    1    0    1    0    0    0    4    0    0]
- [   6    3 1552    9   16    2    0    1    0    0    1    0    0]
- [  29    0    6 1545   11   10    0    0    0    0    2    0   11]
- [  14    0   18   17  769    8    0    0    0    0    0    0    0]
- [  15    0    3   10    3 1564    0    0    0    2    0    0    0]
- [   3    0    0    3    0    0  804    0    0    0    1    0    0]
- [   1    0    3    3    0    0    1  811    0    0    0    0    1]
- [   1    0    0    0    0    0    0    0  828    9    0    0    0]
- [   3    0    0    0    0    1    0    0    1  782    0    0    3]
- [  16    8    0    1    0    0    1    0    0    0  771    0    1]
- [   0    0    0    0    0    0    0    0    0    0    0    0    0]
- [   3    0    0    3    0    4    0    2    0    9    0    0  784]]
-Epoch 7/10 |  val  |  Loss: 0.0801 Acc: 0.9789
-dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'next_year', 'absolute'])
-[[1879    5    1   15    3    4    0    0    0    0    4    0    3]
- [   6  200    0    2    0    1    0    0    0    0    0    0    0]
- [   0    0  429    2    3    0    0    0    0    0    0    0    0]
- [   5    0    0  401    4    0    0    0    0    0    0    0    0]
- [   3    0    1    7  173    2    0    0    0    0    0    0    0]
- [   2    0    0    7    0  418    0    0    0    0    0    0    0]
- [   1    0    0    0    0    0  200    0    0    0    0    0    0]
- [   0    0    0    0    0    0    1  191    0    0    0    0    0]
- [   0    0    0    0    0    0    0    0  174    0    0    0    0]
- [   0    0    0    1    0    0    0    0    2  219    0    0    0]
- [   4    2    0    0    0    0    0    0    0    0  208    0    0]
- [   0    0    0    0    0    0    0    0    0    0    0    0    0]
- [   0    0    1    5    0    2    0    0    0    2    0    0  197]]
-Iteration: 100 || Loss: 0.1530 || 0.9602 sec. || Acc：0.96875
-Iteration: 200 || Loss: 0.0296 || 1.8968 sec. || Acc：1.0
-Iteration: 300 || Loss: 0.1166 || 2.8239 sec. || Acc：0.9375
-Iteration: 400 || Loss: 0.0594 || 3.7472 sec. || Acc：1.0
-Iteration: 500 || Loss: 0.0513 || 4.8102 sec. || Acc：1.0
-Epoch 8/10 | train |  Loss: 0.0775 Acc: 0.9822
-dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'next_year', 'absolute'])
-[[7777   10    8   29    7    8    3    0    4    2   13    0    6]
- [  14  778    1    2    1    3    0    0    0    0    4    0    0]
- [   4    2 1555   13   12    1    1    1    0    0    1    0    0]
- [  31    0    5 1547   16    3    0    1    0    0    0    0   11]
- [  17    0   12    9  781    7    0    0    0    0    0    0    0]
- [  15    0    0   10    6 1564    0    0    0    0    2    0    0]
- [   3    0    1    0    0    1  806    0    0    0    0    0    0]
- [   1    0    0    1    0    0    0  816    0    0    0    0    2]
- [   0    0    0    1    0    0    0    0  836    1    0    0    0]
- [   2    0    0    0    0    1    0    0    2  784    0    0    1]
- [   8    6    2    1    0    0    0    0    0    0  781    0    0]
- [   0    0    0    0    0    0    0    0    0    0    0    0    0]
- [   1    0    0    2    0    1    0    2    0    6    0    0  793]]
-Epoch 8/10 |  val  |  Loss: 0.0678 Acc: 0.9818
-dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'next_year', 'absolute'])
-[[1892    5    4    3    2    4    0    0    0    0    3    0    1]
- [   6  203    0    0    0    0    0    0    0    0    0    0    0]
- [   0    0  434    0    0    0    0    0    0    0    0    0    0]
- [   8    0    0  398    2    1    0    0    0    0    0    0    1]
- [   5    0   10    4  164    3    0    0    0    0    0    0    0]
- [   8    0    0    1    0  418    0    0    0    0    0    0    0]
- [   1    0    0    0    0    0  200    0    0    0    0    0    0]
- [   0    0    0    0    0    0    1  191    0    0    0    0    0]
- [   0    0    0    0    0    0    0    0  174    0    0    0    0]
- [   0    0    1    0    0    0    0    0    1  220    0    0    0]
- [   4    2    0    0    0    0    0    0    0    0  208    0    0]
- [   0    0    0    0    0    0    0    0    0    0    0    0    0]
- [   1    0    1    0    0    1    0    0    0    3    0    0  201]]
-Iteration: 100 || Loss: 0.0363 || 1.1032 sec. || Acc：1.0
-Iteration: 200 || Loss: 0.0918 || 2.1995 sec. || Acc：0.96875
-Iteration: 300 || Loss: 0.0226 || 3.2813 sec. || Acc：1.0
-Iteration: 400 || Loss: 0.0251 || 4.3496 sec. || Acc：1.0
-Iteration: 500 || Loss: 0.0427 || 5.3485 sec. || Acc：1.0
-Epoch 9/10 | train |  Loss: 0.0654 Acc: 0.9841
-dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'next_year', 'absolute'])
-[[7784    8    8   28    9   14    0    0    4    1    7    0    4]
- [  15  781    3    0    0    1    0    0    0    0    3    0    0]
- [   2    2 1563    8   11    3    0    0    0    0    1    0    0]
- [  33    1    9 1560    4    1    0    0    0    0    0    0    6]
- [  13    0    7    9  787   10    0    0    0    0    0    0    0]
- [  17    1    4    9    4 1560    0    0    0    2    0    0    0]
- [   1    0    0    1    1    0  808    0    0    0    0    0    0]
- [   2    0    1    1    0    0    0  815    0    0    0    0    1]
- [   0    0    1    0    0    0    0    0  833    4    0    0    0]
- [   3    0    0    0    0    0    0    0    2  784    0    0    1]
- [  10    5    0    0    0    1    0    0    0    0  782    0    0]
- [   0    0    0    0    0    0    0    0    0    0    0    0    0]
- [   1    0    0    2    0    1    0    2    0    2    0    0  797]]
-Epoch 9/10 |  val  |  Loss: 0.0562 Acc: 0.9850
-dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'next_year', 'absolute'])
-[[1881    7    1    6    3    7    0    0    0    0    5    0    4]
- [   3  203    0    0    0    2    0    0    0    0    1    0    0]
- [   0    0  432    0    2    0    0    0    0    0    0    0    0]
- [   5    0    0  398    3    2    0    0    0    0    0    0    2]
- [   2    0    2    1  178    3    0    0    0    0    0    0    0]
- [   2    0    0    1    0  424    0    0    0    0    0    0    0]
- [   0    0    0    0    0    0  201    0    0    0    0    0    0]
- [   0    0    0    0    0    0    0  192    0    0    0    0    0]
- [   0    0    0    0    0    0    0    0  174    0    0    0    0]
- [   0    0    0    0    0    0    0    0    0  222    0    0    0]
- [   3    2    0    0    0    0    0    0    0    0  209    0    0]
- [   0    0    0    0    0    0    0    0    0    0    0    0    0]
- [   0    0    0    0    0    2    0    0    0    1    0    0  204]]
-Iteration: 100 || Loss: 0.0816 || 0.9517 sec. || Acc：1.0
-Iteration: 200 || Loss: 0.0200 || 1.8938 sec. || Acc：1.0
-Iteration: 300 || Loss: 0.0115 || 2.8313 sec. || Acc：1.0
-Iteration: 400 || Loss: 0.0326 || 3.7687 sec. || Acc：1.0
-Iteration: 500 || Loss: 0.0443 || 4.6982 sec. || Acc：0.96875
-Epoch 10/10 | train |  Loss: 0.0541 Acc: 0.9874
-dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'next_year', 'absolute'])
-[[7799   10    3   20    8   12    0    0    2    1    8    0    4]
- [  10  785    1    1    1    0    0    0    0    0    5    0    0]
- [   4    2 1564    5   11    1    0    1    0    0    2    0    0]
- [  23    1    4 1571    5    4    0    0    0    0    0    0    6]
- [  14    0    6    7  792    7    0    0    0    0    0    0    0]
- [   7    0    3    7    3 1577    0    0    0    0    0    0    0]
- [   1    0    0    0    0    0  809    0    0    0    0    0    1]
- [   1    0    1    1    0    0    0  815    0    0    0    0    2]
- [   0    0    0    0    0    0    0    0  835    3    0    0    0]
- [   0    0    0    1    0    0    0    0    1  787    0    0    1]
- [   4    2    0    0    0    0    0    1    0    0  791    0    0]
- [   0    0    0    0    0    0    0    0    0    0    0    0    0]
- [   1    0    0    0    0    3    1    5    0    3    0    0  792]]
-Epoch 10/10 |  val  |  Loss: 0.0495 Acc: 0.9862
-dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'next_year', 'absolute'])
-[[1885    8    2    6    2    6    0    0    0    0    2    0    3]
- [   1  207    0    0    0    1    0    0    0    0    0    0    0]
- [   0    0  434    0    0    0    0    0    0    0    0    0    0]
- [   6    0    0  401    2    0    0    0    0    0    0    0    1]
- [   3    0    3    1  176    3    0    0    0    0    0    0    0]
- [   2    0    0    1    0  424    0    0    0    0    0    0    0]
- [   1    0    0    0    0    0  200    0    0    0    0    0    0]
- [   0    0    0    0    0    0    0  192    0    0    0    0    0]
- [   0    0    0    0    0    0    0    0  174    0    0    0    0]
- [   0    0    1    0    0    0    0    0    1  220    0    0    0]
- [   4    3    0    0    0    0    0    0    0    0  207    0    0]
- [   0    0    0    0    0    0    0    0    0    0    0    0    0]
- [   0    0    1    0    0    1    0    0    0    1    0    0  204]]
+Iteration: 100 || Loss: 1.7874 || 1.0139 sec. || Acc：0.375
+Iteration: 200 || Loss: 1.6659 || 2.2064 sec. || Acc：0.4375
+Iteration: 300 || Loss: 1.3660 || 3.1930 sec. || Acc：0.5
+Iteration: 400 || Loss: 1.2753 || 4.1753 sec. || Acc：0.625
+Iteration: 500 || Loss: 0.9598 || 5.1575 sec. || Acc：0.65625
+Iteration: 600 || Loss: 1.0892 || 6.1418 sec. || Acc：0.625
+Epoch 1/10 | train |  Loss: 1.3943 Acc: 0.5471
+dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'absolute'])
+[[7270   21   60   42    5   41    4    1    0   10   13   10]
+ [ 366  114  186   44    5  102    9    2    1    1   44    7]
+ [ 511   13  679  307   13  248   13   15    1    2    7   10]
+ [ 466    5  184  870   11  253    2    1    0    3    9   10]
+ [ 306   10  249  167   52  113    2    3    0    1    2    5]
+ [ 452   13  184  323   10  780   10    2    5    3   14    7]
+ [ 195   15  185  148    0  207  118    5    1    1   48    6]
+ [ 270    5  214  120    4   92   19  120    0    0   12   39]
+ [ 205    0   60  139    4  224    0    2  250    1    0    1]
+ [   0    0    0    0    0    0    0    0    0    0    0    0]
+ [ 360   38  157   62    2  102   39    3    1    0  129    3]
+ [ 273    4  150  154   12  150    9   14    1    2   11  136]]
+Epoch 1/10 |  val  |  Loss: 0.8754 Acc: 0.7911
+dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'absolute'])
+[[1848    5    5   19    6    3    8    0    0    0    9    2]
+ [  33  107   28    6    5   10   41    0    0    0    6   10]
+ [   4    1  320   53   25   18    8    4    0    0    0    2]
+ [  14    3   44  339   10   15    5    0    0    0    2    8]
+ [  14    0   47   48   84   19    0    0    0    0    1    4]
+ [  14    2   23   62   13  314   10    0    4    0    1    8]
+ [   3    1   16    4    0    3  162    1    0    0    5    3]
+ [   8    3   31    8    0    2    9  167    0    0    0    4]
+ [   0    0    0    3    0    1    0    0  237    0    0    0]
+ [   0    0    0    0    0    0    0    0    0    0    0    0]
+ [  36   22   25    6    1    7   40    0    0    0   92    2]
+ [  10    3   16    7    6   10   16    9    0    0    1  133]]
+Iteration: 100 || Loss: 1.1543 || 1.0180 sec. || Acc：0.625
+Iteration: 200 || Loss: 0.7168 || 2.0639 sec. || Acc：0.84375
+Iteration: 300 || Loss: 0.4067 || 3.1185 sec. || Acc：0.875
+Iteration: 400 || Loss: 0.3452 || 4.1713 sec. || Acc：0.9375
+Iteration: 500 || Loss: 0.4708 || 5.2351 sec. || Acc：0.96875
+Iteration: 600 || Loss: 0.5058 || 6.3414 sec. || Acc：0.84375
+Epoch 2/10 | train |  Loss: 0.6606 Acc: 0.8236
+dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'absolute'])
+[[7291   23   19   36   12   36    3    0    2    0   37   18]
+ [  79  449   92   13   10   71   47    4    2    0  104   10]
+ [  15   15 1392  154   92   80   29   20    3    0    8   11]
+ [  70   16  114 1394   39  122   11    5    1    0   11   31]
+ [  50    9  190  190  362   91    1    3    0    0    6    8]
+ [  54   14   45  154   54 1430    7    5   14    0   10   16]
+ [   8    6   73   41    1   32  710    6    0    0   51    1]
+ [  17   12   76   20    5    3   27  693    1    0   10   31]
+ [   2    0    3    9    1    7    0    1  860    0    0    3]
+ [   0    0    0    0    0    0    0    0    0    0    0    0]
+ [  81   77   62   14    3   18   81    0    0    0  557    3]
+ [  20   13   45   21   13   57   18   27    1    0    4  697]]
+Epoch 2/10 |  val  |  Loss: 0.4028 Acc: 0.9241
+dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'absolute'])
+[[1868    7    1    5    4    5    0    0    1    0    9    5]
+ [   6  226    1    2    0    4    3    0    0    0    3    1]
+ [   4    3  393   13   17    3    0    0    0    0    1    1]
+ [  18    5   14  379    5    7    1    0    0    0    3    8]
+ [   4    6   34   27  122   24    0    0    0    0    0    0]
+ [   7    1    2   15    1  423    0    0    0    0    1    1]
+ [   2    1    2    0    0    3  185    0    0    0    4    1]
+ [   5    0    3    4    0    0    1  218    0    0    0    1]
+ [   0    0    0    0    0    0    0    0  241    0    0    0]
+ [   0    0    0    0    0    0    0    0    0    0    0    0]
+ [  11   19    3    1    0    0    7    0    0    0  190    0]
+ [   3    8    1    1    0    1    0    0    0    0    0  197]]
+Iteration: 100 || Loss: 0.3027 || 0.9646 sec. || Acc：0.90625
+Iteration: 200 || Loss: 0.4344 || 1.9244 sec. || Acc：0.90625
+Iteration: 300 || Loss: 0.3743 || 2.8978 sec. || Acc：0.875
+Iteration: 400 || Loss: 0.3847 || 3.8430 sec. || Acc：0.8125
+Iteration: 500 || Loss: 0.1339 || 4.7792 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.1882 || 5.7172 sec. || Acc：0.96875
+Epoch 3/10 | train |  Loss: 0.3463 Acc: 0.9173
+dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'absolute'])
+[[7318   14   11   34   27   28    1    2    1    0   29   12]
+ [  36  700   35    8    8   15   15    2    0    0   55    7]
+ [   7    9 1629   59   77   21    7    4    2    0    3    1]
+ [  66   10   36 1577   48   47    1    0    1    0    7   21]
+ [  25    4  115  106  587   61    0    0    0    0    9    3]
+ [  33    8   14   63   29 1642    5    1    1    0    4    3]
+ [   4    3   22   14    0    2  863    2    0    0   17    2]
+ [   8    3   14    5    1    0    8  842    0    0    0   14]
+ [   1    0    1    7    0    1    0    0  876    0    0    0]
+ [   0    0    0    0    0    0    0    0    0    0    0    0]
+ [  34   45    7    9    3    1   40    1    0    0  756    0]
+ [  15    5    7    4    4   14    3   15    1    0    2  846]]
+Epoch 3/10 |  val  |  Loss: 0.2343 Acc: 0.9555
+dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'absolute'])
+[[1856    3    0    6    7    9    0    2    2    0   12    8]
+ [   2  224    0    2    0    4    0    0    0    0   14    0]
+ [   0    0  405    3   25    1    0    0    0    0    0    1]
+ [  10    1    4  394    7    4    2    0    0    0    6   12]
+ [   1    0   11   11  180   13    0    0    0    0    0    1]
+ [   2    0    0    6    3  439    0    0    0    0    0    1]
+ [   0    0    0    1    0    1  195    0    0    0    1    0]
+ [   1    0    1    0    0    0    0  229    0    0    0    1]
+ [   0    0    0    0    0    0    0    0  241    0    0    0]
+ [   0    0    0    0    0    0    0    0    0    0    0    0]
+ [   4    3    0    0    0    1    1    0    0    0  222    0]
+ [   2    1    0    0    0    0    0    0    0    0    0  208]]
+Iteration: 100 || Loss: 0.2654 || 0.9511 sec. || Acc：0.9375
+Iteration: 200 || Loss: 0.2189 || 1.8936 sec. || Acc：0.96875
+Iteration: 300 || Loss: 0.1195 || 2.8390 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.1025 || 3.7891 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.1922 || 4.7501 sec. || Acc：0.96875
+Iteration: 600 || Loss: 0.0769 || 5.6965 sec. || Acc：1.0
+Epoch 4/10 | train |  Loss: 0.2124 Acc: 0.9525
+dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'absolute'])
+[[7355   16    6   44   17   11    2    1    2    0   15    8]
+ [  19  791   14    6    4    6    2    1    0    0   34    4]
+ [   5    3 1710   23   59   11    0    2    1    0    3    2]
+ [  62   10   19 1631   35   29    2    0    0    0    4   22]
+ [  23    3   50   62  740   28    1    1    0    0    2    0]
+ [  32    2    3   28   19 1714    0    1    1    0    2    1]
+ [   5    0    4    5    1    1  900    3    0    0    9    1]
+ [   4    2    2    2    1    0    4  877    1    0    0    2]
+ [   1    0    1    2    1    0    0    0  881    0    0    0]
+ [   0    0    0    0    0    0    0    0    0    0    0    0]
+ [  18   26    1    5    0    0   10    0    0    0  836    0]
+ [  10    5    6    2    1    5    2    7    0    0    0  878]]
+Epoch 4/10 |  val  |  Loss: 0.1461 Acc: 0.9713
+dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'absolute'])
+[[1873    1    0    7    6    6    0    3    1    0    3    5]
+ [   3  240    0    1    0    0    0    0    0    0    2    0]
+ [   0    0  410    2   22    0    0    0    0    0    0    1]
+ [  14    0    2  404    6    0    2    2    0    0    3    7]
+ [   1    0    6    7  202    1    0    0    0    0    0    0]
+ [   2    0    1    6    2  440    0    0    0    0    0    0]
+ [   0    0    0    1    0    0  197    0    0    0    0    0]
+ [   0    0    0    0    0    0    0  232    0    0    0    0]
+ [   0    0    0    0    0    0    0    0  241    0    0    0]
+ [   0    0    0    0    0    0    0    0    0    0    0    0]
+ [   5    3    0    0    0    1    0    0    0    0  222    0]
+ [   2    0    0    1    0    0    0    0    0    0    0  208]]
+Iteration: 100 || Loss: 0.1220 || 1.0592 sec. || Acc：0.96875
+Iteration: 200 || Loss: 0.1605 || 2.1025 sec. || Acc：0.9375
+Iteration: 300 || Loss: 0.1755 || 3.1633 sec. || Acc：0.96875
+Iteration: 400 || Loss: 0.1042 || 4.2132 sec. || Acc：0.96875
+Iteration: 500 || Loss: 0.2497 || 5.2584 sec. || Acc：0.90625
+Iteration: 600 || Loss: 0.0686 || 6.3121 sec. || Acc：1.0
+Epoch 5/10 | train |  Loss: 0.1452 Acc: 0.9691
+dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'absolute'])
+[[7368    8    5   38   14   19    2    2    3    0    9    9]
+ [  13  836    6    3    1    2    2    0    0    0   18    0]
+ [   5    0 1753   13   37    4    2    1    1    0    2    1]
+ [  57    2    7 1687   28   11    0    0    0    0    5   17]
+ [  24    0   32   40  789   23    0    1    0    0    1    0]
+ [  16    0    2   18   10 1756    0    0    0    0    1    0]
+ [   4    0    3    0    0    0  919    1    0    0    2    0]
+ [   2    1    2    4    0    0    1  883    0    0    0    2]
+ [   0    0    0    2    0    1    0    0  883    0    0    0]
+ [   0    0    0    0    0    0    0    0    0    0    0    0]
+ [  12   16    3    1    0    0    4    0    0    0  860    0]
+ [   3    2    2    4    0    1    1    6    0    0    0  897]]
+Epoch 5/10 |  val  |  Loss: 0.1041 Acc: 0.9794
+dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'absolute'])
+[[1884    1    0    5    3    2    0    3    1    0    1    5]
+ [   3  241    0    1    0    0    0    0    0    0    1    0]
+ [   2    0  419    3   11    0    0    0    0    0    0    0]
+ [  17    0    1  412    2    0    1    0    0    0    3    4]
+ [   1    0    1    7  205    3    0    0    0    0    0    0]
+ [   2    0    0    4    0  445    0    0    0    0    0    0]
+ [   0    0    0    0    0    0  198    0    0    0    0    0]
+ [   0    0    0    0    0    0    0  232    0    0    0    0]
+ [   0    0    0    0    0    0    0    0  241    0    0    0]
+ [   0    0    0    0    0    0    0    0    0    0    0    0]
+ [   5    3    0    0    0    0    0    0    0    0  223    0]
+ [   2    0    0    1    0    0    0    0    0    0    0  208]]
+Iteration: 100 || Loss: 0.1781 || 1.0676 sec. || Acc：0.9375
+Iteration: 200 || Loss: 0.0616 || 2.1293 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0401 || 3.2043 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.1119 || 4.2505 sec. || Acc：0.9375
+Iteration: 500 || Loss: 0.1000 || 5.3017 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0772 || 6.3509 sec. || Acc：0.96875
+Epoch 6/10 | train |  Loss: 0.1035 Acc: 0.9766
+dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'absolute'])
+[[7384   11    6   36   14    9    1    1    1    0    9    5]
+ [  15  843    7    1    0    1    1    0    0    0   13    0]
+ [   3    0 1770   14   24    4    1    1    2    0    0    0]
+ [  44    3    7 1711   18   15    0    1    0    0    3   12]
+ [  14    2   19   27  836    9    0    1    0    0    0    2]
+ [  15    1    2   16    7 1760    0    0    1    0    1    0]
+ [   3    0    1    0    0    0  922    0    0    0    3    0]
+ [   2    0    1    2    0    0    0  890    0    0    0    0]
+ [   0    0    0    0    0    0    0    0  886    0    0    0]
+ [   0    0    0    0    0    0    0    0    0    0    0    0]
+ [  12    7    0    2    0    0    0    0    0    0  875    0]
+ [   5    1    0    3    1    0    0    7    0    0    0  899]]
+Epoch 6/10 |  val  |  Loss: 0.0763 Acc: 0.9825
+dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'absolute'])
+[[1885    1    0    6    3    0    0    3    1    0    1    5]
+ [   3  242    0    1    0    0    0    0    0    0    0    0]
+ [   0    0  424    3    8    0    0    0    0    0    0    0]
+ [  11    0    1  423    0    0    0    0    0    0    1    4]
+ [   1    0    3    8  205    0    0    0    0    0    0    0]
+ [   3    0    0    4    1  443    0    0    0    0    0    0]
+ [   0    0    0    0    0    0  198    0    0    0    0    0]
+ [   0    0    0    0    0    0    0  232    0    0    0    0]
+ [   0    0    0    0    0    0    0    0  241    0    0    0]
+ [   0    0    0    0    0    0    0    0    0    0    0    0]
+ [   5    3    1    0    0    0    0    0    0    0  222    0]
+ [   2    0    0    1    0    0    0    0    0    0    0  208]]
+Iteration: 100 || Loss: 0.0421 || 1.0601 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0645 || 2.1319 sec. || Acc：0.96875
+Iteration: 300 || Loss: 0.0625 || 3.2017 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0588 || 4.2684 sec. || Acc：0.96875
+Iteration: 500 || Loss: 0.0814 || 5.3254 sec. || Acc：0.96875
+Iteration: 600 || Loss: 0.0422 || 6.3763 sec. || Acc：1.0
+Epoch 7/10 | train |  Loss: 0.0802 Acc: 0.9826
+dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'absolute'])
+[[7399    6    5   33   12    8    1    1    3    0    6    3]
+ [   7  861    5    3    0    0    0    0    0    0    5    0]
+ [   4    0 1787   10   12    4    1    1    0    0    0    0]
+ [  43    2    3 1733    9   13    0    0    0    0    1   10]
+ [  15    0   17   18  857    2    0    0    0    0    0    1]
+ [  10    2    1   15    3 1771    0    0    0    0    0    1]
+ [   3    0    1    1    0    0  921    1    0    0    2    0]
+ [   0    0    0    2    0    0    0  891    0    0    0    2]
+ [   0    0    0    2    0    0    0    0  884    0    0    0]
+ [   0    0    0    0    0    0    0    0    0    0    0    0]
+ [   7    6    1    0    0    0    1    0    0    0  881    0]
+ [   2    0    2    2    1    0    0    2    0    0    0  907]]
+Epoch 7/10 |  val  |  Loss: 0.0625 Acc: 0.9856
+dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'absolute'])
+[[1890    0    0    6    1    0    0    2    1    0    1    4]
+ [   3  242    0    1    0    0    0    0    0    0    0    0]
+ [   2    0  423    3    7    0    0    0    0    0    0    0]
+ [  12    0    0  427    0    0    0    0    0    0    0    1]
+ [   1    0    0    6  210    0    0    0    0    0    0    0]
+ [   3    0    0    4    0  444    0    0    0    0    0    0]
+ [   0    0    0    0    0    0  198    0    0    0    0    0]
+ [   0    0    0    0    0    0    0  232    0    0    0    0]
+ [   0    0    0    0    0    0    0    0  241    0    0    0]
+ [   0    0    0    0    0    0    0    0    0    0    0    0]
+ [   5    3    0    0    0    0    0    0    0    0  223    0]
+ [   2    0    0    1    0    0    0    0    0    0    0  208]]
+Iteration: 100 || Loss: 0.0360 || 0.9794 sec. || Acc：1.0
+Iteration: 200 || Loss: 0.0334 || 1.9379 sec. || Acc：1.0
+Iteration: 300 || Loss: 0.0378 || 2.9030 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0574 || 3.8579 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.1244 || 4.8257 sec. || Acc：0.96875
+Iteration: 600 || Loss: 0.0341 || 5.7696 sec. || Acc：1.0
+Epoch 8/10 | train |  Loss: 0.0633 Acc: 0.9864
+dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'absolute'])
+[[7406    4    4   31   11   10    1    1    0    0    5    4]
+ [   8  866    4    1    0    1    0    0    0    0    1    0]
+ [   3    1 1794    5   11    3    1    0    0    0    1    0]
+ [  29    0    8 1753   11    8    0    0    0    0    0    5]
+ [  14    0    9   16  865    6    0    0    0    0    0    0]
+ [  10    0    1    7    3 1782    0    0    0    0    0    0]
+ [   2    1    0    0    0    0  926    0    0    0    0    0]
+ [   1    0    1    1    0    0    0  892    0    0    0    0]
+ [   0    0    0    0    0    0    0    0  886    0    0    0]
+ [   0    0    0    0    0    0    0    0    0    0    0    0]
+ [   6    3    1    0    0    0    0    0    0    0  886    0]
+ [   3    0    1    2    0    0    0    2    0    0    0  908]]
+Epoch 8/10 |  val  |  Loss: 0.0503 Acc: 0.9875
+dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'absolute'])
+[[1886    1    0    5    4    0    0    3    1    0    1    4]
+ [   2  243    0    1    0    0    0    0    0    0    0    0]
+ [   0    0  423    1   10    0    0    1    0    0    0    0]
+ [   7    0    0  431    0    0    0    0    0    0    0    2]
+ [   1    0    0    1  215    0    0    0    0    0    0    0]
+ [   2    0    0    3    1  445    0    0    0    0    0    0]
+ [   0    0    0    0    0    0  198    0    0    0    0    0]
+ [   0    0    0    0    0    0    0  232    0    0    0    0]
+ [   0    0    0    0    0    0    0    0  241    0    0    0]
+ [   0    0    0    0    0    0    0    0    0    0    0    0]
+ [   4    2    0    0    0    0    0    0    0    0  225    0]
+ [   2    0    0    1    0    0    0    0    0    0    0  208]]
+Iteration: 100 || Loss: 0.0512 || 0.9558 sec. || Acc：0.96875
+Iteration: 200 || Loss: 0.0751 || 1.9128 sec. || Acc：0.96875
+Iteration: 300 || Loss: 0.1583 || 2.8604 sec. || Acc：0.9375
+Iteration: 400 || Loss: 0.0116 || 3.8111 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0376 || 4.7596 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0132 || 5.7129 sec. || Acc：1.0
+Epoch 9/10 | train |  Loss: 0.0499 Acc: 0.9888
+dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'absolute'])
+[[7413    5    3   30    9    8    2    0    1    0    4    2]
+ [   6  865    2    1    0    0    0    0    0    0    7    0]
+ [   0    0 1801    4   13    0    1    0    0    0    0    0]
+ [  30    0    4 1764    8    6    0    0    0    0    0    2]
+ [  12    0    7   10  875    6    0    0    0    0    0    0]
+ [  10    0    1    6    2 1784    0    0    0    0    0    0]
+ [   1    0    0    1    0    0  926    0    0    0    1    0]
+ [   0    0    0    0    0    0    0  895    0    0    0    0]
+ [   0    0    0    1    0    0    0    0  885    0    0    0]
+ [   0    0    0    0    0    0    0    0    0    0    0    0]
+ [   3    1    0    0    0    0    1    0    0    0  891    0]
+ [   2    0    1    0    0    0    1    0    0    0    0  912]]
+Epoch 9/10 |  val  |  Loss: 0.0446 Acc: 0.9877
+dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'absolute'])
+[[1876    2    0   12    2    2    0    3    2    0    1    5]
+ [   2  243    0    1    0    0    0    0    0    0    0    0]
+ [   0    0  431    0    3    0    0    1    0    0    0    0]
+ [   4    0    0  434    0    0    0    0    0    0    0    2]
+ [   1    0    0    2  214    0    0    0    0    0    0    0]
+ [   2    0    0    4    0  445    0    0    0    0    0    0]
+ [   0    0    0    0    0    0  198    0    0    0    0    0]
+ [   0    0    0    0    0    0    0  232    0    0    0    0]
+ [   0    0    0    0    0    0    0    0  241    0    0    0]
+ [   0    0    0    0    0    0    0    0    0    0    0    0]
+ [   2    3    1    0    0    0    0    0    0    0  225    0]
+ [   0    0    0    2    0    0    0    0    0    0    0  209]]
+Iteration: 100 || Loss: 0.0498 || 0.9633 sec. || Acc：0.96875
+Iteration: 200 || Loss: 0.1126 || 1.9353 sec. || Acc：0.96875
+Iteration: 300 || Loss: 0.0272 || 2.9055 sec. || Acc：1.0
+Iteration: 400 || Loss: 0.0164 || 3.9790 sec. || Acc：1.0
+Iteration: 500 || Loss: 0.0418 || 5.0634 sec. || Acc：1.0
+Iteration: 600 || Loss: 0.0172 || 6.1487 sec. || Acc：1.0
+Epoch 10/10 | train |  Loss: 0.0414 Acc: 0.9900
+dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'absolute'])
+[[7416    2    3   30   10    3    1    1    0    0    7    4]
+ [   6  865    2    1    0    2    0    0    0    0    5    0]
+ [   3    0 1804    2    9    0    1    0    0    0    0    0]
+ [  32    0    0 1771    6    2    0    0    0    0    0    3]
+ [  15    1    4    8  879    3    0    0    0    0    0    0]
+ [   6    0    3    2    2 1790    0    0    0    0    0    0]
+ [   1    0    0    0    0    0  927    0    0    0    1    0]
+ [   1    0    1    1    0    0    0  891    0    0    0    1]
+ [   0    0    0    0    0    0    0    0  886    0    0    0]
+ [   0    0    0    0    0    0    0    0    0    0    0    0]
+ [   2    4    0    0    0    0    0    0    0    0  890    0]
+ [   1    0    0    0    0    0    0    1    0    0    0  914]]
+Epoch 10/10 |  val  |  Loss: 0.0350 Acc: 0.9919
+dict_keys(['unknown', 'today', 'this_morning', 'daytime', 'early_evening', 'tonight', 'tomorrow', 'day_after_next', 'next_week', 'next_month', 'now', 'absolute'])
+[[1896    0    0    2    1    0    0    2    1    0    1    2]
+ [   2  244    0    0    0    0    0    0    0    0    0    0]
+ [   0    0  432    0    3    0    0    0    0    0    0    0]
+ [  11    0    1  423    0    0    0    0    0    0    0    5]
+ [   1    0    0    0  216    0    0    0    0    0    0    0]
+ [   3    0    0    0    0  448    0    0    0    0    0    0]
+ [   0    0    0    0    0    0  198    0    0    0    0    0]
+ [   0    0    0    0    0    0    0  232    0    0    0    0]
+ [   0    0    0    0    0    0    0    0  241    0    0    0]
+ [   0    0    0    0    0    0    0    0    0    0    0    0]
+ [   1    1    0    0    0    0    0    0    0    0  229    0]
+ [   2    0    0    0    0    0    0    0    0    0    0  209]]

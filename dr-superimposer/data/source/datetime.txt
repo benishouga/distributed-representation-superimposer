@@ -10,4 +10,3 @@ tonight	夜
 tomorrow	明日
 day_after_next	明後日
 next_week	来週
-next_month	来月

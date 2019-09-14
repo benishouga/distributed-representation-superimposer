@@ -68,9 +68,12 @@ STATION = load_file(os.path.join(base, "./data/source/station.txt"))
 def get_place():
     result = []
     result.extend(PLACES)
-    for n in range(3):
-        result.append(Attribute("place", "geographical_names",
-                                random.choice(GEOGRAPHICAL_NAMES)))
+
+    # FIXME: disabled station...
+    # for n in range(3):
+    #     result.append(Attribute("place", "geographical_names",
+    #                             random.choice(GEOGRAPHICAL_NAMES)))
+
     # FIXME: disabled station...
     # for n in range(2):
     #     result.append(Attribute("place", "station", random.choice(STATION)))

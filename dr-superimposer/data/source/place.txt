@@ -2,4 +2,8 @@ here	ここ
 here	このあたり
 here	この辺
 working_place	職場
+working_place	仕事場
+working_place	会社
 school	学校
+school	高校
+school	大学
