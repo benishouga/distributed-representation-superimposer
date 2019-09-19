@@ -14,12 +14,17 @@ class Superimposer(nn.Module):
         self.l5 = nn.Linear(in_features=768, out_features=768)
 
     def forward(self, dr1, dr2):
-        x = torch.cat((dr1, dr2), 1)
-        x = F.relu(self.l1(x))
-        x = F.dropout(x, training=self.training)
-        x = F.relu(self.l2(x))
-        x = F.dropout(x, training=self.training)
-        x = F.relu(self.l3(x))
-        x = F.dropout(x, training=self.training)
-        x = F.relu(self.l4(x))
-        return self.l5(x)
+        try:
+            x = torch.cat((dr1, dr2), 1)
+            x = F.relu(self.l1(x))
+            x = F.dropout(x, training=self.training)
+            x = F.relu(self.l2(x))
+            x = F.dropout(x, training=self.training)
+            x = F.relu(self.l3(x))
+            x = F.dropout(x, training=self.training)
+            x = F.relu(self.l4(x))
+            return self.l5(x)
+        except:
+            print("dr1", len(dr1), dr1)
+            print("dr2", len(dr2), dr2)
+            raise

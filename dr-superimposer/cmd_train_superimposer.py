@@ -9,16 +9,77 @@ import torch
 from torch import nn
 from torch import optim
 import torchtext
+from torch.utils.data import RandomSampler
+from torchtext.data.utils import RandomShuffler
+from torchtext.data.dataset import Dataset
 
 from classifier import Classifier
 from superimposer import Superimposer
 
 from dataset.text_holder import TextHolder
-from dataset.superimposer_dataset import SuperimposerDataset
+from dataset.classifier_dataset import ClassifierDataset
+
+
+def deside_expectes(one_batch, two_batch, classifiers):
+    intent_labels = classifiers["intent"]["display_labels"]
+    place_labels = classifiers["place"]["display_labels"]
+    datetime_labels = classifiers["datetime"]["display_labels"]
+
+    # label = label if label in self.labels else "unknown"
+    # return [self.labels[label]]
+    # intent_labels
+
+    intents = []
+    places = []
+    datetimes = []
+
+    for i in range(len(one_batch)):
+        # print(i)
+        one = one_batch.dataset[i]
+        two = two_batch.dataset[i]
+        # print(vars(one))
+        # print(vars(two))
+        one_intent = None
+        one_place = None
+        one_datetime = None
+        two_intent = None
+        two_place = None
+        two_datetime = None
+        for key in intent_labels:
+            if one.intent[0] == intent_labels[key]:
+                one_intent = key
+            if two.intent[0] == intent_labels[key]:
+                two_intent = key
+
+        for key in place_labels:
+            if one.place[0] == place_labels[key]:
+                one_place = key
+            if two.place[0] == place_labels[key]:
+                two_place = key
+
+        for key in datetime_labels:
+            if one.datetime[0] == datetime_labels[key]:
+                one_datetime = key
+            if two.datetime[0] == datetime_labels[key]:
+                two_datetime = key
+
+        intents.append([intent_labels[one_intent] if two_intent ==
+                        "continue" else intent_labels[two_intent]])
+        places.append([place_labels[one_place] if two_place ==
+                       "unknown" else place_labels[two_place]])
+        datetimes.append([datetime_labels[one_datetime] if two_datetime ==
+                          "unknown" else datetime_labels[two_datetime]])
+
+    return {
+        "intent": torch.tensor(intents),
+        "place": torch.tensor(places),
+        "datetime": torch.tensor(datetimes)
+    }
 
 
 def train(net, classifiers, text_holder, dataloaders_dict, batch_size, criterion, optimizer, num_epochs, validation_only=False):
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+    shuffler = RandomShuffler(random_state=random.seed(1234))
 
     net.to(device)
     for classifier_name in classifiers:
@@ -49,19 +110,33 @@ def train(net, classifiers, text_holder, dataloaders_dict, batch_size, criterion
             t_iter_start = time.time()
 
             batches = dataloaders_dict[phase]
-            for data in batches:
-                inputs1 = data.dr1.to(device)
-                inputs2 = data.dr2.to(device)
+            for prev_data_batch in batches:
+                prev_dr_batch = prev_data_batch.dr.to(device)
 
                 optimizer.zero_grad()
 
+                dataset = batches.dataset
+                randperm = shuffler(range(len(dataset.examples)))
+                random_dataset = Dataset([dataset.examples[i]
+                                          for i in randperm], dataset.fields)
+                iterator = torchtext.data.Iterator(
+                    random_dataset, batch_size=batch_size, train=False, sort=False)
+                random_iter = iter(iterator)
+
                 with torch.set_grad_enabled(phase == 'train'):
-                    outputs = net(inputs1, inputs2)
+                    next_data = next(random_iter)
+                    next_dr = next_data.dr.to(device)
+                    next_dr = next_dr[0:len(prev_dr_batch)]
+
+                    outputs = net(prev_dr_batch, next_dr)
                     loss = 0
                     preds = {}
                     acc = 0
+
+                    expect_datas = deside_expectes(
+                        prev_data_batch, next_data, classifiers)
                     for classifier_name in classifiers:
-                        labels = getattr(data, classifier_name).to(device)
+                        labels = expect_datas[classifier_name].to(device)
                         o = classifiers[classifier_name]["net"](outputs)
                         labels = labels.squeeze(1)
                         loss += criterion(o, labels)
@@ -111,7 +186,8 @@ def train(net, classifiers, text_holder, dataloaders_dict, batch_size, criterion
 
 def cmd_train_superimposer(args):
     text_holder = TextHolder()
-    td = SuperimposerDataset(path=args.input, text_holder=text_holder)
+    td = ClassifierDataset(path=args.input, text_holder=text_holder)
+
     training_data, validation_data = td.split(
         split_ratio=0.8, random_state=random.seed(1234))
 
