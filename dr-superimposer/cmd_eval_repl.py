@@ -38,7 +38,7 @@ def cmd_eval_repl(args):
     first = True
 
     while True:
-        print("> ", end='')
+        print("\n> ", end='')
         input_text = input()
 
         if input_text == "exit":
