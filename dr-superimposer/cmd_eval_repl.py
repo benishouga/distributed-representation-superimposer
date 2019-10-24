@@ -38,7 +38,7 @@ def cmd_eval_repl(args):
     first = True
 
     while True:
-        print("> ", end='')
+        print("\n> ", end='')
         input_text = input()
 
         if input_text == "exit":
@@ -50,13 +50,13 @@ def cmd_eval_repl(args):
 
         next_dr = torch.FloatTensor([extractor.extract(input_text)])
 
-        print("----input_dr----")
+        print("　入力の分類")
         print_classifier_result(classifier_nets, next_dr)
 
         if not first:
             result_dr = net_superimposer(prev_dr, next_dr)
 
-            print("----superimposer_dr----")
+            print("\n　合成結果の分類")
             print_classifier_result(classifier_nets, result_dr)
             prev_dr = result_dr
         else:
@@ -71,4 +71,4 @@ def print_classifier_result(classifier_nets, result):
         _, predicted = torch.max(outputs, 1)
         for v in field_labels[target]:
             if field_labels[target][v] == predicted[0]:
-                print("{}: {}".format(target, v))
+                print("　　{}: {}".format(target, v))
